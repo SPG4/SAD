@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public int playerNumber;
+
     public float speed = 3f;
     public float maxSpeed = 10f;
     public float jumpForce = 5000f;
+    public float h;
 
     public bool jumpState;
     public bool oldJumpState;
@@ -31,7 +34,7 @@ public class PlayerController : MonoBehaviour {
         SpeedLimit();
 
         oldJumpState = jumpState;
-        jumpState = Input.GetButton("Jump");
+        jumpState = Input.GetButton("Jump" + playerNumber);
         if (jumpState)
         {
             Jump();
@@ -40,12 +43,12 @@ public class PlayerController : MonoBehaviour {
 
     private void Movement()
     {
-        float h = Input.GetAxis("Horizontal");
+        h = Input.GetAxis("Horizontal" + playerNumber);
 
         velocity.x = (speed * h);
-        velocity.y = ridgidbodyPlayer.velocity.y;
+        velocity.y = this.ridgidbodyPlayer.velocity.y;
 
-        ridgidbodyPlayer.velocity = velocity;
+        this.ridgidbodyPlayer.velocity = velocity;
     }
 
     public void Jump()
