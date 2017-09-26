@@ -9,23 +9,32 @@ public class PlayerController : MonoBehaviour {
     public float speed = 3f;
     public float maxSpeed = 10f;
     public float jumpForce = 5000f;
-    public float h;
 
     public bool jumpState;
     public bool oldJumpState;
+    public bool grounded;
 
-    public Vector2 velocity;
+    public Vector2 position;
     public Rigidbody2D ridgidbodyPlayer;
+
+    private float h;
+
+    private Vector2 velocity;
+
+    private Animator animator;
 
     // Use this for initialization
     void Start ()
     {
         ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
+        position.x = transform.position.x;
+        position.y = transform.position.y;
     }
 
     private void FixedUpdate()
@@ -35,6 +44,7 @@ public class PlayerController : MonoBehaviour {
 
         oldJumpState = jumpState;
         jumpState = Input.GetButton("Jump" + playerNumber);
+
         if (jumpState)
         {
             Jump();
