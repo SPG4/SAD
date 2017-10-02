@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 50216884}
   - component: {fileID: 50216885}
   - component: {fileID: 50216886}
+  - component: {fileID: 50216887}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -197,6 +198,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &50216887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50216882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99438d36a426c4e8130e38339ea055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2D: {fileID: 0}
+  direction: {x: 1, y: 0}
+  buttonInput: UseAbilityP1
+  chosenAbility: SizeGun
 --- !u!1 &101628763
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +224,7 @@ GameObject:
   - component: {fileID: 101628765}
   - component: {fileID: 101628766}
   m_Layer: 0
-  m_Name: Player sprite
+  m_Name: Player sprite1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +336,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 530755076}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &530755078
 Behaviour:
   m_ObjectHideFlags: 0
@@ -525,35 +541,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1462401960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1462401961}
-  m_Layer: 0
-  m_Name: Crate object
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1462401961
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1462401960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.49, y: 1.69, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1564486821}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564486820
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,8 +551,10 @@ GameObject:
   - component: {fileID: 1564486821}
   - component: {fileID: 1564486822}
   - component: {fileID: 1564486823}
-  m_Layer: 0
-  m_Name: New Sprite
+  - component: {fileID: 1564486825}
+  - component: {fileID: 1564486824}
+  m_Layer: 8
+  m_Name: Crate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,12 +566,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1564486820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.49, y: 1.69, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 1462401961}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1564486822
 SpriteRenderer:
@@ -651,6 +640,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.36, y: 2.36}
   m_EdgeRadius: 0
+--- !u!114 &1564486824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564486820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66d8b303d349c7945b2f071b9a0331bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &1564486825
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564486820}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1779499397
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +681,7 @@ GameObject:
   - component: {fileID: 1779499400}
   - component: {fileID: 1779499399}
   - component: {fileID: 1779499398}
+  - component: {fileID: 1779499401}
   m_Layer: 0
   m_Name: 'Player 2 '
   m_TagString: Untagged
@@ -722,6 +743,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779499401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779499397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99438d36a426c4e8130e38339ea055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2D: {fileID: 0}
+  direction: {x: -1, y: 0}
+  buttonInput: UseAbilityP2
+  chosenAbility: StandardAbility
 --- !u!1 &1930112430
 GameObject:
   m_ObjectHideFlags: 0
