@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour {
     private GameObject defaultCollider;
     private GameObject crouchCollider;
 
+    public AudioSource jumping;
+
+
     // Use this for initialization
     void Start ()
     {
@@ -86,12 +89,16 @@ public class PlayerController : MonoBehaviour {
         if (jumpState && !oldJumpState && grounded)
         {
             Jump();
+            jumping.Play();
+
         }
 
         if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped)
         {
             Jump();
             hasDoubleJumped = true;
+            jumping.Play();
+
         }
 
         if (isOnWall)
