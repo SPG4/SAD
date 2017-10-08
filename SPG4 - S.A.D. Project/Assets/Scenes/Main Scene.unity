@@ -223,8 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  direction: {x: 1, y: 0}
-  buttonInput: UseAbilityP2
+  buttonInput: UseAbilityP1
   chosenAbility: StandardAbility
 --- !u!1 &101628763
 GameObject:
@@ -666,7 +665,7 @@ GameObject:
   - component: {fileID: 575738141}
   - component: {fileID: 575738140}
   - component: {fileID: 575738139}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Crate1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,8 +1745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  direction: {x: -1, y: 0}
-  buttonInput: UseAbilityP1
+  buttonInput: UseAbilityP2
   chosenAbility: StandardAbility
 --- !u!1 &1930112430
 GameObject:
@@ -1985,7 +1983,7 @@ GameObject:
   - component: {fileID: 2053937409}
   - component: {fileID: 2053937408}
   - component: {fileID: 2053937406}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Crate1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
