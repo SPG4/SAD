@@ -120,9 +120,9 @@ GameObject:
   - component: {fileID: 50216885}
   - component: {fileID: 50216886}
   - component: {fileID: 50216887}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 9.82
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 50216882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3369720aa191543954d2d62e50c7fd, type: 3}
+  m_Script: {fileID: 11500000, guid: eab7f11d58fdadf4898d1f5d7349ef51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 1
@@ -181,6 +181,7 @@ MonoBehaviour:
   maxSpeed: 10
   crouchSpeed: 2
   jumpForce: 1200
+  shooting: 0
   wallCheck: {fileID: 742701383}
   wallCheckRadius: 0.2
   whatIsWall:
@@ -191,9 +192,15 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  whatIsObject:
+    serializedVersion: 2
+    m_Bits: 2048
   position: {x: 0, y: 0}
   ridgidbodyPlayer: {fileID: 50216884}
   jumping: {fileID: 1620306430}
+  teleportBall: {fileID: 1853700430962534, guid: 91409cbbb71068e4aba3666ed222f5d4,
+    type: 2}
+  otherPlayer: {fileID: 1779499398}
 --- !u!95 &50216886
 Animator:
   serializedVersion: 3
@@ -234,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101628764}
   - component: {fileID: 101628765}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 131607044}
   - component: {fileID: 131607045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crouch Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,13 +381,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 176710749}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.062503986, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 659117464}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &176710751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -475,7 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 330654737}
   - component: {fileID: 330654738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Default Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +535,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 418022676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: -4087464717476244675, guid: 0000000000000000d000000000000000, type: 0}
@@ -598,7 +605,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -646,13 +653,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 530755076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7acbfd538318e004d95d61f5b77dacba, type: 3}
+  m_Script: {fileID: 11500000, guid: f3219c27656497942a91f0197b520d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOne: {fileID: 50216885}
-  playerTwo: {fileID: 1779499398}
-  playerDistance: {x: 0, y: 0}
-  distance: 0
 --- !u!1 &575738138
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +668,7 @@ GameObject:
   - component: {fileID: 575738141}
   - component: {fileID: 575738140}
   - component: {fileID: 575738139}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Crate1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +838,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 659117463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.17, y: 0.66, z: 0}
+  m_LocalPosition: {x: -2.87, y: 2.36, z: 0}
   m_LocalScale: {x: 0.18316603, y: 0.18316603, z: 0.18316603}
   m_Children:
   - {fileID: 176710750}
@@ -850,7 +853,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 742701383}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,7 +881,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 829817673}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}
@@ -1099,7 +1102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154152823}
   - component: {fileID: 1154152825}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1172,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1254968550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647730072}
   - component: {fileID: 1647730073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Default Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1573,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1659,9 +1662,9 @@ GameObject:
   - component: {fileID: 1779499399}
   - component: {fileID: 1779499398}
   - component: {fileID: 1779499401}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'Player 2 '
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1674,7 +1677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1779499397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3369720aa191543954d2d62e50c7fd, type: 3}
+  m_Script: {fileID: 11500000, guid: eab7f11d58fdadf4898d1f5d7349ef51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerNumber: 2
@@ -1682,6 +1685,7 @@ MonoBehaviour:
   maxSpeed: 10
   crouchSpeed: 2
   jumpForce: 1500
+  shooting: 0
   wallCheck: {fileID: 1254968550}
   wallCheckRadius: 0.2
   whatIsWall:
@@ -1692,9 +1696,15 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  whatIsObject:
+    serializedVersion: 2
+    m_Bits: 2048
   position: {x: 0, y: 0}
   ridgidbodyPlayer: {fileID: 1779499399}
   jumping: {fileID: 1620306430}
+  teleportBall: {fileID: 1100972806028158, guid: 0d676016a01e6a1489d7b9ed49b741b5,
+    type: 2}
+  otherPlayer: {fileID: 50216885}
 --- !u!50 &1779499399
 Rigidbody2D:
   serializedVersion: 4
@@ -1711,7 +1721,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 9.82
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -1926,7 +1936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1969298955}
   - component: {fileID: 1969298956}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crouch Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1983,7 +1993,7 @@ GameObject:
   - component: {fileID: 2053937409}
   - component: {fileID: 2053937408}
   - component: {fileID: 2053937406}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Crate1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

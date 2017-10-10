@@ -4,59 +4,65 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public PlayerController playerOne;
-    public PlayerController playerTwo;
+    GameObject playerOne;
+    GameObject playerTwo;
 
-    public Vector2 playerDistance;
-    private Vector2 cameraPosition;
-    private Vector2 cameraOffset;
-    private Vector3 cameraV2toV3;
-    private Vector3 velocity;
-
-    public float distance;
-    private float smoothTime;
+    float playerDistance;
 
     // Use this for initialization
     void Start ()
     {
-
+        playerOne = GameObject.FindGameObjectWithTag("Player");
+        playerTwo = GameObject.FindGameObjectWithTag("Player2");
 	}
-
-    private void Awake()
-    {
-        smoothTime = 0.2f;
-    }
 
     // Update is called once per frame
     void Update ()
     {
-        PlayerDistance();
-        CenterPosition();
-        UpdateCamera();
-	}
+        /*Dont move camera if players are a certain distance apart, still need to stop players from 
+        //being able to move outside camera
 
-    private void PlayerDistance()
-    {
+        //playerDistance = (playerOne.transform.position - playerTwo.transform.position).magnitude;
+        if (playerDistance < 15)*/
+            //Call FixedCameraFollowSmooth
 
-        //This will have to depend on which of the players that is closest to the next goal
-        playerDistance = (playerOne.position - playerTwo.position);
-        //playerDistance = (playerTwo.position - playerOne.position);
-
-        distance = Mathf.Sqrt((playerDistance.x * playerDistance.x) + (playerDistance.y * playerDistance.y));
+        FixedCameraFollowSmooth(gameObject.GetComponent<Camera>(), playerOne.transform, playerTwo.transform);
     }
 
-    private void CenterPosition()
+
+    public void FixedCameraFollowSmooth(Camera cam, Transform t1, Transform t2)
     {
-        //cameraPosition = playerDistance / 2;
-        cameraPosition.x = distance / 2;
-    }
+        // How many units should we keep from the players
+        float followTimeDelta = 0.8f;
 
-    private void UpdateCamera()
-    {     
-        cameraV2toV3.x = cameraPosition.x;
-        cameraV2toV3.y = cameraPosition.y;
-        cameraV2toV3.z = -10f;
+        // Midpoint we're after
+        Vector3 midpoint = (t1.position + t2.position) / 2f;
 
-        transform.position = Vector3.SmoothDamp(transform.position, cameraV2toV3, ref velocity, smoothTime);
+        // Distance between objects
+        float distance = (t1.position - t2.position).magnitude;
+
+        // Move camera a certain distance
+        Vector3 cameraDestination = midpoint - cam.transform.forward;
+
+        // Adjust ortho size if we're using one of those
+        if (cam.orthographic)
+        {
+            //Use this if you want the camera to zoom based on distance between players
+
+            //if (distance < 5)
+            //    cam.orthographicSize = 5;
+            //else if (distance >= 5 && distance < 10)
+            //    cam.orthographicSize = distance;
+            //else if (distance > 10)
+            //    cam.orthographicSize = 10;
+        }
+        
+        cam.transform.position = Vector3.Slerp(cam.transform.position, cameraDestination, followTimeDelta);
+
+        // Snap when close enough to prevent annoying slerp behavior
+        if ((cameraDestination - cam.transform.position).magnitude <= 0.05f)
+            cam.transform.position = cameraDestination;
+
+        //Debug.Log(cam.transform.position);
     }
 }
