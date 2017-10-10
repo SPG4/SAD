@@ -16,7 +16,7 @@ public class LevelMusicControl : MonoBehaviour {
     private float m_TrainsitionOut;
     private float m_QuaterNote;
     bool musicMain;
-    
+    private int count;
     
     void Start()
     {
@@ -46,9 +46,14 @@ public class LevelMusicControl : MonoBehaviour {
     //}
     void OnTriggerEnter2D(Collider2D other)
     {
+        ++count;
         musicMain = true;
         songIN.Stop();
+        if (count == 1)
+        {
         EnterZone();
+
+        }
         if (other.CompareTag("TriggerZone"))
         {
             inZone.TransitionTo(m_TrainsitionIn);
@@ -57,9 +62,14 @@ public class LevelMusicControl : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
+        --count;
         musicMain = false;
         songOut.Stop();
+        if(count == 0)
+        {
         EnterZone();
+
+        }
         if (other.CompareTag("TriggerZone"))
         {
             outOfZone.TransitionTo(m_TrainsitionOut);
