@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Player2
   - TriggerZone
+  - Crosshair
   layers:
   - Default
   - TransparentFX

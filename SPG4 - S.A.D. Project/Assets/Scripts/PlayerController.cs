@@ -47,12 +47,15 @@ public class PlayerController : MonoBehaviour {
     private GameObject defaultCollider;
     private GameObject crouchCollider;
 
+    private GameObject crosshair;
 
     /// <summary>
     /// initialize conponents of the player here
     /// </summary>
     void Start ()
     {
+        crosshair = GameObject.FindGameObjectWithTag("Crosshair");
+
         ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 
@@ -60,6 +63,7 @@ public class PlayerController : MonoBehaviour {
         crouchCollider = transform.Find("Crouch Collider").gameObject;
 
         crouchCollider.SetActive(false);
+        //crosshair.SetActive(false);
     }
 	
 	/// <summary>
@@ -73,6 +77,31 @@ public class PlayerController : MonoBehaviour {
         }
         //else
         //    shooting = false;
+
+
+        //Behöver kolla vilket håll spelaren står på och ändra riktningen som siktet roteras på efter det
+        if (Input.GetKey(KeyCode.Space))
+        {
+            //crosshair.SetActive(true);
+            crosshair.SendMessage("RotateObject", -2);
+
+        }
+
+        if (Input.GetKey(KeyCode.N))
+        {
+            //crosshair.SetActive(true);
+            crosshair.SendMessage("RotateObject", 2);
+        }
+
+        //if (Input.GetKeyUp(KeyCode.N))
+        //{
+        //    crosshair.SetActive(false);
+        //}
+
+        //if (Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    crosshair.SetActive(false);
+        //}
 
         if (grounded)
             hasDoubleJumped = false;
@@ -221,10 +250,18 @@ public class PlayerController : MonoBehaviour {
     /// </summary>
     void ShootTeleportBall()
     {
+        Vector2 shootingDirection = crosshair.transform.position - transform.position;
+        shootingDirection.Normalize();
+
+        Debug.Log(shootingDirection);
+
+        float speed = 15;
+        
         shooting = true;
 
         GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
         ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
         ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
+        ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
     }
 }

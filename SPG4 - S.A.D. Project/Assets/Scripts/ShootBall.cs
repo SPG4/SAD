@@ -12,7 +12,7 @@ public class ShootBall : MonoBehaviour
     GameObject playerBeingTeleported;
     Vector2 playerShootingLocalScale;
 
-    void Start ()
+    void Start()
     {
         //Reset ballspeed to the original direction;
         ballSpeed = originalBallSpeed;
@@ -28,8 +28,14 @@ public class ShootBall : MonoBehaviour
             ballSpeed = ballSpeed * -1;
 
         //Add speed to the ball
-        GetComponent<Rigidbody2D>().velocity = new Vector2(ballSpeed, GetComponent<Rigidbody2D>().velocity.y);
-	}
+
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(ballSpeed, GetComponent<Rigidbody2D>().velocity.y);
+    }
+
+    void AddSpeedToBall(Vector2 direction)
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(direction.x, direction.y);
+    }
 
     /// <summary>
     /// When the ball collides with the ground the ball is destroyed and a message is sent to the 
