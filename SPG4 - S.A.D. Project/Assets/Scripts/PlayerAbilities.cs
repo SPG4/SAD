@@ -22,12 +22,12 @@ public class PlayerAbilities : MonoBehaviour
         if (Input.GetButtonDown(buttonInput))
         {
             //direction = Vector2.right; //fixa detta när vi har koll på vilket håll karaktären är riktad åt
-            
+
             direction = gameObject.transform.localScale;
             direction.y = 0;
             Debug.DrawRay(transform.position, direction, Color.red, 10);
 
-           
+
 
             Debug.Log(direction);
             if (Physics2D.Raycast(transform.position, direction, 7, layer_mask))
@@ -35,28 +35,29 @@ public class PlayerAbilities : MonoBehaviour
                 Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range
                 Debug.Log(hit.collider.gameObject.name);
-
-                if (buttonInput == "UseAbilityP2")
-                    direction.x -= direction.x * 2;
-                hit.collider.gameObject.SendMessage(chosenAbility, direction);
-
-
-                //Nedanför = kontrollera antal gånger ability används
-                if (chosenAbility == "StandardAbility" && buttonInput == "UseAbilityP1")
+                if (chosenAbility == "StandardAbility")
                 {
-                    // .SendMessage(Player1);
+                    if (buttonInput == "UseAbilityP2")
+                        direction.x -= direction.x * 2;
+                    hit.collider.gameObject.SendMessage(chosenAbility, direction);
+
+
+                    //Nedanför = kontrollera antal gånger ability används
+                    if (chosenAbility == "StandardAbility" && buttonInput == "UseAbilityP1")
+                    {
+                        // .SendMessage(Player1);
+                    }
+
+                    else if (chosenAbility == "StandardAbility" && buttonInput == "UseAbilityP2")
+                    {
+                        // .SendMessage(Player2);
+                    }
                 }
 
-                else if (chosenAbility == "StandardAbility" && buttonInput == "UseAbilityP2")
-                {
-                    // .SendMessage(Player2);
-                }
+                else
+                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
             }
         }
-
-        
-
-
     }
 
 }
