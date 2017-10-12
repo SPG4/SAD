@@ -11,12 +11,14 @@ public class PlayerAbilities : MonoBehaviour
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
     public float mana;
+    public float shots;
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         layer_mask = LayerMask.GetMask("Interactable Objects"); // Used in raycast to only hit objects on a specific layer
         mana = 5;
+        shots = 1;
     }
 
     void Update()
@@ -77,8 +79,20 @@ public class PlayerAbilities : MonoBehaviour
                     hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
                 }
 
-                else
-                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
+                else if (chosenAbility == "SizeGun")
+                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);             
+
+                //else
+                //    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
+            }
+
+            //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
+            //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
+            //change shot in another script but we can fix that later
+            if (chosenAbility == "ShootTeleportBall" && shots > 0)
+            {
+                shots--;
+                gameObject.SendMessage(chosenAbility);
             }
         }
     }

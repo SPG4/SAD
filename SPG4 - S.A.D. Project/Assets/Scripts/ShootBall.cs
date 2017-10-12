@@ -12,8 +12,12 @@ public class ShootBall : MonoBehaviour
     GameObject playerBeingTeleported;
     Vector2 playerShootingLocalScale;
 
+    private float timer;
+
     void Start()
     {
+        timer = 3;
+
         //Reset ballspeed to the original direction;
         ballSpeed = originalBallSpeed;
 
@@ -32,6 +36,17 @@ public class ShootBall : MonoBehaviour
         //GetComponent<Rigidbody2D>().velocity = new Vector2(ballSpeed, GetComponent<Rigidbody2D>().velocity.y);
     }
 
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer < 0)
+        {
+            TeleportBallEvent();
+        }
+        
+    }
+
     void AddSpeedToBall(Vector2 direction)
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(direction.x, direction.y);
@@ -47,9 +62,15 @@ public class ShootBall : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
-            Destroy(gameObject);
-            playerBeingTeleported.SendMessage("Teleport", gameObject.transform.position);
-            GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
+            TeleportBallEvent();
         }
+    }
+
+    private void TeleportBallEvent()
+    {
+        Destroy(gameObject);
+        playerBeingTeleported.SendMessage("Teleport", gameObject.transform.position);
+        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
+        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().shots = 1;
     }
 }
