@@ -21,7 +21,10 @@ public class InteractableObjects : MonoBehaviour
     {
 
     }
-
+    /// <summary>
+    /// Method called when using standard ability, moves affected object
+    /// </summary>
+    /// <param name="direction"></param>
     void StandardAbility(Vector2 direction)
     {
         Debug.Log("Using Ability");
