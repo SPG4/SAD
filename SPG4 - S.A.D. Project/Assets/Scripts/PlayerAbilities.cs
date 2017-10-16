@@ -35,8 +35,7 @@ public class PlayerAbilities : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(mana);
-
+        //Change Ability
         if (Input.GetButtonDown(nextAbilityInput))
         {
             int temp = 0;
@@ -55,8 +54,50 @@ public class PlayerAbilities : MonoBehaviour
             chosenAbility = abilityList[temp]; //sets current ability to next ability in list
         }
 
-
         if (chosenAbility == "Shield")
+            UseShield();
+
+        else if (Input.GetButtonDown(buttonInput))
+        {
+            if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility")
+                CastRayAbility();
+
+            //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
+            //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
+            //change shot in another script but we can fix that later
+            if (chosenAbility == "ShootTeleportBall" && shots > 0)
+            {
+                shots--;
+                gameObject.SendMessage(chosenAbility);
+            }
+        }
+        /// <summary>
+        /// Casts a Ray and then uses ability
+        /// </summary>
+        void CastRayAbility()
+        {
+            direction = gameObject.transform.localScale; // choosing direction for the raycast
+            direction.y = 0;
+            //Debug.DrawRay(transform.position, direction, Color.red, 10);
+
+            if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability
+                                                                                                    //Debug.Log(hit.collider.gameObject.name);
+                if (chosenAbility == "StandardAbility")
+                {
+                    if (buttonInput == "UseAbilityP2") // find direction object should move in
+                        direction.x -= direction.x * 2;
+
+                    hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
+                }
+
+                else if (chosenAbility == "SizeGun")
+                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
+            }
+        }
+
+        void UseShield()
         {
             if (Input.GetButton(buttonInput) && mana > 0)    //if button is pressed down the shield is active and mana is used       
             {
@@ -70,61 +111,16 @@ public class PlayerAbilities : MonoBehaviour
             {
                 transform.GetChild(0).gameObject.SetActive(false);
 
-                {
-                    if (mana < 5)
-                        mana += Time.deltaTime;
-                    else
-                        mana = 5.0f;
-                }
+                if (mana < 5)
+                    mana += Time.deltaTime;
+                else
+                    mana = 5.0f;
             }
         }
 
-        else if (Input.GetButtonDown(buttonInput)) //abilities that use raycast (Standard Ability, Sizegun)
+        void AddAbilityToList(string abilityName) //call with SendMessage
         {
-
-            direction = gameObject.transform.localScale; // choosing direction for the raycast
-            direction.y = 0;
-            Debug.DrawRay(transform.position, direction, Color.red, 10);
-
-            // Debug.Log(direction);
-            if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
-            {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability
-                Debug.Log(hit.collider.gameObject.name);
-
-                if (chosenAbility == "StandardAbility")
-                {
-                    if (buttonInput == "UseAbilityP2") // find direction object should move in
-                        direction.x -= direction.x * 2;
-
-                    if (buttonInput == "UseAbilityP1")
-                    {
-                        // .SendMessage(Player1);
-                    }
-
-                    else if (buttonInput == "UseAbilityP2")
-                    {
-                        // .SendMessage(Player2);
-                    }
-
-                    hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
-                }
-
-                else if (chosenAbility == "SizeGun")
-                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);             
-
-                //else
-                //    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
-            }
-
-            //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
-            //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
-            //change shot in another script but we can fix that later
-            if (chosenAbility == "ShootTeleportBall" && shots > 0)
-            {
-                shots--;
-                gameObject.SendMessage(chosenAbility);
-            }
+            abilityList.Add(abilityName);
         }
     }
 }
