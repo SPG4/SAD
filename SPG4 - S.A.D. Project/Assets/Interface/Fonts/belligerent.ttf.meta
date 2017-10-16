@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c0d1c3427cc3eb94eabc57cbc011b838
+timeCreated: 1507718383
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Belligerent Madness
+  fontNames:
+  - Belligerent Madness
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8236acf8e6ad59f4ebcc14315063c601, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
