@@ -71,57 +71,59 @@ public class PlayerAbilities : MonoBehaviour
                 gameObject.SendMessage(chosenAbility);
             }
         }
-        /// <summary>
-        /// Casts a Ray and then uses ability
-        /// </summary>
-        void CastRayAbility()
+    }
+    /// <summary>
+    /// Casts a Ray and then uses ability
+    /// </summary>
+    void CastRayAbility()
+    {
+        direction = gameObject.transform.localScale; // choosing direction for the raycast
+        direction.y = 0;
+        //Debug.DrawRay(transform.position, direction, Color.red, 10);
+
+        if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
         {
-            direction = gameObject.transform.localScale; // choosing direction for the raycast
-            direction.y = 0;
-            //Debug.DrawRay(transform.position, direction, Color.red, 10);
-
-            if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability
+                                                                                                //Debug.Log(hit.collider.gameObject.name);
+            if (chosenAbility == "StandardAbility")
             {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability
-                                                                                                    //Debug.Log(hit.collider.gameObject.name);
-                if (chosenAbility == "StandardAbility")
-                {
-                    if (buttonInput == "UseAbilityP2") // find direction object should move in
-                        direction.x -= direction.x * 2;
+                if (buttonInput == "UseAbilityP2") // find direction object should move in
+                    direction.x -= direction.x * 2;
 
-                    hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
-                }
-
-                else if (chosenAbility == "SizeGun")
-                    hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
-            }
-        }
-
-        void UseShield()
-        {
-            if (Input.GetButton(buttonInput) && mana > 0)    //if button is pressed down the shield is active and mana is used       
-            {
-                transform.GetChild(0).gameObject.SetActive(true);
-                mana -= Time.deltaTime;
-                if (mana < 0)
-                    transform.GetChild(0).gameObject.SetActive(false); //Shield must always be the first child of the players!
+                hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
             }
 
-            else if (!Input.GetButton(buttonInput)) //when button is not pressed the shield is inactive and mana recharges
-            {
-                transform.GetChild(0).gameObject.SetActive(false);
-
-                if (mana < 5)
-                    mana += Time.deltaTime;
-                else
-                    mana = 5.0f;
-            }
-        }
-
-        void AddAbilityToList(string abilityName) //call with SendMessage
-        {
-            abilityList.Add(abilityName);
+            else if (chosenAbility == "SizeGun")
+                hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
         }
     }
+
+    void UseShield()
+    {
+        if (Input.GetButton(buttonInput) && mana > 0)    //if button is pressed down the shield is active and mana is used       
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+            mana -= Time.deltaTime;
+            if (mana < 0)
+                transform.GetChild(0).gameObject.SetActive(false); //Shield must always be the first child of the players!
+        }
+
+        else if (!Input.GetButton(buttonInput)) //when button is not pressed the shield is inactive and mana recharges
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+
+            if (mana < 5)
+                mana += Time.deltaTime;
+            else
+                mana = 5.0f;
+        }
+    }
+
+    void AddAbilityToList(string abilityName) //call with SendMessage
+    {
+        abilityList.Add(abilityName);
+    }
 }
+
+
 
