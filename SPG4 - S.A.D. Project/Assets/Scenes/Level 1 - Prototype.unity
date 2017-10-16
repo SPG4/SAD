@@ -2182,6 +2182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  nextAbilityInput: NextAbilityP1
   buttonInput: UseAbilityP1
   chosenAbility: StandardAbility
   mana: 0
@@ -31526,6 +31527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  nextAbilityInput: NextAbilityP2
   buttonInput: UseAbilityP2
   chosenAbility: Shield
   mana: 0

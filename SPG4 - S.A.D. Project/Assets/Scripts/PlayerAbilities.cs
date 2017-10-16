@@ -8,10 +8,12 @@ public class PlayerAbilities : MonoBehaviour
     public Rigidbody2D rb2D;
     int layer_mask;
     Vector2 direction;
+    public string nextAbilityInput;
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
     public float mana;
     public float shots;
+    List<string> abilityList;
 
     void Start()
     {
@@ -19,11 +21,40 @@ public class PlayerAbilities : MonoBehaviour
         layer_mask = LayerMask.GetMask("Interactable Objects"); // Used in raycast to only hit objects on a specific layer
         mana = 5;
         shots = 1;
+
+        abilityList = new List<string>();
+        abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
+
+        //the code below should be deleted when the system for choosing abilities has been added
+        abilityList.Add("SizeGun");
+        abilityList.Add("Shield");
+        abilityList.Add("ShootTeleportBall");
+
+        chosenAbility = abilityList[0];
     }
 
     void Update()
     {
         //Debug.Log(mana);
+
+        if (Input.GetButtonDown(nextAbilityInput))
+        {
+            int temp = 0;
+
+            for (int i = 0; i < abilityList.Count; i++) // Find the position of the current ability in the list
+            {
+                if (abilityList[i] == chosenAbility)
+                {
+                    temp = (i + 1);
+                    break;
+                }
+            }
+
+            if (temp >= abilityList.Count)
+                temp = 0;
+            chosenAbility = abilityList[temp]; //sets current ability to next ability in list
+        }
+
 
         if (chosenAbility == "Shield")
         {
