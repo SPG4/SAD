@@ -37,11 +37,8 @@ public class FallingFloor : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             children[i] = transform.GetChild(i).gameObject;
-            Debug.Log(children[i]);
             ++numberOfChildren;
         }
-        Debug.Log(numberOfChildren);
-
     }
 
     void FixedUpdate()

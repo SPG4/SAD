@@ -75,6 +75,9 @@ public class ButtonOnOff : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Move object while object is inside object or not. Moves both ways.
+    /// </summary>
     private void moveObject()
     {
         if (buttonOn == true && 0 < maxSeconds)
