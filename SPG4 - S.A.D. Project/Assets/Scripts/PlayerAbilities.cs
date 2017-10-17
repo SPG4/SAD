@@ -14,6 +14,9 @@ public class PlayerAbilities : MonoBehaviour
     public float mana;
     public float shots;
     List<string> abilityList;
+    DistanceJoint2D distanceJoint;
+    SpringJoint2D springJoint;
+    bool buttonPressed;
 
     void Start()
     {
@@ -29,6 +32,7 @@ public class PlayerAbilities : MonoBehaviour
         abilityList.Add("SizeGun");
         abilityList.Add("Shield");
         abilityList.Add("ShootTeleportBall");
+        abilityList.Add("RopeAbility");
 
         chosenAbility = abilityList[0];
     }
@@ -61,6 +65,9 @@ public class PlayerAbilities : MonoBehaviour
         {
             if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility")
                 CastRayAbility();
+
+            if (chosenAbility == "RopeAbility")
+                CastAlternativeRayAbility();
 
             //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
             //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
@@ -95,6 +102,60 @@ public class PlayerAbilities : MonoBehaviour
 
             else if (chosenAbility == "SizeGun")
                 hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
+        }
+    }
+
+    /// <summary>
+    /// Casts a Ray and then uses ability
+    /// </summary>
+    void CastAlternativeRayAbility()
+    {
+        if (chosenAbility == "RopeAbility" && !buttonPressed) //If the input button has not been pressed, the ability can be used
+        {
+            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.z = 0;
+
+            if (Physics2D.Raycast(transform.position, target - transform.position, 7, layer_mask))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, target - transform.position, 7, layer_mask); //A raycast from the player to the mouse cursor's position
+                if (buttonInput == "UseAbilityP1")
+                {
+                    //Creates a dinstance joint connected between the player and the interactable object
+                    distanceJoint = gameObject.AddComponent<DistanceJoint2D>();
+                    distanceJoint.enabled = true;
+                    distanceJoint.maxDistanceOnly = true;
+                    distanceJoint.enableCollision = true;
+                    distanceJoint.connectedBody = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                    distanceJoint.connectedAnchor = hit.point - new Vector2(hit.collider.transform.position.x, hit.collider.transform.position.y);
+                    distanceJoint.distance = Vector3.Distance(transform.position, hit.point);
+                }
+
+                if (buttonInput == "UseAbilityP2")
+                {
+                    //Creates a spring joint connected between the player and the interactable object
+                    springJoint = gameObject.AddComponent<SpringJoint2D>();
+                    springJoint.enabled = true;
+                    springJoint.enableCollision = true;
+                    springJoint.autoConfigureDistance = false;
+                    springJoint.distance = 0.005f;
+                    springJoint.dampingRatio = 1f;
+                    springJoint.frequency = 2f;
+                    springJoint.connectedAnchor = target;
+                }
+            }
+
+            buttonPressed = true;
+        }
+
+        //If the input button has already been pressed, and a joint is connected to an object, then the joint is destroyed
+        else if (chosenAbility == "RopeAbility" && buttonPressed)
+        {
+            if (buttonInput == "UseAbilityP1")
+                Destroy(distanceJoint);
+            if (buttonInput == "UseAbilityP2")
+                Destroy(springJoint);
+
+            buttonPressed = false;
         }
     }
 

@@ -31,6 +31,10 @@ public class InteractableObjects : MonoBehaviour
         GetComponent<Rigidbody2D>().AddForce(direction * force);
     }
 
+    /// <summary>
+    /// Method called when using the size gun ability
+    /// </summary>
+    /// <param name="player">The player using the ability</param>
     void SizeGun(string player)
     {
         float newLocalScaleMagnitude = transform.localScale.magnitude;
