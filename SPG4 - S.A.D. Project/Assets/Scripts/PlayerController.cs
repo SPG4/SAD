@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour {
     public AudioSource jumping; 
 
     public GameObject teleportBall;
+    public GameObject crosshair;
 
     public PlayerController otherPlayer;
 
@@ -50,14 +51,13 @@ public class PlayerController : MonoBehaviour {
     private GameObject defaultCollider;
     private GameObject crouchCollider;
 
-    private GameObject crosshair;
 
     /// <summary>
     /// initialize conponents of the player here
     /// </summary>
     void Start ()
     {
-        crosshair = GameObject.FindGameObjectWithTag("Crosshair");
+        //crosshair = GameObject.FindGameObjectWithTag("Crosshair");
 
         ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
         //animator = gameObject.GetComponent<Animator>();
