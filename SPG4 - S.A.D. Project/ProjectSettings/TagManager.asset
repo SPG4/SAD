@@ -8,6 +8,7 @@ TagManager:
   - Player2
   - TriggerZone
   - Crosshair
+  - Deadly
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Wall
   - Interactable Objects
   - Ball
-  - 
+  - Projectiles
   - 
   - 
   - 
