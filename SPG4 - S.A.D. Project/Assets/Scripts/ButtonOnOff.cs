@@ -30,6 +30,9 @@ public class ButtonOnOff : MonoBehaviour
     [Tooltip("If the button is only clickable once")]
     public bool oneTimeClick = false;
 
+    public Sprite changeToTexture = null;
+    public GameObject whenObjectTouches = null;
+
     private float chosenSeconds = 0.0f;
     private bool notClickable = false;
     // Use this for initialization
@@ -50,7 +53,16 @@ public class ButtonOnOff : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(oneTimeClick == false)
+        
+        if (whenObjectTouches != null && changeToTexture != null)
+        {
+            if (collision.transform.gameObject.name == whenObjectTouches.name)
+            {
+                this.gameObject.GetComponentInParent<SpriteRenderer>().sprite = changeToTexture;
+                Destroy(whenObjectTouches);
+            }
+        }
+        if (oneTimeClick == false)
         {
             buttonOn = true;
         }
