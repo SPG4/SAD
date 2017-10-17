@@ -24,11 +24,14 @@ public class PlayerController : MonoBehaviour {
 
     public Vector2 position;
     public Rigidbody2D ridgidbodyPlayer;
-    public AudioSource jumping;
+    public AudioSource jumping; 
 
     public GameObject teleportBall;
 
     public PlayerController otherPlayer;
+
+    public Animator bodyAnimator;
+    public Animator handsAnimator;
 
     //Private fields 
     private bool jumpState;
@@ -42,7 +45,7 @@ public class PlayerController : MonoBehaviour {
     private float horizontalInput;
     private Vector2 velocity;
 
-    private Animator animator;
+    //private Animator animator;
 
     private GameObject defaultCollider;
     private GameObject crouchCollider;
@@ -57,7 +60,7 @@ public class PlayerController : MonoBehaviour {
         crosshair = GameObject.FindGameObjectWithTag("Crosshair");
 
         ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
+        //animator = gameObject.GetComponent<Animator>();
 
         defaultCollider = transform.Find("Default Collider").gameObject;
         crouchCollider = transform.Find("Crouch Collider").gameObject;
@@ -90,7 +93,7 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKey(KeyCode.N))
         {
             //crosshair.SetActive(true);
-            crosshair.SendMessage("RotateObject", 2);
+            crosshair.SendMessage("RotateObject", 2); 
         }
 
         //if (Input.GetKeyUp(KeyCode.N))
@@ -134,6 +137,12 @@ public class PlayerController : MonoBehaviour {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         isOnWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
         standingOnObject = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsObject);
+
+        bodyAnimator.SetBool("Ground", grounded);
+        handsAnimator.SetBool("Ground", grounded);
+
+        bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
+        handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
 
         //Jumpstate is used to check if the player has pressed the jump button
         oldJumpState = jumpState;
@@ -250,7 +259,7 @@ public class PlayerController : MonoBehaviour {
     /// </summary>
     void ShootTeleportBall()
     {
-        Vector2 shootingDirection = crosshair.transform.position - transform.position;
+        Vector2 shootingDirection = crosshair.transform.position - wallCheck.transform.position;
         shootingDirection.Normalize();
 
         Debug.Log(shootingDirection);

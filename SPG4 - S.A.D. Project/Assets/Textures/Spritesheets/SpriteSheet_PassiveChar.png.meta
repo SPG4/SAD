@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 889044f8dad81514db0685666199df79
+timeCreated: 1508191052
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteSheet_PassiveChar_0
+    21300002: SpriteSheet_PassiveChar_1
+    21300004: SpriteSheet_PassiveChar_2
+    21300006: SpriteSheet_PassiveChar_3
+    21300008: SpriteSheet_PassiveChar_4
+    21300010: SpriteSheet_PassiveChar_5
+    21300012: SpriteSheet_PassiveChar_6
+    21300014: SpriteSheet_PassiveChar_7
+    21300016: SpriteSheet_PassiveChar_8
+    21300018: SpriteSheet_PassiveChar_9
+    21300020: SpriteSheet_PassiveChar_10
+    21300022: SpriteSheet_PassiveChar_11
+    21300024: SpriteSheet_PassiveChar_15
+    21300026: SpriteSheet_PassiveChar_16
+    21300028: SpriteSheet_PassiveChar_17
+    21300030: SpriteSheet_PassiveChar_18
+    21300032: SpriteSheet_PassiveChar_19
+    21300034: SpriteSheet_PassiveChar_20
+    21300036: SpriteSheet_PassiveChar_21
+    21300038: SpriteSheet_PassiveChar_22
+    21300040: SpriteSheet_PassiveChar_26
+    21300042: SpriteSheet_PassiveChar_27
+    21300044: SpriteSheet_PassiveChar_28
+    21300046: SpriteSheet_PassiveChar_29
+    21300048: SpriteSheet_PassiveChar_30
+    21300050: SpriteSheet_PassiveChar_31
+    21300052: SpriteSheet_PassiveChar_32
+    21300054: SpriteSheet_PassiveChar_39
+    21300056: SpriteSheet_PassiveChar_40
+    21300058: SpriteSheet_PassiveChar_41
+    21300060: SpriteSheet_PassiveChar_42
+    21300062: SpriteSheet_PassiveChar_43
+    21300064: SpriteSheet_PassiveChar_44
+    21300066: SpriteSheet_PassiveChar_45
+    21300068: SpriteSheet_PassiveChar_46
+    21300070: SpriteSheet_PassiveChar_47
+    21300072: SpriteSheet_PassiveChar_48
+    21300074: SpriteSheet_PassiveChar_49
+    21300076: SpriteSheet_PassiveChar_50
+    21300078: SpriteSheet_PassiveChar_54
+    21300080: SpriteSheet_PassiveChar_55
+    21300082: SpriteSheet_PassiveChar_56
+    21300084: SpriteSheet_PassiveChar_57
+    21300086: SpriteSheet_PassiveChar_58
+    21300088: SpriteSheet_PassiveChar_59
+    21300090: SpriteSheet_PassiveChar_60
+    21300092: SpriteSheet_PassiveChar_61
+    21300094: SpriteSheet_PassiveChar_66
+    21300096: SpriteSheet_PassiveChar_67
+    21300098: SpriteSheet_PassiveChar_68
+    21300100: SpriteSheet_PassiveChar_69
+    21300102: SpriteSheet_PassiveChar_70
+    21300104: SpriteSheet_PassiveChar_71
+    21300106: SpriteSheet_PassiveChar_81
+    21300108: SpriteSheet_PassiveChar_82
+    21300110: SpriteSheet_PassiveChar_83
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_9
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_19
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_20
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_21
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_22
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_30
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_31
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_32
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_41
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_42
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_43
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_44
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_45
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_46
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_47
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_48
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_49
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_50
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_55
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_56
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_57
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_58
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_59
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_60
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_61
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_67
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_68
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_69
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_70
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_71
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_82
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_PassiveChar_83
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -40,7 +40,7 @@ public class PlayerAbilities : MonoBehaviour
     void Update()
     {
         //Change Ability
-        if (Input.GetButtonDown(nextAbilityInput))
+        if (Input.GetButtonDown(nextAbilityInput)) 
         {
             int temp = 0;
 

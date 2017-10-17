@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 93fa6e7f0809b1c4dae8cc8a562e566a
+timeCreated: 1508191199
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteSheet_OffensiveChar_0
+    21300002: SpriteSheet_OffensiveChar_1
+    21300004: SpriteSheet_OffensiveChar_2
+    21300006: SpriteSheet_OffensiveChar_3
+    21300008: SpriteSheet_OffensiveChar_4
+    21300010: SpriteSheet_OffensiveChar_5
+    21300012: SpriteSheet_OffensiveChar_6
+    21300014: SpriteSheet_OffensiveChar_7
+    21300016: SpriteSheet_OffensiveChar_8
+    21300018: SpriteSheet_OffensiveChar_9
+    21300020: SpriteSheet_OffensiveChar_10
+    21300022: SpriteSheet_OffensiveChar_11
+    21300024: SpriteSheet_OffensiveChar_15
+    21300026: SpriteSheet_OffensiveChar_16
+    21300028: SpriteSheet_OffensiveChar_17
+    21300030: SpriteSheet_OffensiveChar_18
+    21300032: SpriteSheet_OffensiveChar_19
+    21300034: SpriteSheet_OffensiveChar_20
+    21300036: SpriteSheet_OffensiveChar_21
+    21300038: SpriteSheet_OffensiveChar_22
+    21300040: SpriteSheet_OffensiveChar_26
+    21300042: SpriteSheet_OffensiveChar_27
+    21300044: SpriteSheet_OffensiveChar_28
+    21300046: SpriteSheet_OffensiveChar_29
+    21300048: SpriteSheet_OffensiveChar_30
+    21300050: SpriteSheet_OffensiveChar_31
+    21300052: SpriteSheet_OffensiveChar_32
+    21300054: SpriteSheet_OffensiveChar_39
+    21300056: SpriteSheet_OffensiveChar_40
+    21300058: SpriteSheet_OffensiveChar_41
+    21300060: SpriteSheet_OffensiveChar_42
+    21300062: SpriteSheet_OffensiveChar_43
+    21300064: SpriteSheet_OffensiveChar_44
+    21300066: SpriteSheet_OffensiveChar_45
+    21300068: SpriteSheet_OffensiveChar_46
+    21300070: SpriteSheet_OffensiveChar_47
+    21300072: SpriteSheet_OffensiveChar_48
+    21300074: SpriteSheet_OffensiveChar_49
+    21300076: SpriteSheet_OffensiveChar_50
+    21300078: SpriteSheet_OffensiveChar_54
+    21300080: SpriteSheet_OffensiveChar_55
+    21300082: SpriteSheet_OffensiveChar_56
+    21300084: SpriteSheet_OffensiveChar_57
+    21300086: SpriteSheet_OffensiveChar_58
+    21300088: SpriteSheet_OffensiveChar_59
+    21300090: SpriteSheet_OffensiveChar_60
+    21300092: SpriteSheet_OffensiveChar_61
+    21300094: SpriteSheet_OffensiveChar_66
+    21300096: SpriteSheet_OffensiveChar_67
+    21300098: SpriteSheet_OffensiveChar_68
+    21300100: SpriteSheet_OffensiveChar_69
+    21300102: SpriteSheet_OffensiveChar_70
+    21300104: SpriteSheet_OffensiveChar_71
+    21300106: SpriteSheet_OffensiveChar_81
+    21300108: SpriteSheet_OffensiveChar_82
+    21300110: SpriteSheet_OffensiveChar_83
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_9
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 686
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_19
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_20
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_21
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_22
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 588
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_28
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_30
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_31
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_32
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 490
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_40
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_41
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_42
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_43
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_44
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_45
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_46
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_47
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_48
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_49
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_50
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 392
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_55
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_56
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_57
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_58
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_59
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_60
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_61
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 294
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_67
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_68
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_69
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_70
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_71
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 196
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_82
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SpriteSheet_OffensiveChar_83
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 98
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
