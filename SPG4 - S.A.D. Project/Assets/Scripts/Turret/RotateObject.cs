@@ -71,18 +71,7 @@ public class RotateObject : MonoBehaviour
         {
             closestTarget = direction2;
         }
-        Debug.Log(transform.position);
-        Debug.Log(zeroPosTurret);
-
-        Debug.Log(target1Sum + " Ply1");
-
-        Debug.Log(target2Sum + " Ply2");
-
-
-
-
-
-
+        
         float angle = Mathf.Atan2(closestTarget.y, closestTarget.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);

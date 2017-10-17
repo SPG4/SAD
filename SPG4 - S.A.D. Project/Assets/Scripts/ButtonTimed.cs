@@ -12,6 +12,8 @@ public class ButtonTimed : MonoBehaviour {
     public float buttonTime = 0.0f;
     public bool isButton1 = false;
     public bool isButton2 = false;
+    public Sprite notActive;
+    public Sprite active;
 
     private float buttonOriginalTime;
     private bool startTime = false;
@@ -37,8 +39,8 @@ public class ButtonTimed : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -51,15 +53,38 @@ public class ButtonTimed : MonoBehaviour {
         {
             GlobalLevel1.Button2Clicked = true;
         }
+
     }
 
     private void checkButton()
     {
         buttonTime -= Time.fixedDeltaTime;
 
-        if(GlobalLevel1.Button1Clicked == true && GlobalLevel1.Button2Clicked == true)
+        // Change sprites if active or not
+        if (buttonTime >= 0 && GlobalLevel1.Button1Clicked == true && isButton1 == true && moveObject == false)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = active;
+        }
+        else if(isButton1 == true && buttonTime <= 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = notActive;
+        }
+        
+        
+        if (buttonTime >= 0 && GlobalLevel1.Button2Clicked == true && isButton2 == true && moveObject == false)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = active;
+        }
+        else if (isButton2 == true && buttonTime <= 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = notActive;
+        }
+
+        // Move object if both buttons are active.
+        if (GlobalLevel1.Button1Clicked == true && GlobalLevel1.Button2Clicked == true)
         {
             moveObject = true;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = active;
         }
 
         if (buttonTime <= 0)
