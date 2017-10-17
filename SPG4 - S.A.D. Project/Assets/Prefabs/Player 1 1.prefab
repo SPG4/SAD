@@ -475,11 +475,12 @@ MonoBehaviour:
     m_Bits: 2048
   position: {x: 0, y: 0}
   ridgidbodyPlayer: {fileID: 50574200067697672}
-  jumping: {fileID: 0}
+  jumping: {fileID: 82126639181401738, guid: a6512a2c80b0fef4782d5e2a43024bbb, type: 2}
   teleportBall: {fileID: 1853700430962534, guid: 91409cbbb71068e4aba3666ed222f5d4,
     type: 2}
   crosshair: {fileID: 0}
-  otherPlayer: {fileID: 0}
+  otherPlayer: {fileID: 114615502052137582, guid: fd846f72831238e4fb574e1683480891,
+    type: 2}
   bodyAnimator: {fileID: 95928864708045138}
   handsAnimator: {fileID: 95069104135617734}
 --- !u!114 &114584555712437126
