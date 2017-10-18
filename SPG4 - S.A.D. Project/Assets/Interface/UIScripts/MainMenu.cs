@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
     public Animator CameraObject;
@@ -106,5 +106,10 @@ public class MainMenu : MonoBehaviour {
     public void Yes()
     {
         Application.Quit();
+    }
+
+    public void LoadScene(int level)
+    {
+        SceneManager.LoadScene(level);
     }
 }

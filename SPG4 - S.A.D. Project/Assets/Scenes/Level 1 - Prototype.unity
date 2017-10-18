@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef0d866a1aab3f44ab53b6be207abea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToStart: 1000
+  waitToStart: 30
   dropEverySeconds: 0.3
 --- !u!4 &32379453
 Transform:
@@ -8213,6 +8213,16 @@ Prefab:
         type: 2}
       propertyPath: whatIsWall.m_Bits
       value: 3072
+      objectReference: {fileID: 0}
+    - target: {fileID: 212043323727526876, guid: fd846f72831238e4fb574e1683480891,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -861486297
+      objectReference: {fileID: 0}
+    - target: {fileID: 212043323727526876, guid: fd846f72831238e4fb574e1683480891,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd846f72831238e4fb574e1683480891, type: 2}
@@ -31374,6 +31384,16 @@ Prefab:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 180420622}
+    - target: {fileID: 212469558996346012, guid: 9cc213098afd14a458b2c619e8bc2c1e,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -861486297
+      objectReference: {fileID: 0}
+    - target: {fileID: 212469558996346012, guid: 9cc213098afd14a458b2c619e8bc2c1e,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cc213098afd14a458b2c619e8bc2c1e, type: 2}
   m_IsPrefabParent: 0
@@ -34877,7 +34897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef0d866a1aab3f44ab53b6be207abea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToStart: 1000
+  waitToStart: 30
   dropEverySeconds: 0.3
 --- !u!1 &952753578
 GameObject:
@@ -43903,7 +43923,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1368492321
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: -50
   m_Sprite: {fileID: 21300000, guid: 44eb05ed5cccb5e4e98eb0c91393a601, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -76715,7 +76735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef0d866a1aab3f44ab53b6be207abea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitToStart: 1000
+  waitToStart: 30
   dropEverySeconds: 0.3
 --- !u!4 &2023610817
 Transform:
