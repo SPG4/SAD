@@ -83,14 +83,14 @@ public class PlayerController : MonoBehaviour {
 
 
         //Behöver kolla vilket håll spelaren står på och ändra riktningen som siktet roteras på efter det
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetAxis("Aim"+playerNumber) == 1)
         {
             //crosshair.SetActive(true);
             crosshair.SendMessage("RotateObject", -2);
 
         }
 
-        if (Input.GetKey(KeyCode.N))
+        if (Input.GetAxis("Aim" + playerNumber) == -1)
         {
             //crosshair.SetActive(true);
             crosshair.SendMessage("RotateObject", 2); 

@@ -79,7 +79,7 @@ public class PlayerAbilities : MonoBehaviour
             }
         }
 
-        Debug.Log(chosenAbility);
+        //Debug.Log(chosenAbility);
     }
     /// <summary>
     /// Casts a Ray and then uses ability

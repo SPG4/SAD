@@ -7,13 +7,12 @@ public class InGameUI : MonoBehaviour {
 
     private string currentP1Ability;
     private string currentP2Ability;
+    public Text p2MainAbilityText;
     public Text p1MainAbilityText;
     public PlayerAbilities playerOne;
     public PlayerAbilities playerTwo;
-    int playerNumber;
 	// Use this for initialization
 	void Start () {
-        playerNumber = 1;
         GetChosenAbility();
 
     }
@@ -21,12 +20,15 @@ public class InGameUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GetChosenAbility();
+        p2MainAbilityText.text = currentP1Ability;
+        p1MainAbilityText.text = currentP2Ability;
 	}
 
     void GetChosenAbility()
     {
         //    string s = player.gameObject.CompareTag("Current Ability");
         //    currentAbility = s;
-        currentP1Ability = playerOne.GetCurrentAbility();
+        currentP2Ability = playerOne.GetCurrentAbility();
+        currentP1Ability = playerTwo.GetCurrentAbility();
     }
 }
