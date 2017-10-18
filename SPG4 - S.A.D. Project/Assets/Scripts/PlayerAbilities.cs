@@ -78,6 +78,8 @@ public class PlayerAbilities : MonoBehaviour
                 gameObject.SendMessage(chosenAbility);
             }
         }
+
+        Debug.Log(chosenAbility);
     }
     /// <summary>
     /// Casts a Ray and then uses ability
@@ -183,6 +185,11 @@ public class PlayerAbilities : MonoBehaviour
     void AddAbilityToList(string abilityName) //call with SendMessage
     {
         abilityList.Add(abilityName);
+    }
+
+    public string GetCurrentAbility()
+    {
+        return chosenAbility;
     }
 }
 
