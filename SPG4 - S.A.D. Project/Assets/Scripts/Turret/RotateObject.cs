@@ -13,14 +13,11 @@ public class RotateObject : MonoBehaviour
 
 
     private Vector2 closestTarget;
-    private Vector2 zeroPosTurret;
     private float target1Sum;
     private float target2Sum;
 
     private void Start()
     {
-        zeroPosTurret = transform.position - transform.position;
-        //player1 = GameObject.Find("Player 1");
         target1Sum = Mathf.Infinity;
     }
 
