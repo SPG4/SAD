@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
-    public LayerMask whatIsObject;
 
     public Vector2 position;
     public Rigidbody2D ridgidbodyPlayer;
@@ -41,15 +40,20 @@ public class PlayerController : MonoBehaviour {
     private bool hasDoubleJumped;
     private bool isOnWall;
     private bool crouchState;
-    private bool standingOnObject;
+    public bool facingRight;
 
     private float horizontalInput;
+    private float aimingSpeed;
     private Vector2 velocity;
+    private Vector3 initialVector = Vector3.forward;
 
     //private Animator animator;
 
     private GameObject defaultCollider;
     private GameObject crouchCollider;
+
+    private Vector3 worldSize;
+    float worldHalfSize;
 
 
     /// <summary>
@@ -57,6 +61,8 @@ public class PlayerController : MonoBehaviour {
     /// </summary>
     void Start ()
     {
+        transform.localScale = new Vector3(1, 1, 1);
+        facingRight = true;
         //crosshair = GameObject.FindGameObjectWithTag("Crosshair");
 
         ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
@@ -67,6 +73,11 @@ public class PlayerController : MonoBehaviour {
 
         crouchCollider.SetActive(false);
         //crosshair.SetActive(false);
+
+        aimingSpeed = 70f;
+
+        worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
+        worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
     }
 	
 	/// <summary>
@@ -74,37 +85,9 @@ public class PlayerController : MonoBehaviour {
     /// </summary>
 	void Update ()
     {
-        if (Input.GetButtonDown("Fire" + playerNumber) && shooting == false)
-        {
-            ShootTeleportBall();
-        }
-        //else
-        //    shooting = false;
+        float aimInput = Input.GetAxis("Aim" + playerNumber);
 
-
-        //Behöver kolla vilket håll spelaren står på och ändra riktningen som siktet roteras på efter det
-        if (Input.GetAxis("Aim"+playerNumber) == 1)
-        {
-            //crosshair.SetActive(true);
-            crosshair.SendMessage("RotateObject", -2);
-
-        }
-
-        if (Input.GetAxis("Aim" + playerNumber) == -1)
-        {
-            //crosshair.SetActive(true);
-            crosshair.SendMessage("RotateObject", 2); 
-        }
-
-        //if (Input.GetKeyUp(KeyCode.N))
-        //{
-        //    crosshair.SetActive(false);
-        //}
-
-        //if (Input.GetKeyUp(KeyCode.Space))
-        //{
-        //    crosshair.SetActive(false);
-        //}
+        AimCrosshairRelativeToPlayer(aimInput);
 
         if (grounded)
             hasDoubleJumped = false;
@@ -136,7 +119,6 @@ public class PlayerController : MonoBehaviour {
         */ 
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         isOnWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
-        standingOnObject = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsObject);
 
         bodyAnimator.SetBool("Ground", grounded);
         handsAnimator.SetBool("Ground", grounded);
@@ -147,6 +129,7 @@ public class PlayerController : MonoBehaviour {
         //Jumpstate is used to check if the player has pressed the jump button
         oldJumpState = jumpState;
         jumpState = Input.GetButton("Jump" + playerNumber);
+
         crouchState = Input.GetButton("Crouch" + playerNumber);
 
         Movement();
@@ -159,6 +142,16 @@ public class PlayerController : MonoBehaviour {
             Jump();           
         }
 
+        //Used to cancel a players jump if they release the jump button before reaching the pivot point
+        if (Input.GetButtonUp("Jump" + playerNumber))
+        {
+            if (velocity.y > 0)
+            {
+                velocity.y = velocity.y * .5f;
+                ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, velocity.y);
+            }
+        }
+
         //Check if a player is pressing jump in the air after the player has jumped once
         if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped)
         {
@@ -167,7 +160,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         //Check if a player is up against a wall, if so it counts as staning on the ground
-        if (isOnWall || standingOnObject)
+        if (isOnWall) //|| standingOnObject)
         {
             grounded = false;
             hasDoubleJumped = false;
@@ -196,6 +189,21 @@ public class PlayerController : MonoBehaviour {
 
         //Give the players ridgidbody the newly calculated velocity
         this.ridgidbodyPlayer.velocity = velocity;
+
+        worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
+        Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
+        Debug.Log("world " + (worldSize.x - worldHalfSize));
+        Debug.Log("check this " + worldLeft);
+        Debug.Log("player " + playerNumber + " " + ridgidbodyPlayer.position.x);
+        if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
+        {
+            ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
+            Debug.Log("out of bounds");
+        }
+        else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
+        {
+            ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
+        }
     }
 
     /// <summary>
@@ -236,11 +244,13 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetAxis("Horizontal" + playerNumber) < -0.1f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+            facingRight = false;
         }
 
         if (Input.GetAxis("Horizontal" + playerNumber) > 0.1f)
         {
             transform.localScale = new Vector3(1, 1, 1);
+            facingRight = true;
         }
     }
 
@@ -272,5 +282,52 @@ public class PlayerController : MonoBehaviour {
         ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
         ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
         ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+    }
+
+    /// <summary>
+    /// Checks if the player is facing left or right and if the player has given input to move crosshair,
+    /// if player is facing left the crosshair gets a message which sets the initial direction of the crosshair
+    /// to vector3.left, the direction is used to calculate the proper angle between the initial direction of the
+    /// crosshair and the updated direction that is updated by sending a rotate value to the RotateCrosshair method.
+    /// the direction of the rotation is determined by the value of the aimInput.
+    /// </summary>
+    /// <param name="aimInput"></param>
+    void AimCrosshairRelativeToPlayer(float aimInput)
+    {
+        float rotateDegrees = 0f;
+
+        if (facingRight && aimInput != 0)
+        {
+            crosshair.SendMessage("SetInitialVector", Vector3.right);
+
+            if (aimInput == 1)
+            {
+                rotateDegrees -= aimingSpeed * Time.deltaTime;
+            }
+
+            else if (aimInput == -1)
+            {
+                rotateDegrees += aimingSpeed * Time.deltaTime;
+            }
+
+            crosshair.SendMessage("RotateCrosshair", rotateDegrees);
+        }
+
+        if (!facingRight && aimInput != 0)
+        {
+            crosshair.SendMessage("SetInitialVector", Vector3.left);
+
+            if (aimInput == 1)
+            {
+                rotateDegrees += aimingSpeed * Time.deltaTime;
+            }
+
+            else if (aimInput == -1)
+            {
+                rotateDegrees -= aimingSpeed * Time.deltaTime;
+            }
+
+            crosshair.SendMessage("RotateCrosshair", rotateDegrees);
+        }
     }
 }

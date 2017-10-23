@@ -18994,8 +18994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f2a9c09385254299c52f4011b5788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsPlayerNoob: 0
-  playerY: 0
+  RestartLevel: 0
 --- !u!61 &485002971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20994,6 +20993,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3219c27656497942a91f0197b520d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerOne: {fileID: 1360701822}
+  playerTwo: {fileID: 1746741812}
+  minSizeY: 4
+  maxSizeY: 7
+  dampTime: 0.15
 --- !u!82 &530755083
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41804,8 +41808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f2a9c09385254299c52f4011b5788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsPlayerNoob: 0
-  playerY: 0
+  RestartLevel: 0
 --- !u!61 &1143208312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46543,8 +46546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f2a9c09385254299c52f4011b5788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsPlayerNoob: 0
-  playerY: 0
+  RestartLevel: 0
 --- !u!61 &1233691098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64481,8 +64483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36f2a9c09385254299c52f4011b5788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsPlayerNoob: 1
-  playerY: -65
+  RestartLevel: 0
 --- !u!50 &1714928480
 Rigidbody2D:
   serializedVersion: 4
@@ -82125,6 +82126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d49f30144bb054195cc2ca948d23bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LevelToLoad: 
 --- !u!50 &2137931021
 Rigidbody2D:
   serializedVersion: 4

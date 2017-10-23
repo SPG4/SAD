@@ -685,6 +685,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3219c27656497942a91f0197b520d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerOne: {fileID: 1721798793}
+  playerTwo: {fileID: 583275235}
+  minSizeY: 4
+  maxSizeY: 7
+  dampTime: 0.15
 --- !u!1 &575738138
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +877,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd846f72831238e4fb574e1683480891, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &583275235 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4473846713125562, guid: fd846f72831238e4fb574e1683480891,
+    type: 2}
+  m_PrefabInternal: {fileID: 583275234}
 --- !u!1 &598098809
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5167b10b881d7b94ab3c990209b551e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p2MainAbilityText: {fileID: 0}
   p1MainAbilityText: {fileID: 1062866721}
   playerOne: {fileID: 114586351585656502, guid: 9cc213098afd14a458b2c619e8bc2c1e,
     type: 2}
@@ -2364,6 +2375,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cc213098afd14a458b2c619e8bc2c1e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1721798793 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4997605833447506, guid: 9cc213098afd14a458b2c619e8bc2c1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1721798792}
 --- !u!1 &1740622150
 GameObject:
   m_ObjectHideFlags: 0
