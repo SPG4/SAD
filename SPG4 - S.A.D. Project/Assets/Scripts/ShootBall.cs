@@ -11,6 +11,7 @@ public class ShootBall : MonoBehaviour
 
     GameObject playerBeingTeleported;
     Vector2 playerShootingLocalScale;
+    Vector2 ballDirection;
 
     private float timer;
 
@@ -38,17 +39,18 @@ public class ShootBall : MonoBehaviour
 
     private void Update()
     {
-        timer -= Time.deltaTime;
+        //timer -= Time.deltaTime;
 
-        if (timer < 0)
-        {
-            TeleportBallEvent();
-        }
+        //if (timer < 0)
+        //{
+        //    TeleportBallEvent();
+        //}
         
     }
 
     void AddSpeedToBall(Vector2 direction)
     {
+        ballDirection = direction;
         GetComponent<Rigidbody2D>().velocity = new Vector2(direction.x, direction.y);
     }
 
@@ -64,6 +66,46 @@ public class ShootBall : MonoBehaviour
         {
             TeleportBallEvent();
         }
+
+        else if (collision.gameObject.tag == "Teleport destroyer")
+        {
+            Destroy(gameObject);
+            GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
+            GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().shots = 1;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            AntiGravityBall();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            ReturnToNormal();
+        }
+    }
+
+    private void ReturnToNormal()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Ball");
+        GetComponent<Rigidbody2D>().gravityScale = 1;
+    }
+
+    private void AntiGravityBall()
+    {
+        gameObject.layer = LayerMask.NameToLayer("Interactable Objects");
+        GetComponent<Rigidbody2D>().gravityScale = 0;
+
+        Vector2 CurrentVelocity = GetComponent<Rigidbody2D>().velocity;
+        CurrentVelocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x * 0.9f, GetComponent<Rigidbody2D>().velocity.y * 0.9f);
+
+        GetComponent<Rigidbody2D>().velocity = CurrentVelocity;
     }
 
     private void TeleportBallEvent()
@@ -73,4 +115,5 @@ public class ShootBall : MonoBehaviour
         GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
         GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().shots = 1;
     }
+
 }

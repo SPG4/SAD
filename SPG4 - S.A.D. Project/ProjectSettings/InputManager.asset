@@ -505,13 +505,13 @@ InputManager:
     m_Name: Aim2
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: g
+    positiveButton: y
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
-    dead: 0.5
-    sensitivity: 3
+    dead: 0.1
+    sensitivity: 1000
     snap: 0
     invert: 1
     type: 0
