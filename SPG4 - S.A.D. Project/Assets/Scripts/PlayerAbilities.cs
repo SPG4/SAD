@@ -18,6 +18,8 @@ public class PlayerAbilities : MonoBehaviour
     SpringJoint2D springJoint;
     bool buttonPressed;
 
+    PlayerController player;
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -35,6 +37,8 @@ public class PlayerAbilities : MonoBehaviour
         abilityList.Add("RopeAbility");
 
         chosenAbility = abilityList[0];
+
+        player = gameObject.GetComponent<PlayerController>();
     }
 
     void Update()
@@ -86,9 +90,8 @@ public class PlayerAbilities : MonoBehaviour
     /// </summary>
     void CastRayAbility()
     {
-        direction = gameObject.transform.localScale; // choosing direction for the raycast
-        direction.y = 0;
-        //Debug.DrawRay(transform.position, direction, Color.red, 10);
+        direction = player.crosshair.transform.position - gameObject.transform.position;
+        Debug.DrawRay(transform.position, direction, Color.red, 10);
 
         if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
         {
@@ -96,8 +99,9 @@ public class PlayerAbilities : MonoBehaviour
                                                                                                 //Debug.Log(hit.collider.gameObject.name);
             if (chosenAbility == "StandardAbility")
             {
+                Debug.DrawRay(transform.position, direction, Color.red, 10);
                 if (buttonInput == "UseAbilityP2") // find direction object should move in
-                    direction.x -= direction.x * 2;
+                    direction = direction *-1;
 
                 hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
             }
