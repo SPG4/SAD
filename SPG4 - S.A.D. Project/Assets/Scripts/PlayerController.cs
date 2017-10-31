@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour{
 
     //Public fields
     public int playerNumber;
 
-    public float speed = 3f;
-    public float maxSpeed = 10f;
-    public float crouchSpeed = 2f;
-    public float jumpForce = 5000f;
-    public bool shooting;
+    [SerializeField]
+    private float speed = 3f;
+    [SerializeField]
+    private float maxSpeed = 10f;
+    [SerializeField]
+    private float crouchSpeed = 2f;
+    [SerializeField]
+    private float jumpForce = 5000f;
 
     public Transform wallCheck;
     public float wallCheckRadius;
@@ -20,10 +23,6 @@ public class PlayerController : MonoBehaviour {
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
-
-    public Vector2 position;
-    public Rigidbody2D ridgidbodyPlayer;
-    public AudioSource jumping; 
 
     public GameObject teleportBall;
     public GameObject crosshair;
@@ -40,20 +39,21 @@ public class PlayerController : MonoBehaviour {
     private bool hasDoubleJumped;
     private bool isOnWall;
     private bool crouchState;
-    public bool facingRight;
+    private bool facingRight;
+    private bool shooting;
 
     private float horizontalInput;
     private float aimingSpeed;
+    private float worldHalfSize;
     private Vector2 velocity;
     private Vector3 initialVector = Vector3.forward;
+    private Vector3 worldSize;
 
-    //private Animator animator;
-
+    private Rigidbody2D ridgidbodyPlayer;
     private GameObject defaultCollider;
     private GameObject crouchCollider;
 
-    private Vector3 worldSize;
-    float worldHalfSize;
+    private AudioSource jumping; 
 
 
     /// <summary>
@@ -61,23 +61,20 @@ public class PlayerController : MonoBehaviour {
     /// </summary>
     void Start ()
     {
+        ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
         transform.localScale = new Vector3(1, 1, 1);
         facingRight = true;
-        //crosshair = GameObject.FindGameObjectWithTag("Crosshair");
-
-        ridgidbodyPlayer = gameObject.GetComponent<Rigidbody2D>();
-        //animator = gameObject.GetComponent<Animator>();
 
         defaultCollider = transform.Find("Default Collider").gameObject;
         crouchCollider = transform.Find("Crouch Collider").gameObject;
-
         crouchCollider.SetActive(false);
-        //crosshair.SetActive(false);
 
         aimingSpeed = 70f;
 
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
+
+        jumping = gameObject.GetComponent<AudioSource>();   
     }
 	
 	/// <summary>
@@ -91,9 +88,6 @@ public class PlayerController : MonoBehaviour {
 
         if (grounded)
             hasDoubleJumped = false;
-
-        position.x = transform.position.x;
-        position.y = transform.position.y;
 
         if (crouchState)
         {
@@ -195,6 +189,7 @@ public class PlayerController : MonoBehaviour {
         Debug.Log("world " + (worldSize.x - worldHalfSize));
         Debug.Log("check this " + worldLeft);
         Debug.Log("player " + playerNumber + " " + ridgidbodyPlayer.position.x);
+
         if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
         {
             ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
@@ -282,6 +277,11 @@ public class PlayerController : MonoBehaviour {
         ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
         ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
         ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+    }
+
+    public void ResetShootingValue(bool shootingValue)
+    {
+        shooting = shootingValue;
     }
 
     /// <summary>

@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class PlayerAbilities : MonoBehaviour
 {
-
-    public Rigidbody2D rb2D;
-    int layer_mask;
-    Vector2 direction;
     public string nextAbilityInput;
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
-    public float mana;
-    public float shots;
+
+    int layer_mask;
+    float mana;
+    float shots;
+    bool buttonPressed;
+
+    Vector2 direction;
     List<string> abilityList;
     DistanceJoint2D distanceJoint;
     SpringJoint2D springJoint;
-    bool buttonPressed;
-
     PlayerController player;
 
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
         layer_mask = LayerMask.GetMask("Interactable Objects"); // Used in raycast to only hit objects on a specific layer
         mana = 5;
         shots = 1;
@@ -194,6 +192,11 @@ public class PlayerAbilities : MonoBehaviour
     public string GetCurrentAbility()
     {
         return chosenAbility;
+    }
+
+    public void ResetShot(int newShotsValue)
+    {
+        shots = newShotsValue;
     }
 }
 

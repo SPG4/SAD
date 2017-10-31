@@ -31,10 +31,6 @@ public class ShootBall : MonoBehaviour
         //If shooting player is facing left, invert the speed of the ball
         if (playerShootingLocalScale.x < 0.1)
             ballSpeed = ballSpeed * -1;
-
-        //Add speed to the ball
-
-        //GetComponent<Rigidbody2D>().velocity = new Vector2(ballSpeed, GetComponent<Rigidbody2D>().velocity.y);
     }
 
     private void Update()
@@ -45,7 +41,6 @@ public class ShootBall : MonoBehaviour
         //{
         //    TeleportBallEvent();
         //}
-        
     }
 
     void AddSpeedToBall(Vector2 direction)
@@ -70,8 +65,7 @@ public class ShootBall : MonoBehaviour
         else if (collision.gameObject.tag == "Teleport destroyer")
         {
             Destroy(gameObject);
-            GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
-            GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().shots = 1;
+            ResetShootingVariables();
         }
     }
 
@@ -112,8 +106,12 @@ public class ShootBall : MonoBehaviour
     {
         Destroy(gameObject);
         playerBeingTeleported.SendMessage("Teleport", gameObject.transform.position);
-        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().shooting = false;
-        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().shots = 1;
+        ResetShootingVariables();
     }
 
+    private void ResetShootingVariables()
+    {
+        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().SendMessage("ResetShootingValue", false);
+        GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().SendMessage("ResetShot", 1);
+    }
 }
