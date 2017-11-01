@@ -9,6 +9,9 @@ TagManager:
   - TriggerZone
   - Crosshair
   - Deadly
+  - Fire
+  - Teleport destroyer
+  - Teleport antigrav field
   layers:
   - Default
   - TransparentFX
@@ -24,7 +27,7 @@ TagManager:
   - Interactable Objects
   - Ball
   - Projectiles
-  - 
+  - Teleport antigrav
   - 
   - 
   - 
