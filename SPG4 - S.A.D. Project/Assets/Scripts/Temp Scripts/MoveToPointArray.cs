@@ -46,27 +46,30 @@ public class MoveToPointArray : MonoBehaviour {
         if (puzzleDone == true) {
             canMove = true;
         }
-        currentTime += Time.deltaTime;
-        if (currentTime >= time)
-        {
-            currentTime = time;
-        }
-        float Perc = currentTime / time;
 
-        if (canMove == true)
+        if (MovePlatform.startPlattform == true)
         {
-            moveObject.transform.position = Vector3.Lerp(startPos, endPos, Perc);   // Move object to next position
-
-            currentPos = moveObject.transform.position;                             // Saves platforms position
-            if(currentPos == endPos && waypoints[numberOfChildren].gameObject.name.Contains("!")) // if the platform position is on the end position,
+            currentTime += Time.deltaTime;
+            if (currentTime >= time)
             {
-                canMove = false;
-                moveToNextPoint();
+                currentTime = time;
             }
-            else if (currentPos == endPos)
+            float Perc = currentTime / time;
+            if (canMove == true)
             {
-                canMove = false;
-                moveToNextPoint();
+                moveObject.transform.position = Vector3.Lerp(startPos, endPos, Perc);   // Move object to next position
+
+                currentPos = moveObject.transform.position;                             // Saves platforms position
+                if (currentPos == endPos && waypoints[numberOfChildren].gameObject.name.Contains("!")) // if the platform position is on the end position,
+                {
+                    canMove = false;
+                    moveToNextPoint();
+                }
+                else if (currentPos == endPos)
+                {
+                    canMove = false;
+                    moveToNextPoint();
+                }
             }
         }
     }
