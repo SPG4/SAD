@@ -61,3 +61,6 @@ TagManager:
   - name: Character hands
     uniqueID: 3433480999
     locked: 0
+  - name: InFrontOfCharacters
+    uniqueID: 4211293277
+    locked: 0

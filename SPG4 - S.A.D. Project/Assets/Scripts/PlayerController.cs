@@ -239,9 +239,9 @@ public class PlayerController : MonoBehaviour{
 
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
-        Debug.Log("world " + (worldSize.x - worldHalfSize));
-        Debug.Log("check this " + worldLeft);
-        Debug.Log("player " + playerNumber + " " + ridgidbodyPlayer.position.x);
+        //Debug.Log("world " + (worldSize.x - worldHalfSize));
+        //Debug.Log("check this " + worldLeft);
+        //Debug.Log("player " + playerNumber + " " + ridgidbodyPlayer.position.x);
 
         if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
         {
