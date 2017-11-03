@@ -89,8 +89,7 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
 	void Update ()
     {
-        aimInput = Input.GetAxis("Aim" + playerNumber);
-        jumpState = Input.GetButtonDown("Jump" + playerNumber);
+        aimInput = Input.GetAxis("Aim" + playerNumber);     
         cancelJump = Input.GetButtonUp("Jump" + playerNumber);
         crouchState = Input.GetButton("Crouch" + playerNumber);
         horizontalInput = Input.GetAxis("Horizontal" + playerNumber);
@@ -128,6 +127,9 @@ public class PlayerController : MonoBehaviour{
         bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
         handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
 
+        oldJumpState = jumpState;
+        jumpState = Input.GetButton("Jump" + playerNumber);
+
         CheckSpeedLimit();
 
         //Walljump is ended when on ground and ability to doublejump is reset
@@ -150,20 +152,20 @@ public class PlayerController : MonoBehaviour{
         }
 
         //Check if a player has pressed the jump button and is standing on ground
-        if (jumpState && grounded)
+        if (jumpState && !oldJumpState && grounded)
         {
             Jump();
         }
 
         ////Check if a player is pressing jump in the air after the player has jumped once
-        if (jumpState && !grounded && !hasDoubleJumped && !isOnWall)
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall)
         {
             Jump();
             hasDoubleJumped = true;
         }
 
         //Check if a player is up against a wall, if so it counts as staning on the ground
-        if (jumpState && isOnWall && !grounded) //|| standingOnObject)
+        if (jumpState && !oldJumpState && isOnWall && !grounded) //|| standingOnObject)
         {
             wallJumped = true; 
             hasDoubleJumped = true;
