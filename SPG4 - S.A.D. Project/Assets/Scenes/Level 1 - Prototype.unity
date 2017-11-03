@@ -21005,8 +21005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3219c27656497942a91f0197b520d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOne: {fileID: 0}
-  playerTwo: {fileID: 0}
+  playerOne: {fileID: 1391968529}
+  playerTwo: {fileID: 515851592}
   minSizeY: 7
   maxSizeY: 12
   dampTime: 0.15

@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour{
     private float crouchSpeed = 2f;
     [SerializeField]
     private float jumpForce = 5000f;
+    [SerializeField]
+    private float wallJumpForce = 20f;
+    [SerializeField]
+    private float jumpPushForce = 40f;
 
     public Transform wallCheck;
     public float wallCheckRadius;
@@ -35,14 +39,18 @@ public class PlayerController : MonoBehaviour{
     //Private fields 
     private bool jumpState;
     private bool oldJumpState;
+    private bool cancelJump;
     private bool grounded;
     private bool hasDoubleJumped;
     private bool isOnWall;
     private bool crouchState;
     private bool facingRight;
     private bool shooting;
+    private bool wallJumped = false;
+    private bool wallJumping = false;
 
     private float horizontalInput;
+    private float aimInput;
     private float aimingSpeed;
     private float worldHalfSize;
     private Vector2 velocity;
@@ -54,12 +62,6 @@ public class PlayerController : MonoBehaviour{
     private GameObject crouchCollider;
 
     private AudioSource jumping;
-
-    public float jumpForce1 = 20f;
-    public float jumpPushForce = 40f;
-
-    bool wallJumped = false;
-    bool wallJumping = false;
 
     /// <summary>
     /// initialize conponents of the player here
@@ -87,30 +89,13 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
 	void Update ()
     {
-        float aimInput = Input.GetAxis("Aim" + playerNumber);
+        aimInput = Input.GetAxis("Aim" + playerNumber);
+        jumpState = Input.GetButtonDown("Jump" + playerNumber);
+        cancelJump = Input.GetButtonUp("Jump" + playerNumber);
+        crouchState = Input.GetButton("Crouch" + playerNumber);
+        horizontalInput = Input.GetAxis("Horizontal" + playerNumber);
 
         AimCrosshairRelativeToPlayer(aimInput);
-
-        //Jumpstate is used to check if the player has pressed the jump button
-        oldJumpState = jumpState;
-        jumpState = Input.GetButton("Jump" + playerNumber);
-
-        //if (jumpState && !oldJumpState)
-        //{
-        //    if (grounded)
-        //        Jump();
-
-        //    else if (!hasDoubleJumped)
-        //    {
-        //        Jump();
-        //        hasDoubleJumped = true;
-        //    }
-
-        //    else if (isOnWall)
-        //        wallJumped = true;
-        //}
-
-        crouchState = Input.GetButton("Crouch" + playerNumber);
 
         if (crouchState)
         {
@@ -133,7 +118,7 @@ public class PlayerController : MonoBehaviour{
           Set player bools grounded and isOnWall based on if the Ground Check and Wall Check transforms
           (which are placed on the player) are overlaping the LayerMask that specifies what counts as a
           wall or ground.
-        */ 
+        */
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         isOnWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
 
@@ -143,39 +128,49 @@ public class PlayerController : MonoBehaviour{
         bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
         handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
 
-        Movement();
-        SpeedLimit();
+        CheckSpeedLimit();
 
-        if (!wallJumping)
-            TurnToInputDirection();
-
-        if (wallJumped)
-        {
-            ridgidbodyPlayer.velocity = new Vector2(jumpPushForce * (facingRight ? -1 : 1), jumpForce1);
-            wallJumping = true;
-            Flip();
-            wallJumped = false;
-        }
-
-        if (ridgidbodyPlayer.velocity.y < 0)
-        {
-            wallJumping = false;
-        }
-
+        //Walljump is ended when on ground and ability to doublejump is reset
         if (grounded)
         {
             hasDoubleJumped = false;
             wallJumping = false;
         }
 
+        //Dont allow the player to turn or move during a walljump
+        if (!wallJumping)
+        {
+            TurnToInputDirection();
+            Movement();
+        }
+
+        if (wallJumped)
+        {
+            WallJump();
+        }
+
         //Check if a player has pressed the jump button and is standing on ground
-        if (jumpState && !oldJumpState && grounded)
+        if (jumpState && grounded)
         {
             Jump();
         }
 
+        ////Check if a player is pressing jump in the air after the player has jumped once
+        if (jumpState && !grounded && !hasDoubleJumped && !isOnWall)
+        {
+            Jump();
+            hasDoubleJumped = true;
+        }
+
+        //Check if a player is up against a wall, if so it counts as staning on the ground
+        if (jumpState && isOnWall && !grounded) //|| standingOnObject)
+        {
+            wallJumped = true; 
+            hasDoubleJumped = true;
+        }
+
         //Used to cancel a players jump if they release the jump button before reaching the pivot point
-        if (Input.GetButtonUp("Jump" + playerNumber))
+        if (cancelJump)
         {
             if (velocity.y > 0)
             {
@@ -184,29 +179,14 @@ public class PlayerController : MonoBehaviour{
             }
         }
 
-        ////Check if a player is pressing jump in the air after the player has jumped once
-        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped)
+        //Make players fall slower when on walls to create a gliding effect, making it easier to walljmp
+        if (isOnWall)
         {
-            Jump();
-            hasDoubleJumped = true;
+             if (ridgidbodyPlayer.velocity.y < 0)
+            {
+                ridgidbodyPlayer.velocity = new Vector2(0, ridgidbodyPlayer.velocity.y * 0.5f);
+            }
         }
-
-        //Check if a player is up against a wall, if so it counts as staning on the ground
-        if (jumpState && !oldJumpState && isOnWall && !grounded) //|| standingOnObject)
-        {
-            wallJumped = true;
-            grounded = false;
-            hasDoubleJumped = true;
-        }
-
-        //if (ridgidbodyPlayer.velocity.x > 0 && !facingRight)
-        //{
-        //    Flip();
-        //}
-        //else if (ridgidbodyPlayer.velocity.x < 0 && facingRight)
-        //{
-        //    Flip();
-        //}
     }
 
     /// <summary>
@@ -216,8 +196,6 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
     private void Movement()
     {
-        horizontalInput = Input.GetAxis("Horizontal" + playerNumber);    
-
         //If crouching the players speed in the X-axis is decreased
         if (crouchState)
             velocity.x = (crouchSpeed * horizontalInput);
@@ -230,18 +208,22 @@ public class PlayerController : MonoBehaviour{
         velocity.y = this.ridgidbodyPlayer.velocity.y;
 
         //Give the players ridgidbody the newly calculated velocity
-
         if (grounded)
             this.ridgidbodyPlayer.velocity = velocity;
 
         else if ((horizontalInput != 0 && !wallJumping))
-            this.ridgidbodyPlayer.velocity = velocity;
+            this.ridgidbodyPlayer.velocity = velocity;  
+    }
 
+    private void LateUpdate()
+    {
+        CheckPlayersInsideCamera();
+    }
+
+    void CheckPlayersInsideCamera()
+    {
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
-        //Debug.Log("world " + (worldSize.x - worldHalfSize));
-        //Debug.Log("check this " + worldLeft);
-        //Debug.Log("player " + playerNumber + " " + ridgidbodyPlayer.position.x);
 
         if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
         {
@@ -265,12 +247,21 @@ public class PlayerController : MonoBehaviour{
         ridgidbodyPlayer.AddForce(Vector2.up * jumpForce);
     }
 
+    public void WallJump()
+    {
+        jumping.Play();
+        ridgidbodyPlayer.velocity = new Vector2(jumpPushForce * (facingRight ? -1 : 1), wallJumpForce);
+        wallJumping = true;
+        Flip();
+        wallJumped = false;
+    }
+
     /// <summary>
     /// Checks if the velocity of the players ridgidbody exceeds the maxSpeed value in both
     /// the positive and negative X-axis, if so the velocity is set to the positive or negative
     /// maxSpeed value respectively
     /// </summary>
-    private void SpeedLimit()
+    private void CheckSpeedLimit()
     {
         if (ridgidbodyPlayer.velocity.x > maxSpeed)
         {
@@ -304,11 +295,6 @@ public class PlayerController : MonoBehaviour{
 
     void Flip()
     {
-        //if (facingRight)
-        //    facingRight = false;
-        //else if (!facingRight)
-        //    facingRight = true;
-
         facingRight = !facingRight;
 
         Vector3 theScale = transform.localScale;
