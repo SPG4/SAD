@@ -12,7 +12,10 @@ public class ChangeBool : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        MoveToPointArray.puzzleDone = true;
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            MoveToPointArray.puzzleDone = true;
+        }
     }
 
     // Update is called once per frame

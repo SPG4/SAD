@@ -54,6 +54,7 @@ public class MoveToPointArray : MonoBehaviour {
             {
                 currentTime = time;
             }
+
             float Perc = currentTime / time;
             if (canMove == true)
             {
