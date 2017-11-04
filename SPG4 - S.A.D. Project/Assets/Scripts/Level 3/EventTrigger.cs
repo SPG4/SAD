@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class EventTrigger : MonoBehaviour {
 
-    public GameObject blocker;
+    public GameObject spawnObject;
     bool hasHappened = false;
-
-	void Start () {
-		
-	}
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!hasHappened)
         {
-            GameObject blockerObject = Instantiate(blocker);
+            GameObject spawnedObject = Instantiate(spawnObject);
             hasHappened = true;
         }
         

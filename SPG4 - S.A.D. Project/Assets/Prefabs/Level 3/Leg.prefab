@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61798746069784764}
   - component: {fileID: 61518023648743778}
   - component: {fileID: 114745286844850954}
+  - component: {fileID: 114548749341102322}
   m_Layer: 0
   m_Name: Leg
   m_TagString: Untagged
@@ -36,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1481613016917296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.018, y: -1.893, z: -0.734375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.087631, y: 0.94261575, z: -0.3906834}
   m_LocalScale: {x: 0.5774021, y: 4.4464035, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,7 +56,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.84817266}
+  m_Offset: {x: 0, y: -0.85977083}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66,7 +67,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75, y: 0.13365483}
+  m_Size: {x: 2.75, y: 0.11045849}
   m_EdgeRadius: 0
 --- !u!61 &61798746069784764
 BoxCollider2D:
@@ -80,7 +81,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.025214434, y: -0.8778293}
+  m_Offset: {x: -0.025214434, y: -0.9067455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -91,8 +92,19 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3970094, y: 0.074341536}
+  m_Size: {x: 2.3970094, y: 0.016509175}
   m_EdgeRadius: 0
+--- !u!114 &114548749341102322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1481613016917296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338e10adab9d7c346813c956964f865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114745286844850954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 1}
   speed: 0.2
-  timer: 0.5
+  timer: 0.6
 --- !u!212 &212808218218545398
 SpriteRenderer:
   m_ObjectHideFlags: 1
