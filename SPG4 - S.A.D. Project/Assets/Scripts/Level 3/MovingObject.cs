@@ -18,8 +18,6 @@ public class MovingObject : MonoBehaviour {
         movementSpeed = Random.Range(speed - 0.1f, speed + 0.1f);
         startpos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
 
-
-
     }
 	
 	void Update ()
@@ -38,12 +36,6 @@ public class MovingObject : MonoBehaviour {
             else
                 gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * -movementSpeed;
 
-        }
-     
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //if player, then dead
+        }     
     }
 }
