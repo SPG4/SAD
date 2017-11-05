@@ -4,29 +4,22 @@ using UnityEngine;
 
 public class MoveToPointArray : MonoBehaviour {
 
+    [Tooltip("Where the object get its points from.")]
     public Transform waypointContainer;
-    public float time;
-    private float originTime;
+    [Tooltip("How fast the object moves.")]
+    public float speed;
 
     private Transform[] waypoints;
     private int numberOfChildren = 0;
 
-    private GameObject moveObject;
-    private bool canMove = true;
     public static bool puzzleDone = false;
-    private float currentTime;
-
+    private bool canMove = true;
     private Vector2 currentPos;
-    private Vector2 startPos;
     private Vector2 endPos;
 
     // Use this for initialization
     void Start()
     {
-        moveObject = this.gameObject;
-        startPos = moveObject.transform.position;
-        originTime = time;
-
         waypoints = new Transform[waypointContainer.childCount];
         for (int i = 0; i < waypointContainer.childCount; i++)
         {
@@ -46,21 +39,13 @@ public class MoveToPointArray : MonoBehaviour {
         if (puzzleDone == true) {
             canMove = true;
         }
-
         if (MovePlatform.startPlattform == true)
         {
-            currentTime += Time.deltaTime;
-            if (currentTime >= time)
-            {
-                currentTime = time;
-            }
-
-            float Perc = currentTime / time;
             if (canMove == true)
             {
-                moveObject.transform.position = Vector3.Lerp(startPos, endPos, Perc);   // Move object to next position
+                currentPos = this.gameObject.transform.position;                             // Saves platforms position
+                this.gameObject.transform.position = Vector3.MoveTowards(currentPos, endPos, Time.deltaTime * speed); // Moves platform
 
-                currentPos = moveObject.transform.position;                             // Saves platforms position
                 if (currentPos == endPos && waypoints[numberOfChildren].gameObject.name.Contains("!")) // if the platform position is on the end position,
                 {
                     canMove = false;
@@ -79,18 +64,12 @@ public class MoveToPointArray : MonoBehaviour {
     {
         if (canMove == false && !waypoints[numberOfChildren].gameObject.name.Contains("!"))
         {
-            startPos = currentPos;
             endPos = waypoints[++numberOfChildren].transform.position;
-            currentTime = 0;
-            time = originTime;
             canMove = true;
         }
         else if (canMove == false && puzzleDone == true)
         {
-            startPos = currentPos;
             endPos = waypoints[++numberOfChildren].transform.position;
-            currentTime = 0;
-            time = originTime;
             canMove = true;
             puzzleDone = false;
         }

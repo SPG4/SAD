@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RemoveObjects : MonoBehaviour
 {
+    [Tooltip("Restart level if players trigger on enter.")]
     public bool RestartLevel = false;
 
     /// <summary>
