@@ -10,6 +10,8 @@ public class ShootBall : MonoBehaviour
     public string playerBeingTeleportedString;
 
     GameObject playerBeingTeleported;
+    GameObject playerShooting;
+    GameObject blackHoleExit;
     Vector2 playerShootingLocalScale;
     Vector2 ballDirection;
 
@@ -24,9 +26,11 @@ public class ShootBall : MonoBehaviour
 
         //Get the facing direction of the player that shot the ball
         playerShootingLocalScale = GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().transform.localScale;
+        blackHoleExit = GameObject.FindGameObjectWithTag("Black hole exit");
 
         //Get the player that is being teleported
         playerBeingTeleported = GameObject.FindGameObjectWithTag(playerBeingTeleportedString);
+        playerShooting = GameObject.FindGameObjectWithTag(playerShootingString);
 
         //If shooting player is facing left, invert the speed of the ball
         if (playerShootingLocalScale.x < 0.1)
@@ -57,9 +61,14 @@ public class ShootBall : MonoBehaviour
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.layer == LayerMask.NameToLayer("Wall") || collision.gameObject.layer == LayerMask.NameToLayer("Interactable Objects"))
         {
             TeleportBallEvent();
+        }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Black hole"))
+        {
+            TeleportBothPlayers();
         }
 
         else if (collision.gameObject.tag == "Teleport destroyer")
@@ -106,6 +115,14 @@ public class ShootBall : MonoBehaviour
     {
         Destroy(gameObject);
         playerBeingTeleported.SendMessage("Teleport", gameObject.transform.position);
+        ResetShootingVariables();
+    }
+
+    private void TeleportBothPlayers()
+    {
+        Destroy(gameObject);
+        playerBeingTeleported.SendMessage("Teleport", blackHoleExit.transform.position);
+        playerShooting.SendMessage("Teleport", blackHoleExit.transform.position);
         ResetShootingVariables();
     }
 
