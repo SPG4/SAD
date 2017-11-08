@@ -25274,7 +25274,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.00000047683716}
-  m_Size: {x: 2.36, y: 2.3599997}
+  m_Size: {x: 7.71, y: 2.3599997}
   m_Direction: 1
 --- !u!50 &640045309
 Rigidbody2D:
@@ -51783,7 +51783,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360732484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.02, y: -0.02, z: 0}
+  m_LocalPosition: {x: -0.49, y: -0.02, z: 0}
   m_LocalScale: {x: 0.15691508, y: 0.1568307, z: 0.95202}
   m_Children:
   - {fileID: 892021972}
@@ -52448,6 +52448,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toPoint: {fileID: 87737201}
   time: 10
+  maxTime: 5
+  resetTime: 0
+  parent: {fileID: 0}
+  velocity: {x: 0, y: 0}
+  speed: 2
 --- !u!70 &1364718447
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -57852,7 +57857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1967521296056078, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
@@ -60333,6 +60338,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toPoint: {fileID: 87737201}
   time: 10
+  maxTime: 5
+  resetTime: 0
+  parent: {fileID: 0}
+  velocity: {x: 0, y: 0}
+  speed: 2
 --- !u!70 &1585412042
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -63118,6 +63128,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toPoint: {fileID: 2106197427}
   time: 2
+  maxTime: 5
+  resetTime: 0
+  parent: {fileID: 0}
+  velocity: {x: 0, y: 0}
+  speed: 2
 --- !u!70 &1682049171
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
