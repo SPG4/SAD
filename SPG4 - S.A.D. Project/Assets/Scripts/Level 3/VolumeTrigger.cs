@@ -7,8 +7,6 @@ public class VolumeTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponent<Renderer>().material.color = Color.red;
-
-        //turn down music
+        AudioListener.volume = 0.3f;
     }
 }
