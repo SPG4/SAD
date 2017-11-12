@@ -18,6 +18,15 @@ public class ChangeBool : MonoBehaviour {
         }
     }
 
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            MoveToPointArray.puzzleDone = false;
+        }
+    }
+
+
     // Update is called once per frame
     void Update () {
 
