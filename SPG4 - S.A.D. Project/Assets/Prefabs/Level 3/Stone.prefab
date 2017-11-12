@@ -20,8 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4643798663077562}
   - component: {fileID: 212462589263627360}
-  - component: {fileID: 70582898146754804}
   - component: {fileID: 114285870724854962}
+  - component: {fileID: 50456334230438982}
+  - component: {fileID: 61265938149585056}
+  - component: {fileID: 232638009636747226}
   m_Layer: 11
   m_Name: Stone
   m_TagString: Untagged
@@ -35,15 +37,35 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177124371256752}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.586, y: -9.324, z: 0}
-  m_LocalScale: {x: 0.92657185, y: 0.6165435, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 110, y: 0, z: 0}
+  m_LocalScale: {x: 0.6486006, y: 0.41327825, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &70582898146754804
-CapsuleCollider2D:
+--- !u!50 &50456334230438982
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177124371256752}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61265938149585056
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -54,9 +76,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06981199, y: -0.00000134095}
-  m_Size: {x: 6.277901, y: 6.147217}
-  m_Direction: 1
+  m_Offset: {x: -0.0575881, y: 0.030128479}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8, y: 8}
+    newSize: {x: 8, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.1187544, y: 5.7705994}
+  m_EdgeRadius: 0
 --- !u!114 &114285870724854962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,8 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490e7d0964694bd4b98591e58350c1d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 1
-  other: {fileID: 0}
+  isStone: 1
 --- !u!212 &212462589263627360
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -114,3 +145,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!232 &232638009636747226
+DistanceJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177124371256752}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -0.10039093, y: 0.43368888}
+  m_AutoConfigureDistance: 1
+  m_Distance: 10.986137
+  m_MaxDistanceOnly: 0
