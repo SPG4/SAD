@@ -5,15 +5,22 @@ using UnityEngine;
 public class EventTrigger : MonoBehaviour {
 
     public GameObject spawnObject;
+    GameObject player;
     bool hasHappened = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!hasHappened)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            GameObject spawnedObject = Instantiate(spawnObject);
-            hasHappened = true;
-        }
-        
+            if (!hasHappened)
+            {
+                hasHappened = true;
+                // Debug.Log(collision.gameObject);
+                GameObject spawnedObject = Instantiate(spawnObject);
+                player = collision.transform.root.gameObject;
+                Debug.Log(player.tag);
+                player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.5f, -0.5f)*40000);
+            }
+        }       
     }
 }
