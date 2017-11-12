@@ -27,7 +27,7 @@ public class InteractableObjects : MonoBehaviour
     /// <param name="direction"></param>
     void StandardAbility(Vector2 direction)
     {
-        Debug.Log("Using Ability");
+       // Debug.Log("Using Ability");
         GetComponent<Rigidbody2D>().AddForce(direction * force);
     }
 

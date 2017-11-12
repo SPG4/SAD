@@ -19,7 +19,7 @@ public class EventTrigger : MonoBehaviour {
                 GameObject spawnedObject = Instantiate(spawnObject);
                 player = collision.transform.root.gameObject;
                 Debug.Log(player.tag);
-                player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.5f, -0.5f)*40000);
+                player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0.5f, -0.5f)* 5000);
             }
         }       
     }
