@@ -6,6 +6,7 @@ public class Weights : MonoBehaviour {
 
     public float stoneMass, boxMass;
     public GameObject box, stone;
+    public float speed;
 
     void Start()
     {
@@ -16,30 +17,52 @@ public class Weights : MonoBehaviour {
     /// </summary>
     void Update()
     {
+        float step = speed * Time.deltaTime;
         stoneMass = stone.GetComponent<Rigidbody2D>().mass;
         boxMass = box.GetComponent<Rigidbody2D>().mass;
 
         if (stoneMass == boxMass)
         {
             //print("=");
-            stone.transform.position = new Vector3(110, -10, 0);
-            box.transform.position = new Vector3(117.4f, -9, 0);
+            if (stone.transform.position != new Vector3(110, -10, 0))
+            {
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -10, 0), step);
+            }
+
+            if(box.transform.position != new Vector3(117.4f, -6, 0))
+            {
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -6, 0), step);
+            }
         }
 
         if (stoneMass < boxMass)
         {
             //print("big box");
-            stone.transform.position = new Vector3(110, 0, 0);
-            box.transform.position = new Vector3(117.4f, -12, 0);
+            if (stone.transform.position != new Vector3(110, -4, 0))
+            {
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -4, 0), step);
+            }
+
+            if(box.transform.position != new Vector3(117.4f, -12, 0))
+            {
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -12, 0), step);
+            }
         }
 
         if (stoneMass > boxMass)
         {
             //print("big stone");
-            stone.transform.position = new Vector3(110, -10, 0);
-            box.transform.position = new Vector3(117.4f, -9, 0);
+            
+            if (stone.transform.position != new Vector3(110, -10, 0))
+            {                
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -10, 0), step);
+            }
+            
+            if(box.transform.position != new Vector3(117.4f, -6, 0))
+            {
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -6, 0), step);
+            }
         }
 
     }
-
 }
