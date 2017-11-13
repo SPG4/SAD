@@ -11,11 +11,21 @@ public class ShootBall : MonoBehaviour
 
     GameObject playerBeingTeleported;
     GameObject playerShooting;
-    GameObject blackHoleExit;
+    BlackHoleController blackHole;
     Vector2 playerShootingLocalScale;
     Vector2 ballDirection;
 
+    public LayerMask whatIsTeleportableSurface;
+    public float hitRadius = 0.3f;
+    public bool touchingTeleportableSurface;
+
+    public LayerMask whatIsTeleportDestroySurface;
+    public bool touchingTeleportDestroySurface;
+
+    public Transform hitCheck; 
+
     private float timer;
+    private bool insideAntigravField;
 
     void Start()
     {
@@ -26,7 +36,7 @@ public class ShootBall : MonoBehaviour
 
         //Get the facing direction of the player that shot the ball
         playerShootingLocalScale = GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().transform.localScale;
-        blackHoleExit = GameObject.FindGameObjectWithTag("Black hole exit");
+        //blackHole = GameObject.FindGameObjectWithTag("Black hole").GetComponent<BlackHoleController>();
 
         //Get the player that is being teleported
         playerBeingTeleported = GameObject.FindGameObjectWithTag(playerBeingTeleportedString);
@@ -39,12 +49,26 @@ public class ShootBall : MonoBehaviour
 
     private void Update()
     {
-        //timer -= Time.deltaTime;
+        Debug.Log(blackHole);
+        if (insideAntigravField)
+        {
+            timer = 3;
+        }
+        else if (!insideAntigravField)
+        {
+            timer -= Time.deltaTime;
+        }
 
-        //if (timer < 0)
-        //{
-        //    TeleportBallEvent();
-        //}
+        if (timer < 0)
+        {
+            TeleportBallEvent();
+        }
+    } 
+
+    private void FixedUpdate()
+    {
+        //touchingTeleportableSurface = Physics2D.OverlapCircle(hitCheck.position, hitRadius, whatIsTeleportableSurface);
+        //touchingTeleportDestroySurface = Physics2D.OverlapCircle(hitCheck.position, hitRadius, whatIsTeleportDestroySurface);
     }
 
     void AddSpeedToBall(Vector2 direction)
@@ -66,8 +90,22 @@ public class ShootBall : MonoBehaviour
             TeleportBallEvent();
         }
 
+        //if (touchingTeleportableSurface)
+        //{
+        //    TeleportBallEvent();
+        //    ResetShootingVariables();
+        //}
+
+        //if (touchingTeleportDestroySurface)
+        //{
+        
+        //    Destroy(gameObject);
+        //    ResetShootingVariables();
+        //}
+
         if (collision.gameObject.layer == LayerMask.NameToLayer("Black hole"))
         {
+            blackHole = collision.transform.gameObject.GetComponent<BlackHoleController>();
             TeleportBothPlayers();
         }
 
@@ -82,6 +120,7 @@ public class ShootBall : MonoBehaviour
     {
         if (collision.gameObject.tag == "Teleport antigrav field")
         {
+            insideAntigravField = true;
             AntiGravityBall();
         }
     }
@@ -90,6 +129,7 @@ public class ShootBall : MonoBehaviour
     {
         if (collision.gameObject.tag == "Teleport antigrav field")
         {
+            insideAntigravField = false;
             ReturnToNormal();
         }
     }
@@ -121,8 +161,8 @@ public class ShootBall : MonoBehaviour
     private void TeleportBothPlayers()
     {
         Destroy(gameObject);
-        playerBeingTeleported.SendMessage("Teleport", blackHoleExit.transform.position);
-        playerShooting.SendMessage("Teleport", blackHoleExit.transform.position);
+        playerBeingTeleported.SendMessage("Teleport", blackHole.target.transform.position);
+        playerShooting.SendMessage("Teleport", blackHole.target.transform.position);
         ResetShootingVariables();
     }
 

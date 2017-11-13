@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour{
     private bool shooting;
     private bool wallJumped = false;
     private bool wallJumping = false;
+    private bool insideAntigravArea;
 
     private float horizontalInput;
     private float aimInput;
@@ -60,6 +61,8 @@ public class PlayerController : MonoBehaviour{
     private Rigidbody2D ridgidbodyPlayer;
     private GameObject defaultCollider;
     private GameObject crouchCollider;
+
+    private PlayerAbilities playerAbilities;
 
     private AudioSource jumping;
 
@@ -81,13 +84,33 @@ public class PlayerController : MonoBehaviour{
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
 
-        jumping = gameObject.GetComponent<AudioSource>();   
+        jumping = gameObject.GetComponent<AudioSource>();
+
+        playerAbilities = gameObject.GetComponent<PlayerAbilities>();
     }
-	
-	/// <summary>
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            insideAntigravArea = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            insideAntigravArea = false;
+            shooting = false;
+            playerAbilities.SendMessage("ResetShot", 1);
+        }
+    }
+
+    /// <summary>
     /// Update is called once a frame
     /// </summary>
-	void Update ()
+    void Update ()
     {
         aimInput = Input.GetAxis("Aim" + playerNumber);     
         cancelJump = Input.GetButtonUp("Jump" + playerNumber);
@@ -214,7 +237,20 @@ public class PlayerController : MonoBehaviour{
             this.ridgidbodyPlayer.velocity = velocity;
 
         else if ((horizontalInput != 0 && !wallJumping))
-            this.ridgidbodyPlayer.velocity = velocity;  
+            this.ridgidbodyPlayer.velocity = velocity;
+
+        //worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
+        //Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
+
+        //if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
+        //{
+        //    ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
+        //    Debug.Log("out of bounds");
+        //}
+        //else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
+        //{
+        //    ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
+        //} 
     }
 
     private void LateUpdate()
@@ -224,18 +260,7 @@ public class PlayerController : MonoBehaviour{
 
     void CheckPlayersInsideCamera()
     {
-        worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
-        Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
-
-        if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
-        {
-            ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
-            Debug.Log("out of bounds");
-        }
-        else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
-        {
-            ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
-        }
+        
     }
 
     /// <summary>
@@ -325,13 +350,16 @@ public class PlayerController : MonoBehaviour{
         Debug.Log(shootingDirection);
 
         float speed = 15;
-        
+
         shooting = true;
 
-        GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
-        ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
-        ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
-        ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+        if (insideAntigravArea == false)
+        {
+            GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
+            ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
+            ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
+            ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+        }
     }
 
     public void ResetShootingValue(bool shootingValue)
