@@ -18,17 +18,17 @@ public class InheritancePlatform : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
-        {
+        //if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        //{
             collision.collider.transform.SetParent(transform);
-        }
+        //}
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
-        {
+        //if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        //{
             collision.rigidbody.transform.SetParent(null);
-        }
+        //}
     }
 }
