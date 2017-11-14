@@ -40,8 +40,11 @@ public class MovePointToPoint : MonoBehaviour {
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        moving = true;
-        currentTime += Time.deltaTime;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            moving = true;
+            currentTime += Time.deltaTime;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

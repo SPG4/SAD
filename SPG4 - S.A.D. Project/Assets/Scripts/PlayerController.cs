@@ -66,6 +66,10 @@ public class PlayerController : MonoBehaviour{
 
     private AudioSource jumping;
 
+    private float mudFloorJumpForce = 1000f;
+    private bool standingOnMudFloor;
+    private bool mudFloorJumping;
+
     /// <summary>
     /// initialize conponents of the player here
     /// </summary>
@@ -104,6 +108,22 @@ public class PlayerController : MonoBehaviour{
             insideAntigravArea = false;
             shooting = false;
             playerAbilities.SendMessage("ResetShot", 1);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
+        {
+            standingOnMudFloor = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
+        {
+            standingOnMudFloor = false;
         }
     }
 
@@ -160,6 +180,7 @@ public class PlayerController : MonoBehaviour{
         {
             hasDoubleJumped = false;
             wallJumping = false;
+            mudFloorJumping = false;
         }
 
         //Dont allow the player to turn or move during a walljump
@@ -175,15 +196,26 @@ public class PlayerController : MonoBehaviour{
         }
 
         //Check if a player has pressed the jump button and is standing on ground
-        if (jumpState && !oldJumpState && grounded)
+        if (jumpState && !oldJumpState && grounded && !standingOnMudFloor)
         {
             Jump();
         }
 
+        if (jumpState && !oldJumpState && grounded && standingOnMudFloor)
+        {
+            MudFloorJump();
+        }
+
         ////Check if a player is pressing jump in the air after the player has jumped once
-        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall)
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && !mudFloorJumping)
         {
             Jump();
+            hasDoubleJumped = true;
+        }
+
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && mudFloorJumping)
+        {
+            MudFloorJump();
             hasDoubleJumped = true;
         }
 
@@ -272,6 +304,15 @@ public class PlayerController : MonoBehaviour{
         ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
         velocity = ridgidbodyPlayer.velocity;
         ridgidbodyPlayer.AddForce(Vector2.up * jumpForce);
+    }
+
+    public void MudFloorJump()
+    {
+        jumping.Play();
+        mudFloorJumping = true;
+        ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
+        velocity = ridgidbodyPlayer.velocity;
+        ridgidbodyPlayer.AddForce(Vector2.up * mudFloorJumpForce);
     }
 
     public void WallJump()
