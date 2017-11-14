@@ -37,7 +37,7 @@ public class Drunkard : MonoBehaviour {
                     time = timer;
                     awake = false;
                     hasMoved = false;
-                    GameObject spawnedObject = Instantiate(coke);
+                    Instantiate(coke);
                 }
                 else
                     gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * -movementSpeed;

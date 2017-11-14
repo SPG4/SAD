@@ -17,7 +17,7 @@ public class EventTrigger : MonoBehaviour {
             if (!hasHappened)
             {
                 hasHappened = true;
-                GameObject spawnedObject = Instantiate(spawnObject);
+                Instantiate(spawnObject);
                 player2 = GameObject.FindGameObjectWithTag("Player2");
             }
         }       
@@ -30,7 +30,7 @@ public class EventTrigger : MonoBehaviour {
             if (player2.transform.position.x != 100)
             {
                 float step = speed * Time.deltaTime;
-                player2.transform.position = Vector3.MoveTowards(player2.transform.position, new Vector3(100, -14.6f, 0), step);
+                player2.transform.position = Vector3.MoveTowards(player2.transform.position, new Vector3(115, -14.6f, 0), step);
             }
             else
                 playerMoved = true;

@@ -24,28 +24,28 @@ public class Weights : MonoBehaviour {
         if (stoneMass == boxMass)
         {
             //print("=");
-            if (stone.transform.position != new Vector3(110, -10, 0))
+            if (stone.transform.position != new Vector3(124.6f, -10, 0))
             {
-                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -10, 0), step);
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(124.6f, -10, 0), step);
             }
 
-            if(box.transform.position != new Vector3(117.4f, -6, 0))
+            if(box.transform.position != new Vector3(132.05f, -6, 0))
             {
-                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -6, 0), step);
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(132.05f, -6, 0), step);
             }
         }
 
         if (stoneMass < boxMass)
         {
             //print("big box");
-            if (stone.transform.position != new Vector3(110, -4, 0))
+            if (stone.transform.position != new Vector3(124.6f, -4, 0))
             {
-                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -4, 0), step);
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(124.6f, -4, 0), step);
             }
 
-            if(box.transform.position != new Vector3(117.4f, -12, 0))
+            if(box.transform.position != new Vector3(132.05f, -12, 0))
             {
-                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -12, 0), step);
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(132.05f, -12, 0), step);
             }
         }
 
@@ -53,14 +53,14 @@ public class Weights : MonoBehaviour {
         {
             //print("big stone");
             
-            if (stone.transform.position != new Vector3(110, -10, 0))
+            if (stone.transform.position != new Vector3(124.6f, -10, 0))
             {                
-                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(110, -10, 0), step);
+                stone.transform.position = Vector3.MoveTowards(stone.transform.position, new Vector3(124.6f, -10, 0), step);
             }
             
-            if(box.transform.position != new Vector3(117.4f, -6, 0))
+            if(box.transform.position != new Vector3(132.05f, -6, 0))
             {
-                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(117.4f, -6, 0), step);
+                box.transform.position = Vector3.MoveTowards(box.transform.position, new Vector3(132.05f, -6, 0), step);
             }
         }
 

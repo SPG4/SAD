@@ -17,7 +17,7 @@ public class FallingGlass : MonoBehaviour {
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            GameObject spawnedObject = Instantiate(puddle);
+            Instantiate(puddle);
             Destroy(gameObject);
         }
     }
