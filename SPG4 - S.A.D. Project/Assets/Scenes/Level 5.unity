@@ -2768,6 +2768,65 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212303577573367448, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 66d6d51b3785c6344bece6f4dc867148,
+        type: 3}
+    - target: {fileID: 4910551105461804, guid: d6fb4a9fecba99445898bfb69715c51d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910551105461804, guid: d6fb4a9fecba99445898bfb69715c51d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 16.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 61006851032225646, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61986868909426630, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 61986868909426630, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61986868909426630, guid: d6fb4a9fecba99445898bfb69715c51d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 5.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d6fb4a9fecba99445898bfb69715c51d, type: 2}
   m_IsPrefabParent: 0
