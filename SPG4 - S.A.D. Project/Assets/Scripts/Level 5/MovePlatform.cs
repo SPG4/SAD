@@ -15,8 +15,9 @@ public class MovePlatform : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        playerCount = 0;
+        startPlattform = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,7 +29,7 @@ public class MovePlatform : MonoBehaviour {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             ++playerCount;
-            collision.collider.transform.SetParent(transform);
+            //collision.collider.transform.SetParent(transform);
         }
         if (playerCount >= 1)
         {
@@ -41,7 +42,7 @@ public class MovePlatform : MonoBehaviour {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             --playerCount;
-            collision.rigidbody.transform.SetParent(null);
+            //collision.rigidbody.transform.SetParent(null);
 
         }
         if (playerCount == 0)

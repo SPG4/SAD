@@ -20,6 +20,8 @@ public class MoveToPointArray : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        puzzleDone = false;
+        
         waypoints = new Transform[waypointContainer.childCount];
         for (int i = 0; i < waypointContainer.childCount; i++)
         {

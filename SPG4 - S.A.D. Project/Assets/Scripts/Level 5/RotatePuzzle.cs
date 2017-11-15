@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used for Puzzle 4 on Level 5.
+/// Rotates target object while player is within trigger.
+/// </summary>
 public class RotatePuzzle : MonoBehaviour {
 
     public float rotationSpeed;
