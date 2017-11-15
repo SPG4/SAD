@@ -5,6 +5,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Constantly rotate object.
+/// </summary>
 public class Rotater : MonoBehaviour {
 
     public float rotationSpeed;

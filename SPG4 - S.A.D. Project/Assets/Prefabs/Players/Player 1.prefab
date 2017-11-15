@@ -276,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1722864141588178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.93, y: 1.7251563, z: 0}
+  m_LocalPosition: {x: 94.09, y: 28.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4401623427380436}
@@ -566,7 +566,9 @@ MonoBehaviour:
   speed: 9
   maxSpeed: 10
   crouchSpeed: 2
-  jumpForce: 1200
+  jumpForce: 1500
+  wallJumpForce: 20
+  jumpPushForce: 40
   wallCheck: {fileID: 4099471657051480}
   wallCheckRadius: 0.2
   whatIsWall:
@@ -576,15 +578,13 @@ MonoBehaviour:
   groundCheckRadius: 0.1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294950399
+    m_Bits: 4294708681
   teleportBall: {fileID: 1853700430962534, guid: 91409cbbb71068e4aba3666ed222f5d4,
     type: 2}
   crosshair: {fileID: 1670296312891500}
   otherPlayer: {fileID: 0}
   bodyAnimator: {fileID: 95520875290750044}
   handsAnimator: {fileID: 95560604547120202}
-  jumpForce1: 20
-  jumpPushForce: 40
 --- !u!114 &114880992644751644
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -605,6 +605,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -620,6 +621,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -647,6 +649,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -662,6 +665,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -689,6 +693,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -704,6 +709,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -731,6 +737,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -746,6 +753,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

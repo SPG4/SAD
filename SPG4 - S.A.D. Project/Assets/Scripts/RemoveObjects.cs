@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RemoveObjects : MonoBehaviour
 {
+    [Tooltip("Restart level if players trigger on enter.")]
     public bool RestartLevel = false;
 
     /// <summary>
@@ -13,7 +14,12 @@ public class RemoveObjects : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player") && RestartLevel == true)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player") && RestartLevel == true )
+        {
+            int scene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        }
+        if (collision.gameObject.name.Contains("Eyeball") && RestartLevel == true)
         {
             int scene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(scene, LoadSceneMode.Single);
@@ -22,5 +28,6 @@ public class RemoveObjects : MonoBehaviour
         {
             GameObject.Destroy(collision.gameObject);
         }
+
     }
 }

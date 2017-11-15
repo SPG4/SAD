@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour{
     private bool shooting;
     private bool wallJumped = false;
     private bool wallJumping = false;
+    private bool insideAntigravArea;
 
     private float horizontalInput;
     private float aimInput;
@@ -61,7 +62,13 @@ public class PlayerController : MonoBehaviour{
     private GameObject defaultCollider;
     private GameObject crouchCollider;
 
+    private PlayerAbilities playerAbilities;
+
     private AudioSource jumping;
+
+    private float mudFloorJumpForce = 1000f;
+    private bool standingOnMudFloor;
+    private bool mudFloorJumping;
 
     /// <summary>
     /// initialize conponents of the player here
@@ -81,13 +88,49 @@ public class PlayerController : MonoBehaviour{
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
 
-        jumping = gameObject.GetComponent<AudioSource>();   
+        jumping = gameObject.GetComponent<AudioSource>();
+
+        playerAbilities = gameObject.GetComponent<PlayerAbilities>();
     }
-	
-	/// <summary>
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            insideAntigravArea = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Teleport antigrav field")
+        {
+            insideAntigravArea = false;
+            shooting = false;
+            playerAbilities.SendMessage("ResetShot", 1);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
+        {
+            standingOnMudFloor = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
+        {
+            standingOnMudFloor = false;
+        }
+    }
+
+    /// <summary>
     /// Update is called once a frame
     /// </summary>
-	void Update ()
+    void Update ()
     {
         aimInput = Input.GetAxis("Aim" + playerNumber);     
         cancelJump = Input.GetButtonUp("Jump" + playerNumber);
@@ -137,6 +180,7 @@ public class PlayerController : MonoBehaviour{
         {
             hasDoubleJumped = false;
             wallJumping = false;
+            mudFloorJumping = false;
         }
 
         //Dont allow the player to turn or move during a walljump
@@ -152,15 +196,26 @@ public class PlayerController : MonoBehaviour{
         }
 
         //Check if a player has pressed the jump button and is standing on ground
-        if (jumpState && !oldJumpState && grounded)
+        if (jumpState && !oldJumpState && grounded && !standingOnMudFloor)
         {
             Jump();
         }
 
+        if (jumpState && !oldJumpState && grounded && standingOnMudFloor)
+        {
+            MudFloorJump();
+        }
+
         ////Check if a player is pressing jump in the air after the player has jumped once
-        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall)
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && !mudFloorJumping)
         {
             Jump();
+            hasDoubleJumped = true;
+        }
+
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && mudFloorJumping)
+        {
+            MudFloorJump();
             hasDoubleJumped = true;
         }
 
@@ -214,7 +269,20 @@ public class PlayerController : MonoBehaviour{
             this.ridgidbodyPlayer.velocity = velocity;
 
         else if ((horizontalInput != 0 && !wallJumping))
-            this.ridgidbodyPlayer.velocity = velocity;  
+            this.ridgidbodyPlayer.velocity = velocity;
+
+        //worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
+        //Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
+
+        //if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
+        //{
+        //    ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
+        //    Debug.Log("out of bounds");
+        //}
+        //else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
+        //{
+        //    ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
+        //} 
     }
 
     private void LateUpdate()
@@ -224,18 +292,7 @@ public class PlayerController : MonoBehaviour{
 
     void CheckPlayersInsideCamera()
     {
-        worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
-        Vector3 worldLeft = Camera.main.ScreenToWorldPoint(new Vector3(0.0f, 0.0f, 0.0f));
-
-        if (ridgidbodyPlayer.position.x >= worldSize.x - worldHalfSize)
-        {
-            ridgidbodyPlayer.position = new Vector2(worldSize.x - worldHalfSize, ridgidbodyPlayer.position.y);
-            Debug.Log("out of bounds");
-        }
-        else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
-        {
-            ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
-        }
+        
     }
 
     /// <summary>
@@ -247,6 +304,15 @@ public class PlayerController : MonoBehaviour{
         ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
         velocity = ridgidbodyPlayer.velocity;
         ridgidbodyPlayer.AddForce(Vector2.up * jumpForce);
+    }
+
+    public void MudFloorJump()
+    {
+        jumping.Play();
+        mudFloorJumping = true;
+        ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
+        velocity = ridgidbodyPlayer.velocity;
+        ridgidbodyPlayer.AddForce(Vector2.up * mudFloorJumpForce);
     }
 
     public void WallJump()
@@ -325,13 +391,16 @@ public class PlayerController : MonoBehaviour{
         Debug.Log(shootingDirection);
 
         float speed = 15;
-        
+
         shooting = true;
 
-        GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
-        ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
-        ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
-        ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+        if (insideAntigravArea == false)
+        {
+            GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
+            ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
+            ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
+            ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
+        }
     }
 
     public void ResetShootingValue(bool shootingValue)

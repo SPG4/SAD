@@ -12,6 +12,8 @@ TagManager:
   - Fire
   - Teleport destroyer
   - Teleport antigrav field
+  - Black hole
+  - Black hole exit
   layers:
   - Default
   - TransparentFX
@@ -28,11 +30,11 @@ TagManager:
   - Ball
   - Projectiles
   - Teleport antigrav
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Black hole
+  - Black hole exit
+  - Teleport destroy field
+  - Teleport passing wall
+  - Mud floor
   - 
   - 
   - 
