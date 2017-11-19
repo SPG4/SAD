@@ -50,6 +50,6 @@ public class TeleportwallController : MonoBehaviour {
             parent.gameObject.layer = LayerMask.NameToLayer("Teleport destroy field");
         }
 
-        Debug.Log(hasBeenUsed);
+        //Debug.Log(hasBeenUsed);
 	}
 }

@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour{
     private bool wallJumping = false;
     private bool insideAntigravArea;
 
+    private int energy;
     private float horizontalInput;
     private float aimInput;
     private float aimingSpeed;
@@ -66,9 +67,7 @@ public class PlayerController : MonoBehaviour{
 
     private AudioSource jumping;
 
-    private float mudFloorJumpForce = 1000f;
-    private bool standingOnMudFloor;
-    private bool mudFloorJumping;
+    private float fanPushForce = 200;
 
     /// <summary>
     /// initialize conponents of the player here
@@ -99,6 +98,12 @@ public class PlayerController : MonoBehaviour{
         {
             insideAntigravArea = true;
         }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Fan trigger area"))
+        {
+            if (collision.GetComponent<FanController>().IsFanOn())
+                AffectedByFan(fanPushForce);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -108,22 +113,6 @@ public class PlayerController : MonoBehaviour{
             insideAntigravArea = false;
             shooting = false;
             playerAbilities.SendMessage("ResetShot", 1);
-        }
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
-        {
-            standingOnMudFloor = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Mud floor"))
-        {
-            standingOnMudFloor = false;
         }
     }
 
@@ -180,7 +169,6 @@ public class PlayerController : MonoBehaviour{
         {
             hasDoubleJumped = false;
             wallJumping = false;
-            mudFloorJumping = false;
         }
 
         //Dont allow the player to turn or move during a walljump
@@ -196,26 +184,15 @@ public class PlayerController : MonoBehaviour{
         }
 
         //Check if a player has pressed the jump button and is standing on ground
-        if (jumpState && !oldJumpState && grounded && !standingOnMudFloor)
+        if (jumpState && !oldJumpState && grounded)
         {
             Jump();
-        }
-
-        if (jumpState && !oldJumpState && grounded && standingOnMudFloor)
-        {
-            MudFloorJump();
         }
 
         ////Check if a player is pressing jump in the air after the player has jumped once
-        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && !mudFloorJumping)
+        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall)
         {
             Jump();
-            hasDoubleJumped = true;
-        }
-
-        if (jumpState && !oldJumpState && !grounded && !hasDoubleJumped && !isOnWall && mudFloorJumping)
-        {
-            MudFloorJump();
             hasDoubleJumped = true;
         }
 
@@ -282,7 +259,7 @@ public class PlayerController : MonoBehaviour{
         //else if (ridgidbodyPlayer.position.x <= (worldLeft.x + worldHalfSize))
         //{
         //    ridgidbodyPlayer.position = new Vector2(worldLeft.x + worldHalfSize, ridgidbodyPlayer.position.y);
-        //} 
+        //}
     }
 
     private void LateUpdate()
@@ -304,15 +281,6 @@ public class PlayerController : MonoBehaviour{
         ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
         velocity = ridgidbodyPlayer.velocity;
         ridgidbodyPlayer.AddForce(Vector2.up * jumpForce);
-    }
-
-    public void MudFloorJump()
-    {
-        jumping.Play();
-        mudFloorJumping = true;
-        ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
-        velocity = ridgidbodyPlayer.velocity;
-        ridgidbodyPlayer.AddForce(Vector2.up * mudFloorJumpForce);
     }
 
     public void WallJump()
@@ -453,5 +421,16 @@ public class PlayerController : MonoBehaviour{
 
             crosshair.SendMessage("RotateCrosshair", rotateDegrees);
         }
+    }
+
+    private void AffectedByFan(float fanPushForce)
+    {
+        //ridgidbodyPlayer.gravityScale = 0;
+        ridgidbodyPlayer.AddForce(new Vector2(0, fanPushForce));
+    }
+
+    private void IncreaseEnergy(int amount)
+    {
+        energy += amount;
     }
 }

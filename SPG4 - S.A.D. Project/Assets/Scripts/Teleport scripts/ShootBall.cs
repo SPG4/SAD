@@ -163,6 +163,8 @@ public class ShootBall : MonoBehaviour
         Destroy(gameObject);
         playerBeingTeleported.SendMessage("Teleport", blackHole.target.transform.position);
         playerShooting.SendMessage("Teleport", blackHole.target.transform.position);
+        playerBeingTeleported.SendMessage("IncreaseEnergy", 1);
+        playerShooting.SendMessage("IncreaseEnergy", 1);
         ResetShootingVariables();
     }
 
