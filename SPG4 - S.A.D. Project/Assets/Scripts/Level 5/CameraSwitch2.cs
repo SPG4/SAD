@@ -20,7 +20,7 @@ public class CameraSwitch2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         lvl5Time2 += Time.deltaTime;
-        if (lvl5Time2>= 2f)
+        if (lvl5Time2>= 0.5f)
         {
             lvl5Camera3.enabled = false;
             lvl5Camera2.enabled = true;
