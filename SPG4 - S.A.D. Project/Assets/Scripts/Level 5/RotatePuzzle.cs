@@ -23,10 +23,9 @@ public class RotatePuzzle : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-
-        if (true)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            rotateObject.transform.Rotate(Vector3.forward * (((Time.deltaTime * 10) * rotationSpeed))* reverser );
+            rotateObject.transform.Rotate(Vector3.forward * (((Time.deltaTime * 10) * rotationSpeed)) * reverser);
         }
     }
 }
