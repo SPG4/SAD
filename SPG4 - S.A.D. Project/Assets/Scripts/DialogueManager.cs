@@ -11,24 +11,45 @@ public class DialogueManager : MonoBehaviour
     public bool diaActive;
     public string[] diaLines;
     public int currentLine;
+    public List<string> diaList = new List<string>();
+    public bool useList;
+    bool player1Input = false;
+    bool player2Input = false;
 
     void Update()
     {
+        if (Input.GetButtonDown("Next1"))
+            player1Input = true;
 
-        if (diaActive && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Next2"))
+            player2Input = true;
+
+        if (diaActive && player1Input && player2Input)
         {
             //diaBox.SetActive(false);
             //diaActive = false;
+            player1Input = false;
+            player2Input = false;
             currentLine++;
         }
-
-        if (currentLine >= diaLines.Length)
+        if (useList)
+        {
+            if (currentLine >= diaList.Count)
+            {
+                diaBox.SetActive(false);
+                diaActive = false;
+            }
+            else
+                diaText.text = diaList[currentLine];
+        }
+        else if (currentLine >= diaLines.Length)
         {
             diaBox.SetActive(false);
             diaActive = false;
             currentLine = 0;
         }
-        diaText.text = diaLines[currentLine];
+        if (!useList)
+            diaText.text = diaLines[currentLine];
     }
 
     public void ShowBox(string dialogue)
@@ -42,5 +63,11 @@ public class DialogueManager : MonoBehaviour
     {
         diaActive = true;
         diaBox.SetActive(true);
+    }
+
+    public void AddText(string text)
+    {
+        diaList.Add(text);
+        ShowDialogue();
     }
 }

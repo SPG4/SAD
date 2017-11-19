@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class CPC_Visual
@@ -45,9 +46,9 @@ public class CPC_Point
         handleprev = Vector3.back;
         handlenext = Vector3.forward;
         curveTypeRotation = CPC_ECurveType.EaseInAndOut;
-        rotationCurve = AnimationCurve.EaseInOut(0,0,1,1);
+        rotationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
         curveTypePosition = CPC_ECurveType.Linear;
-        positionCurve = AnimationCurve.Linear(0,0,1,1);
+        positionCurve = AnimationCurve.Linear(0, 0, 1, 1);
         chained = true;
     }
 }
@@ -67,6 +68,7 @@ public class CPC_CameraPath : MonoBehaviour
     public bool alwaysShow = true;
     public CPC_EAfterLoop afterLoop = CPC_EAfterLoop.Continue;
 
+
     private int currentWaypointIndex;
     private float currentTimeInWaypoint;
     private float timePerSegment;
@@ -74,26 +76,32 @@ public class CPC_CameraPath : MonoBehaviour
     private bool paused = false;
     private bool playing = false;
 
-    void Start ()
+    bool player1Input = false;
+    bool player2Input = false;
+    GameObject dialogue;
+    bool hasAdded1, hasAdded2, hasAdded3, hasAdded4;
+    string LevelToLoad = "Level1";
+
+    void Start()
     {
-        
+        dialogue = GameObject.FindGameObjectWithTag("DialogueManager");
         if (Camera.main == null) { Debug.LogError("There is no main camera in the scene!"); }
-	    if (useMainCamera)
-	        selectedCamera = Camera.main;
-	    else if (selectedCamera == null)
-	    {
+        if (useMainCamera)
+            selectedCamera = Camera.main;
+        else if (selectedCamera == null)
+        {
             selectedCamera = Camera.main;
             Debug.LogError("No camera selected for following path, defaulting to main camera");
         }
 
-	    if (lookAtTarget && target == null)
-	    {
-	        lookAtTarget = false;
+        if (lookAtTarget && target == null)
+        {
+            lookAtTarget = false;
             Debug.LogError("No target selected to look at, defaulting to normal rotation");
         }
 
-	    foreach (var index in points)
-	    {
+        foreach (var index in points)
+        {
             if (index.curveTypeRotation == CPC_ECurveType.EaseInAndOut) index.rotationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
             if (index.curveTypeRotation == CPC_ECurveType.Linear) index.rotationCurve = AnimationCurve.Linear(0, 0, 1, 1);
             if (index.curveTypePosition == CPC_ECurveType.EaseInAndOut) index.positionCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
@@ -232,8 +240,18 @@ public class CPC_CameraPath : MonoBehaviour
             {
                 if (!paused)
                 {
+                    CheckForDialogue(currentWaypointIndex);
+                    if (dialogue.GetComponent<DialogueManager>().diaActive)
+                    {
+                        PausePath();
+                    }
+
                     if (currentWaypointIndex < 1)
                     {
+                        if (currentWaypointIndex == 2)
+                        {
+                            PausePath();
+                        }
                         currentTimeInWaypoint += Time.deltaTime / timePerSegment;
                         selectedCamera.transform.position = GetBezierPosition(currentWaypointIndex, currentTimeInWaypoint);
                     }
@@ -243,17 +261,16 @@ public class CPC_CameraPath : MonoBehaviour
                         selectedCamera.transform.position = GetBezierPosition(currentWaypointIndex, currentTimeInWaypoint);
                     }
                     if (currentWaypointIndex > 5)
-                        time++;
+                        timePerSegment = 5f;
                     if (!lookAtTarget)
                         selectedCamera.transform.rotation = GetLerpRotation(currentWaypointIndex, currentTimeInWaypoint);
                     else
                         selectedCamera.transform.rotation = Quaternion.LookRotation((target.transform.position - selectedCamera.transform.position).normalized);
 
                 }
-                else
-                {
+                else if (!dialogue.GetComponent<DialogueManager>().diaActive)
+                    ResumePath();
 
-                }
                 yield return 0;
             }
             ++currentWaypointIndex;
@@ -261,13 +278,51 @@ public class CPC_CameraPath : MonoBehaviour
             if (currentWaypointIndex == points.Count && afterLoop == CPC_EAfterLoop.Continue) currentWaypointIndex = 0;
         }
         StopPath();
+        SceneManager.LoadScene(LevelToLoad);
     }
 
     int GetNextIndex(int index)
     {
-        if (index == points.Count-1)
+        if (index == points.Count - 1)
             return 0;
         return index + 1;
+    }
+
+    void CheckForDialogue(float index)
+    {
+        if ((int)index == 3 && !hasAdded1)
+        {
+            dialogue.SendMessage("AddText", "Blue: Wow, what an energized rising, watch out world, the shit show is on the move!");
+            dialogue.SendMessage("AddText", "Green: No, just get back down man, it's better that way, trust me, at least in bed no one can observe your failiure.");
+            dialogue.SendMessage("AddText", "Maybe today will be different... better get dressed.");
+            hasAdded1 = true;
+        }
+
+        if ((int)index == 5 && !hasAdded2)
+        {
+            dialogue.SendMessage("AddText", "Blue: Good thing you're so stylish, I'm sure that will improve the situation!");
+            dialogue.SendMessage("AddText", "Green: Stylish? What do you mean? He's not very stylish.");
+            dialogue.SendMessage("AddText", "Blue: It's called irony you idiot.");
+            dialogue.SendMessage("AddText", "Green: Hey, don't call me an idiot you self absorbed shit.");
+            dialogue.SendMessage("AddText", "Actually, today will probably be just the same...");
+            hasAdded2 = true;
+        }
+
+        if ((int)index == 6 && !hasAdded3)
+        {
+            dialogue.SendMessage("AddText", "Probably better to just... get back to bed.");
+            dialogue.SendMessage("AddText", "Green: Finally something reasonable!");
+            dialogue.SendMessage("AddText", "Blue: Yeah, crawl back into your rathole like the coward you are.");
+            dialogue.SendMessage("AddText", "Green: Better a coward than ridiculed.");
+            dialogue.SendMessage("AddText", "Yeah, that's probably right..");
+            hasAdded3 = true;
+        }
+
+        if ((int)index == 7 && !hasAdded4)
+        {
+            dialogue.SendMessage("AddText", "Just back into the nothingness....");
+            hasAdded4 = true;
+        }
     }
 
     Vector3 GetBezierPosition(int pointIndex, float time)
@@ -307,7 +362,7 @@ public class CPC_CameraPath : MonoBehaviour
                         var index = points[i];
                         var indexNext = points[i + 1];
                         UnityEditor.Handles.DrawBezier(index.position, indexNext.position, index.position + index.handlenext,
-                            indexNext.position + indexNext.handleprev,((UnityEditor.Selection.activeGameObject == gameObject) ? visual.pathColor : visual.inactivePathColor), null, 5);
+                            indexNext.position + indexNext.handleprev, ((UnityEditor.Selection.activeGameObject == gameObject) ? visual.pathColor : visual.inactivePathColor), null, 5);
                     }
                     else if (looped)
                     {
