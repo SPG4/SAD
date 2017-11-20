@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed890be3adb71243ad3b3d38b86a203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 15
+  destroyTime: 11.01
   isDeadly: 1
 --- !u!212 &212412426516191634
 SpriteRenderer:
