@@ -15,6 +15,7 @@ TagManager:
   - Black hole
   - Black hole exit
   - Fan
+  - Energy button
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Teleport passing wall
   - Mud floor
   - Fan trigger area
-  - 
+  - Interactable ball object
   - 
   - 
   - 

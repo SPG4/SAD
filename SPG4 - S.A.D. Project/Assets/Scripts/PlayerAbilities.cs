@@ -9,6 +9,7 @@ public class PlayerAbilities : MonoBehaviour
     public string chosenAbility; //what ability is being used
 
     int layer_mask;
+    int ball_layer;
     float mana;
     float shots;
     bool buttonPressed;
@@ -22,7 +23,7 @@ public class PlayerAbilities : MonoBehaviour
     void Start()
     {
         layer_mask = LayerMask.GetMask("Interactable Objects"); // Used in raycast to only hit objects on a specific layer
-        mana = 5;
+        ball_layer = LayerMask.GetMask("Interactable ball object");
         shots = 1;
 
         abilityList = new List<string>();
@@ -88,17 +89,21 @@ public class PlayerAbilities : MonoBehaviour
         direction = player.crosshair.transform.position - gameObject.transform.position;
         Debug.DrawRay(transform.position, direction, Color.red, 10);
 
-        if (Physics2D.Raycast(transform.position, direction, 7, layer_mask)) //checking for objects that the raycast hits
+        if (Physics2D.Raycast(transform.position, direction, 7, layer_mask) || Physics2D.Raycast(transform.position, direction, 7, ball_layer)) //checking for objects that the raycast hits
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability
-                                                                                                //Debug.Log(hit.collider.gameObject.name);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 7, layer_mask); // 7 = range for ability                                                                           
+            RaycastHit2D ballHit = Physics2D.Raycast(transform.position, direction, 7, ball_layer);
+
             if (chosenAbility == "StandardAbility")
             {
                 Debug.DrawRay(transform.position, direction, Color.red, 10);
                 if (buttonInput == "UseAbilityP2") // find direction object should move in
                     direction = direction * -1;
 
-                hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
+                    if(hit)
+                        hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
+                    else if (ballHit)
+                        ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
             }
 
             else if (chosenAbility == "SizeGun")

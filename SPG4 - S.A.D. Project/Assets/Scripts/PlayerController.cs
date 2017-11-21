@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour{
     private bool wallJumping = false;
     private bool insideAntigravArea;
 
+    [SerializeField]
     private int energy;
     private float horizontalInput;
     private float aimInput;
@@ -64,10 +65,11 @@ public class PlayerController : MonoBehaviour{
     private GameObject crouchCollider;
 
     private PlayerAbilities playerAbilities;
-
+    private EnergyButtonController energyBtn;
     private AudioSource jumping;
 
     private float fanPushForce = 200;
+
 
     /// <summary>
     /// initialize conponents of the player here
@@ -90,6 +92,20 @@ public class PlayerController : MonoBehaviour{
         jumping = gameObject.GetComponent<AudioSource>();
 
         playerAbilities = gameObject.GetComponent<PlayerAbilities>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Energy button")
+        {
+            energyBtn = collision.gameObject.GetComponent<EnergyButtonController>();
+            if (energyBtn.hasBeenTriggered == false && energy > 0)
+            {
+                energyBtn.hasBeenTriggered = true;
+                DecreaseEnergy(1);
+                otherPlayer.SendMessage("DecreaseEnergy", 1);
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -432,5 +448,10 @@ public class PlayerController : MonoBehaviour{
     private void IncreaseEnergy(int amount)
     {
         energy += amount;
+    }
+
+    private void DecreaseEnergy(int amount)
+    {
+        energy -= amount;
     }
 }

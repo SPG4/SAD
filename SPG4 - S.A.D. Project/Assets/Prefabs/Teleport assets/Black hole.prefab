@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 58820105650035004}
   - component: {fileID: 114809636188481062}
   - component: {fileID: 114838791210643592}
-  - component: {fileID: 50091745960226520}
   m_Layer: 15
   m_Name: Black hole
   m_TagString: Black hole
@@ -54,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1694482387543156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.184233, y: 1.2539892, z: 0}
+  m_LocalPosition: {x: 26.18, y: 10.93, z: 0}
   m_LocalScale: {x: 0.21676144, y: 0.21676144, z: 0.21676144}
   m_Children:
   - {fileID: 4566608086672692}
@@ -68,32 +67,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1831889286817006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.327896, y: 0.36906925, z: 0}
+  m_LocalPosition: {x: 55.6, y: -43.8, z: 0}
   m_LocalScale: {x: 0.95791745, y: 0.95791745, z: 0.95791745}
   m_Children: []
   m_Father: {fileID: 4372423703126494}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50091745960226520
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1694482387543156}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &58820105650035004
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -132,7 +111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1831889286817006}
-  asshole: 0
 --- !u!212 &212589701556610710
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -142,6 +120,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -157,6 +136,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -184,6 +164,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -199,6 +180,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

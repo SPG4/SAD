@@ -49,7 +49,6 @@ public class ShootBall : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(blackHole);
         if (insideAntigravField)
         {
             timer = 3;
@@ -142,7 +141,7 @@ public class ShootBall : MonoBehaviour
 
     private void AntiGravityBall()
     {
-        gameObject.layer = LayerMask.NameToLayer("Interactable Objects");
+        gameObject.layer = LayerMask.NameToLayer("Interactable ball object");
         GetComponent<Rigidbody2D>().gravityScale = 0;
 
         Vector2 CurrentVelocity = GetComponent<Rigidbody2D>().velocity;
