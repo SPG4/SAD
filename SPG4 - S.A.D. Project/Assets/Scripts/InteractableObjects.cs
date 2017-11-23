@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableObjects : MonoBehaviour
 {
-    float force = 400;
+    float force = 300;
     // Vector2 direction = new Vector2(1, 0);
 
     Vector3 maxLocalScale, scale;
@@ -27,8 +27,9 @@ public class InteractableObjects : MonoBehaviour
     /// <param name="direction"></param>
     void StandardAbility(Vector2 direction)
     {
-       // Debug.Log("Using Ability");
-        GetComponent<Rigidbody2D>().AddForce(direction * force);
+        // Debug.Log("Using Ability");
+        float mass = GetComponent<Rigidbody2D>().mass;
+        GetComponent<Rigidbody2D>().AddForce(direction * mass * force);
     }
 
     /// <summary>
