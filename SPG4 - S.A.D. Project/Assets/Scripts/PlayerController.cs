@@ -172,6 +172,9 @@ public class PlayerController : MonoBehaviour{
         bodyAnimator.SetBool("Ground", grounded);
         handsAnimator.SetBool("Ground", grounded);
 
+        bodyAnimator.SetBool("IsOnWall", isOnWall);
+        bodyAnimator.SetBool("DoubleJumped", hasDoubleJumped);
+
         bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
         handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
 
