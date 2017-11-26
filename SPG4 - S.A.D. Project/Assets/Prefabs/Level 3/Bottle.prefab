@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4062634517861590}
   - component: {fileID: 212368673412804876}
-  - component: {fileID: 61685189671259296}
   - component: {fileID: 50614824046862350}
   - component: {fileID: 114501642022255688}
+  - component: {fileID: 68816834476352948}
+  - component: {fileID: 61842405470440560}
   m_Layer: 11
   m_Name: Bottle
   m_TagString: Untagged
@@ -37,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1641210379542346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.430195, y: 4.821204, z: -0.76402915}
-  m_LocalScale: {x: 0.19733557, y: 0.18274167, z: 1}
+  m_LocalPosition: {x: 7.430195, y: 4.41, z: -0.76402915}
+  m_LocalScale: {x: 0.13169841, y: 0.13177392, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +64,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61685189671259296
+--- !u!61 &61842405470440560
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,19 +76,49 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.069322705, y: 0.2834592}
+  m_Offset: {x: -0.7415625, y: -3.158805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13, y: 13}
+    oldSize: {x: 18.76, y: 20.83}
     newSize: {x: 13, y: 13}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4320347, y: 11.77167}
+  m_Size: {x: 4.777875, y: 11.331877}
   m_EdgeRadius: 0
+--- !u!68 &68816834476352948
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641210379542346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.0956697, y: 2.4772577}
+  - {x: -2.9252915, y: 2.8851428}
+  - {x: -2.2591743, y: 3.661108}
+  - {x: -2.1297534, y: 5.8234754}
+  - {x: -1.7590034, y: 7.836318}
+  - {x: -1.9822036, y: 8.144756}
+  - {x: -1.8901008, y: 9.558392}
+  - {x: -1.4011215, y: 9.736297}
+  - {x: -0.4561652, y: 9.78039}
+  - {x: 0.31982145, y: 9.652298}
+  - {x: 0.45664674, y: 8.151151}
+  - {x: 0.33604932, y: 7.8380117}
+  - {x: 0.73519975, y: 5.478199}
+  - {x: 0.80418444, y: 3.8057039}
+  - {x: 1.6685518, y: 2.4772577}
 --- !u!114 &114501642022255688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,7 +164,7 @@ SpriteRenderer:
   m_SortingLayerID: 765975521
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e360543901f0bd444a77f91ada59aba7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58e43ebbc15f8e34b99be133496baf9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
