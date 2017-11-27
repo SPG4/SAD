@@ -1,0 +1,1342 @@
+fileFormatVersion: 2
+guid: 1a4f9e702f1070945aa2fe468c8e2e43
+timeCreated: 1511741079
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JumpForward_WithShot_SpriteSheet_125x125_0
+    21300002: JumpForward_WithShot_SpriteSheet_125x125_1
+    21300004: JumpForward_WithShot_SpriteSheet_125x125_2
+    21300006: JumpForward_WithShot_SpriteSheet_125x125_3
+    21300008: JumpForward_WithShot_SpriteSheet_125x125_4
+    21300010: JumpForward_WithShot_SpriteSheet_125x125_5
+    21300012: JumpForward_WithShot_SpriteSheet_125x125_7
+    21300014: JumpForward_WithShot_SpriteSheet_125x125_8
+    21300016: JumpForward_WithShot_SpriteSheet_125x125_9
+    21300018: JumpForward_WithShot_SpriteSheet_125x125_10
+    21300020: JumpForward_WithShot_SpriteSheet_125x125_11
+    21300022: JumpForward_WithShot_SpriteSheet_125x125_12
+    21300024: JumpForward_WithShot_SpriteSheet_125x125_13
+    21300026: JumpForward_WithShot_SpriteSheet_125x125_14
+    21300028: JumpForward_WithShot_SpriteSheet_125x125_15
+    21300030: JumpForward_WithShot_SpriteSheet_125x125_16
+    21300032: JumpForward_WithShot_SpriteSheet_125x125_17
+    21300034: JumpForward_WithShot_SpriteSheet_125x125_18
+    21300036: JumpForward_WithShot_SpriteSheet_125x125_20
+    21300038: JumpForward_WithShot_SpriteSheet_125x125_21
+    21300040: JumpForward_WithShot_SpriteSheet_125x125_22
+    21300042: JumpForward_WithShot_SpriteSheet_125x125_23
+    21300044: JumpForward_WithShot_SpriteSheet_125x125_24
+    21300046: JumpForward_WithShot_SpriteSheet_125x125_25
+    21300048: JumpForward_WithShot_SpriteSheet_125x125_26
+    21300050: JumpForward_WithShot_SpriteSheet_125x125_27
+    21300052: JumpForward_WithShot_SpriteSheet_125x125_28
+    21300054: JumpForward_WithShot_SpriteSheet_125x125_29
+    21300056: JumpForward_WithShot_SpriteSheet_125x125_30
+    21300058: JumpForward_WithShot_SpriteSheet_125x125_31
+    21300060: JumpForward_WithShot_SpriteSheet_125x125_33
+    21300062: JumpForward_WithShot_SpriteSheet_125x125_34
+    21300064: JumpForward_WithShot_SpriteSheet_125x125_35
+    21300066: JumpForward_WithShot_SpriteSheet_125x125_36
+    21300068: JumpForward_WithShot_SpriteSheet_125x125_37
+    21300070: JumpForward_WithShot_SpriteSheet_125x125_38
+    21300072: JumpForward_WithShot_SpriteSheet_125x125_39
+    21300074: JumpForward_WithShot_SpriteSheet_125x125_40
+    21300076: JumpForward_WithShot_SpriteSheet_125x125_41
+    21300078: JumpForward_WithShot_SpriteSheet_125x125_42
+    21300080: JumpForward_WithShot_SpriteSheet_125x125_43
+    21300082: JumpForward_WithShot_SpriteSheet_125x125_44
+    21300084: JumpForward_WithShot_SpriteSheet_125x125_46
+    21300086: JumpForward_WithShot_SpriteSheet_125x125_47
+    21300088: JumpForward_WithShot_SpriteSheet_125x125_48
+    21300090: JumpForward_WithShot_SpriteSheet_125x125_49
+    21300092: JumpForward_WithShot_SpriteSheet_125x125_50
+    21300094: JumpForward_WithShot_SpriteSheet_125x125_51
+    21300096: JumpForward_WithShot_SpriteSheet_125x125_52
+    21300098: JumpForward_WithShot_SpriteSheet_125x125_53
+    21300100: JumpForward_WithShot_SpriteSheet_125x125_54
+    21300102: JumpForward_WithShot_SpriteSheet_125x125_55
+    21300104: JumpForward_WithShot_SpriteSheet_125x125_56
+    21300106: JumpForward_WithShot_SpriteSheet_125x125_57
+    21300108: JumpForward_WithShot_SpriteSheet_125x125_59
+    21300110: JumpForward_WithShot_SpriteSheet_125x125_60
+    21300112: JumpForward_WithShot_SpriteSheet_125x125_61
+    21300114: JumpForward_WithShot_SpriteSheet_125x125_62
+    21300116: JumpForward_WithShot_SpriteSheet_125x125_63
+    21300118: JumpForward_WithShot_SpriteSheet_125x125_64
+    21300120: JumpForward_WithShot_SpriteSheet_125x125_65
+    21300122: JumpForward_WithShot_SpriteSheet_125x125_66
+    21300124: JumpForward_WithShot_SpriteSheet_125x125_67
+    21300126: JumpForward_WithShot_SpriteSheet_125x125_68
+    21300128: JumpForward_WithShot_SpriteSheet_125x125_69
+    21300130: JumpForward_WithShot_SpriteSheet_125x125_70
+    21300132: JumpForward_WithShot_SpriteSheet_125x125_72
+    21300134: JumpForward_WithShot_SpriteSheet_125x125_73
+    21300136: JumpForward_WithShot_SpriteSheet_125x125_74
+    21300138: JumpForward_WithShot_SpriteSheet_125x125_75
+    21300140: JumpForward_WithShot_SpriteSheet_125x125_76
+    21300142: JumpForward_WithShot_SpriteSheet_125x125_77
+    21300144: JumpForward_WithShot_SpriteSheet_125x125_78
+    21300146: JumpForward_WithShot_SpriteSheet_125x125_79
+    21300148: JumpForward_WithShot_SpriteSheet_125x125_80
+    21300150: JumpForward_WithShot_SpriteSheet_125x125_81
+    21300152: JumpForward_WithShot_SpriteSheet_125x125_82
+    21300154: JumpForward_WithShot_SpriteSheet_125x125_83
+    21300156: JumpForward_WithShot_SpriteSheet_125x125_85
+    21300158: JumpForward_WithShot_SpriteSheet_125x125_86
+    21300160: JumpForward_WithShot_SpriteSheet_125x125_87
+    21300162: JumpForward_WithShot_SpriteSheet_125x125_88
+    21300164: JumpForward_WithShot_SpriteSheet_125x125_89
+    21300166: JumpForward_WithShot_SpriteSheet_125x125_90
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_7
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 529
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_10
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_11
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_12
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_17
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_20
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 441
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_22
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_24
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_25
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_30
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_31
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_33
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 353
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_35
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_36
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_37
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_38
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_40
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_42
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_44
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_46
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 265
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_47
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_49
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_50
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_51
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_53
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_54
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_55
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_56
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_57
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_59
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 177
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_60
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_61
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_62
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_63
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_64
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_66
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_68
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_70
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_72
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 89
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_73
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_74
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_75
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_76
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_77
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_79
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_80
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_81
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_82
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_83
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_85
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_86
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_87
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_88
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_89
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpForward_WithShot_SpriteSheet_125x125_90
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

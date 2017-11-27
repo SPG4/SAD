@@ -1,0 +1,1552 @@
+fileFormatVersion: 2
+guid: 258d25de6575b8945ac7ad178d5f5b35
+timeCreated: 1511774766
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_0
+    21300002: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_1
+    21300004: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_2
+    21300006: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_3
+    21300008: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_4
+    21300010: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_5
+    21300012: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_6
+    21300014: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_8
+    21300016: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_9
+    21300018: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_10
+    21300020: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_11
+    21300022: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_12
+    21300024: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_13
+    21300026: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_14
+    21300028: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_15
+    21300030: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_16
+    21300032: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_17
+    21300034: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_18
+    21300036: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_19
+    21300038: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_20
+    21300040: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_21
+    21300042: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_23
+    21300044: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_24
+    21300046: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_25
+    21300048: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_26
+    21300050: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_27
+    21300052: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_28
+    21300054: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_29
+    21300056: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_30
+    21300058: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_31
+    21300060: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_32
+    21300062: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_33
+    21300064: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_34
+    21300066: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_35
+    21300068: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_36
+    21300070: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_38
+    21300072: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_39
+    21300074: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_40
+    21300076: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_41
+    21300078: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_42
+    21300080: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_43
+    21300082: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_44
+    21300084: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_45
+    21300086: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_46
+    21300088: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_47
+    21300090: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_48
+    21300092: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_49
+    21300094: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_50
+    21300096: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_51
+    21300098: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_53
+    21300100: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_54
+    21300102: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_55
+    21300104: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_56
+    21300106: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_57
+    21300108: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_58
+    21300110: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_59
+    21300112: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_60
+    21300114: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_61
+    21300116: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_62
+    21300118: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_63
+    21300120: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_64
+    21300122: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_65
+    21300124: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_66
+    21300126: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_68
+    21300128: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_69
+    21300130: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_70
+    21300132: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_71
+    21300134: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_72
+    21300136: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_73
+    21300138: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_74
+    21300140: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_75
+    21300142: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_76
+    21300144: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_77
+    21300146: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_78
+    21300148: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_79
+    21300150: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_80
+    21300152: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_81
+    21300154: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_83
+    21300156: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_84
+    21300158: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_85
+    21300160: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_86
+    21300162: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_87
+    21300164: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_88
+    21300166: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_89
+    21300168: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_90
+    21300170: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_91
+    21300172: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_92
+    21300174: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_93
+    21300176: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_94
+    21300178: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_95
+    21300180: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_96
+    21300182: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_98
+    21300184: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_99
+    21300186: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_100
+    21300188: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_101
+    21300190: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_102
+    21300192: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_103
+    21300194: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_104
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_8
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 529
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_10
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_11
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_12
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_13
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_14
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_20
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_23
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 441
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_24
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_25
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_26
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_27
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_28
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_29
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_31
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_32
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_33
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_34
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_35
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_36
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_38
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 353
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_39
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_40
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_41
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_42
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_43
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_44
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_46
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_47
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_48
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_49
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_50
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_51
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_53
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 265
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_54
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_55
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_56
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_57
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_58
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_59
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_61
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_63
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_64
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_65
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_66
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_68
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 177
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_69
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_70
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_71
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_72
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_73
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_74
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_76
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_77
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_78
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_79
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_80
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_81
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_83
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 89
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_84
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_85
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_86
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_87
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_88
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_89
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_91
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_92
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_93
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_94
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_95
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_96
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_98
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_99
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_100
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_101
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_102
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_103
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WallJumpBetweenWalls_WithShot_SpriteSheet_125x125_104
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

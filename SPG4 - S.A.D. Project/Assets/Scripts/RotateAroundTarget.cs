@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateAroundTarget : MonoBehaviour {
 
     public Transform target;
-    public float angleMax = 90f;
+    public float angleMax = 50f;
 
     private Vector3 initialVector = Vector3.right;
     
@@ -41,6 +41,7 @@ public class RotateAroundTarget : MonoBehaviour {
             rotateDegrees = newAngle - angleBetween;
 
             transform.RotateAround(target.position, Vector3.forward, rotateDegrees);
+            Debug.Log(newAngle);
         }
     }
 

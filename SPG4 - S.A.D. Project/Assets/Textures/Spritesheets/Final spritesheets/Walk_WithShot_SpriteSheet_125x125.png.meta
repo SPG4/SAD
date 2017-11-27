@@ -1,0 +1,1552 @@
+fileFormatVersion: 2
+guid: 69f72e8376cdc464daa818a7be6c8878
+timeCreated: 1511742647
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walk_WithShot_SpriteSheet_125x125_0
+    21300002: Walk_WithShot_SpriteSheet_125x125_1
+    21300004: Walk_WithShot_SpriteSheet_125x125_2
+    21300006: Walk_WithShot_SpriteSheet_125x125_3
+    21300008: Walk_WithShot_SpriteSheet_125x125_4
+    21300010: Walk_WithShot_SpriteSheet_125x125_5
+    21300012: Walk_WithShot_SpriteSheet_125x125_6
+    21300014: Walk_WithShot_SpriteSheet_125x125_7
+    21300016: Walk_WithShot_SpriteSheet_125x125_9
+    21300018: Walk_WithShot_SpriteSheet_125x125_10
+    21300020: Walk_WithShot_SpriteSheet_125x125_11
+    21300022: Walk_WithShot_SpriteSheet_125x125_12
+    21300024: Walk_WithShot_SpriteSheet_125x125_13
+    21300026: Walk_WithShot_SpriteSheet_125x125_14
+    21300028: Walk_WithShot_SpriteSheet_125x125_15
+    21300030: Walk_WithShot_SpriteSheet_125x125_16
+    21300032: Walk_WithShot_SpriteSheet_125x125_17
+    21300034: Walk_WithShot_SpriteSheet_125x125_18
+    21300036: Walk_WithShot_SpriteSheet_125x125_19
+    21300038: Walk_WithShot_SpriteSheet_125x125_20
+    21300040: Walk_WithShot_SpriteSheet_125x125_21
+    21300042: Walk_WithShot_SpriteSheet_125x125_22
+    21300044: Walk_WithShot_SpriteSheet_125x125_23
+    21300046: Walk_WithShot_SpriteSheet_125x125_25
+    21300048: Walk_WithShot_SpriteSheet_125x125_26
+    21300050: Walk_WithShot_SpriteSheet_125x125_27
+    21300052: Walk_WithShot_SpriteSheet_125x125_28
+    21300054: Walk_WithShot_SpriteSheet_125x125_29
+    21300056: Walk_WithShot_SpriteSheet_125x125_30
+    21300058: Walk_WithShot_SpriteSheet_125x125_31
+    21300060: Walk_WithShot_SpriteSheet_125x125_32
+    21300062: Walk_WithShot_SpriteSheet_125x125_33
+    21300064: Walk_WithShot_SpriteSheet_125x125_34
+    21300066: Walk_WithShot_SpriteSheet_125x125_35
+    21300068: Walk_WithShot_SpriteSheet_125x125_36
+    21300070: Walk_WithShot_SpriteSheet_125x125_37
+    21300072: Walk_WithShot_SpriteSheet_125x125_38
+    21300074: Walk_WithShot_SpriteSheet_125x125_39
+    21300076: Walk_WithShot_SpriteSheet_125x125_41
+    21300078: Walk_WithShot_SpriteSheet_125x125_42
+    21300080: Walk_WithShot_SpriteSheet_125x125_43
+    21300082: Walk_WithShot_SpriteSheet_125x125_44
+    21300084: Walk_WithShot_SpriteSheet_125x125_45
+    21300086: Walk_WithShot_SpriteSheet_125x125_46
+    21300088: Walk_WithShot_SpriteSheet_125x125_47
+    21300090: Walk_WithShot_SpriteSheet_125x125_48
+    21300092: Walk_WithShot_SpriteSheet_125x125_49
+    21300094: Walk_WithShot_SpriteSheet_125x125_50
+    21300096: Walk_WithShot_SpriteSheet_125x125_51
+    21300098: Walk_WithShot_SpriteSheet_125x125_52
+    21300100: Walk_WithShot_SpriteSheet_125x125_53
+    21300102: Walk_WithShot_SpriteSheet_125x125_54
+    21300104: Walk_WithShot_SpriteSheet_125x125_55
+    21300106: Walk_WithShot_SpriteSheet_125x125_57
+    21300108: Walk_WithShot_SpriteSheet_125x125_58
+    21300110: Walk_WithShot_SpriteSheet_125x125_59
+    21300112: Walk_WithShot_SpriteSheet_125x125_60
+    21300114: Walk_WithShot_SpriteSheet_125x125_61
+    21300116: Walk_WithShot_SpriteSheet_125x125_62
+    21300118: Walk_WithShot_SpriteSheet_125x125_63
+    21300120: Walk_WithShot_SpriteSheet_125x125_64
+    21300122: Walk_WithShot_SpriteSheet_125x125_65
+    21300124: Walk_WithShot_SpriteSheet_125x125_66
+    21300126: Walk_WithShot_SpriteSheet_125x125_67
+    21300128: Walk_WithShot_SpriteSheet_125x125_68
+    21300130: Walk_WithShot_SpriteSheet_125x125_69
+    21300132: Walk_WithShot_SpriteSheet_125x125_70
+    21300134: Walk_WithShot_SpriteSheet_125x125_71
+    21300136: Walk_WithShot_SpriteSheet_125x125_73
+    21300138: Walk_WithShot_SpriteSheet_125x125_74
+    21300140: Walk_WithShot_SpriteSheet_125x125_75
+    21300142: Walk_WithShot_SpriteSheet_125x125_76
+    21300144: Walk_WithShot_SpriteSheet_125x125_77
+    21300146: Walk_WithShot_SpriteSheet_125x125_78
+    21300148: Walk_WithShot_SpriteSheet_125x125_79
+    21300150: Walk_WithShot_SpriteSheet_125x125_80
+    21300152: Walk_WithShot_SpriteSheet_125x125_81
+    21300154: Walk_WithShot_SpriteSheet_125x125_82
+    21300156: Walk_WithShot_SpriteSheet_125x125_83
+    21300158: Walk_WithShot_SpriteSheet_125x125_84
+    21300160: Walk_WithShot_SpriteSheet_125x125_85
+    21300162: Walk_WithShot_SpriteSheet_125x125_86
+    21300164: Walk_WithShot_SpriteSheet_125x125_87
+    21300166: Walk_WithShot_SpriteSheet_125x125_89
+    21300168: Walk_WithShot_SpriteSheet_125x125_90
+    21300170: Walk_WithShot_SpriteSheet_125x125_91
+    21300172: Walk_WithShot_SpriteSheet_125x125_92
+    21300174: Walk_WithShot_SpriteSheet_125x125_93
+    21300176: Walk_WithShot_SpriteSheet_125x125_94
+    21300178: Walk_WithShot_SpriteSheet_125x125_95
+    21300180: Walk_WithShot_SpriteSheet_125x125_96
+    21300182: Walk_WithShot_SpriteSheet_125x125_97
+    21300184: Walk_WithShot_SpriteSheet_125x125_98
+    21300186: Walk_WithShot_SpriteSheet_125x125_99
+    21300188: Walk_WithShot_SpriteSheet_125x125_100
+    21300190: Walk_WithShot_SpriteSheet_125x125_101
+    21300192: Walk_WithShot_SpriteSheet_125x125_102
+    21300194: Walk_WithShot_SpriteSheet_125x125_103
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 501
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_9
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_10
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_11
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_13
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_14
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_15
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 501
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_20
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_22
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_23
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 416
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_25
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_26
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_27
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_28
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_29
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_30
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_31
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 416
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_34
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_35
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_36
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_37
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_38
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_39
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 331
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_41
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_42
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_43
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_44
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_45
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_46
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_47
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 331
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_50
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_54
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_55
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 246
+        width: 69
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_57
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_58
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_59
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_60
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_61
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_62
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_63
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 246
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_65
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_66
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_67
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_68
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_69
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_70
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_71
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 161
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_73
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_74
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_75
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_76
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_77
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_78
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_79
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 161
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_81
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_82
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_83
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_84
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_85
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_86
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_87
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 76
+        width: 68
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_89
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_90
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_91
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_92
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_93
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_94
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_95
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 76
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_96
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_97
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_98
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_99
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_100
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_101
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 64
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_102
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Walk_WithShot_SpriteSheet_125x125_103
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 0
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

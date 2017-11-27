@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour{
 
     public GameObject teleportBall;
     public GameObject crosshair;
+    public Transform BallSpawnPoint;
 
     public PlayerController otherPlayer;
 
@@ -71,6 +72,13 @@ public class PlayerController : MonoBehaviour{
     private float fanPushForce = 200;
 
 
+    public float blendIdle = 0;
+    public float blendSpeed = 3.0f;
+    public float blendMax = 100.0f;
+
+    public string activeAbility;
+
+
     /// <summary>
     /// initialize conponents of the player here
     /// </summary>
@@ -84,7 +92,7 @@ public class PlayerController : MonoBehaviour{
         crouchCollider = transform.Find("Crouch Collider").gameObject;
         crouchCollider.SetActive(false);
 
-        aimingSpeed = 70f;
+        aimingSpeed = 90f;
 
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
@@ -92,6 +100,8 @@ public class PlayerController : MonoBehaviour{
         jumping = gameObject.GetComponent<AudioSource>();
 
         playerAbilities = gameObject.GetComponent<PlayerAbilities>();
+
+        //BallSpawnPoint = transform.Find("BallSpawnPoint");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -161,6 +171,19 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
     private void FixedUpdate()
     {
+        if (activeAbility == "Shield")
+        {
+            bodyAnimator.SetLayerWeight(1, 0);
+            crosshair.SetActive(false);
+        }
+        else
+        {
+            bodyAnimator.SetLayerWeight(1, 1);
+            crosshair.SetActive(true);
+        }
+
+        aimInput = Input.GetAxis("Aim" + playerNumber);
+
         /*
           Set player bools grounded and isOnWall based on if the Ground Check and Wall Check transforms
           (which are placed on the player) are overlaping the LayerMask that specifies what counts as a
@@ -182,6 +205,20 @@ public class PlayerController : MonoBehaviour{
         jumpState = Input.GetButton("Jump" + playerNumber);
 
         CheckSpeedLimit();
+
+        bodyAnimator.SetFloat("AimInput", blendIdle);
+
+        if (aimInput < 0)
+        {
+            bodyAnimator.SetFloat("AimInput", blendIdle -= blendSpeed);
+        }
+        if (aimInput > 0)
+        {
+            bodyAnimator.SetFloat("AimInput", blendIdle += blendSpeed);
+        }
+
+        if (blendIdle < -blendMax) blendIdle = -blendMax;
+        if (blendIdle > blendMax) blendIdle = blendMax;
 
         //Walljump is ended when on ground and ability to doublejump is reset
         if (grounded)
@@ -372,7 +409,7 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
     void ShootTeleportBall()
     {
-        Vector2 shootingDirection = crosshair.transform.position - wallCheck.transform.position;
+        Vector2 shootingDirection = crosshair.transform.position - BallSpawnPoint.transform.position;
         shootingDirection.Normalize();
 
         Debug.Log(shootingDirection);
@@ -383,7 +420,7 @@ public class PlayerController : MonoBehaviour{
 
         if (insideAntigravArea == false)
         {
-            GameObject ball = Instantiate(teleportBall, wallCheck.position, wallCheck.rotation);
+            GameObject ball = Instantiate(teleportBall, BallSpawnPoint.position, BallSpawnPoint.rotation);
             ball.GetComponent<ShootBall>().playerShootingString = gameObject.tag;
             ball.GetComponent<ShootBall>().playerBeingTeleportedString = otherPlayer.tag;
             ball.SendMessage("AddSpeedToBall", shootingDirection * speed);
@@ -456,5 +493,10 @@ public class PlayerController : MonoBehaviour{
     private void DecreaseEnergy(int amount)
     {
         energy -= amount;
+    }
+
+    private void SetActiveAbility(string value)
+    {
+        activeAbility = value;
     }
 }

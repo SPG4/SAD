@@ -38,6 +38,8 @@ public class PlayerAbilities : MonoBehaviour
         chosenAbility = abilityList[0];
 
         player = gameObject.GetComponent<PlayerController>();
+
+        player.SendMessage("SetActiveAbility", chosenAbility);
     }
 
     void Update()
@@ -59,6 +61,7 @@ public class PlayerAbilities : MonoBehaviour
             if (temp >= abilityList.Count)
                 temp = 0;
             chosenAbility = abilityList[temp]; //sets current ability to next ability in list
+            player.SendMessage("SetActiveAbility", chosenAbility);
         }
 
         if (chosenAbility == "Shield")

@@ -1,0 +1,1349 @@
+fileFormatVersion: 2
+guid: 3d9a8457b118ed44281d0ddfbdf0490c
+timeCreated: 1511732851
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JumpUp_WithShot_SpriteSheet_125x125_0
+    21300002: JumpUp_WithShot_SpriteSheet_125x125_1
+    21300004: JumpUp_WithShot_SpriteSheet_125x125_2
+    21300006: JumpUp_WithShot_SpriteSheet_125x125_3
+    21300008: JumpUp_WithShot_SpriteSheet_125x125_4
+    21300010: JumpUp_WithShot_SpriteSheet_125x125_5
+    21300012: JumpUp_WithShot_SpriteSheet_125x125_7
+    21300014: JumpUp_WithShot_SpriteSheet_125x125_8
+    21300016: JumpUp_WithShot_SpriteSheet_125x125_9
+    21300018: JumpUp_WithShot_SpriteSheet_125x125_10
+    21300020: JumpUp_WithShot_SpriteSheet_125x125_11
+    21300022: JumpUp_WithShot_SpriteSheet_125x125_12
+    21300024: JumpUp_WithShot_SpriteSheet_125x125_13
+    21300026: JumpUp_WithShot_SpriteSheet_125x125_14
+    21300028: JumpUp_WithShot_SpriteSheet_125x125_15
+    21300030: JumpUp_WithShot_SpriteSheet_125x125_16
+    21300032: JumpUp_WithShot_SpriteSheet_125x125_17
+    21300034: JumpUp_WithShot_SpriteSheet_125x125_18
+    21300036: JumpUp_WithShot_SpriteSheet_125x125_20
+    21300038: JumpUp_WithShot_SpriteSheet_125x125_21
+    21300040: JumpUp_WithShot_SpriteSheet_125x125_22
+    21300042: JumpUp_WithShot_SpriteSheet_125x125_23
+    21300044: JumpUp_WithShot_SpriteSheet_125x125_24
+    21300046: JumpUp_WithShot_SpriteSheet_125x125_25
+    21300048: JumpUp_WithShot_SpriteSheet_125x125_26
+    21300050: JumpUp_WithShot_SpriteSheet_125x125_27
+    21300052: JumpUp_WithShot_SpriteSheet_125x125_28
+    21300054: JumpUp_WithShot_SpriteSheet_125x125_29
+    21300056: JumpUp_WithShot_SpriteSheet_125x125_30
+    21300058: JumpUp_WithShot_SpriteSheet_125x125_31
+    21300060: JumpUp_WithShot_SpriteSheet_125x125_33
+    21300062: JumpUp_WithShot_SpriteSheet_125x125_34
+    21300064: JumpUp_WithShot_SpriteSheet_125x125_35
+    21300066: JumpUp_WithShot_SpriteSheet_125x125_36
+    21300068: JumpUp_WithShot_SpriteSheet_125x125_37
+    21300070: JumpUp_WithShot_SpriteSheet_125x125_38
+    21300072: JumpUp_WithShot_SpriteSheet_125x125_39
+    21300074: JumpUp_WithShot_SpriteSheet_125x125_40
+    21300076: JumpUp_WithShot_SpriteSheet_125x125_41
+    21300078: JumpUp_WithShot_SpriteSheet_125x125_42
+    21300080: JumpUp_WithShot_SpriteSheet_125x125_43
+    21300082: JumpUp_WithShot_SpriteSheet_125x125_44
+    21300084: JumpUp_WithShot_SpriteSheet_125x125_46
+    21300086: JumpUp_WithShot_SpriteSheet_125x125_47
+    21300088: JumpUp_WithShot_SpriteSheet_125x125_48
+    21300090: JumpUp_WithShot_SpriteSheet_125x125_49
+    21300092: JumpUp_WithShot_SpriteSheet_125x125_50
+    21300094: JumpUp_WithShot_SpriteSheet_125x125_51
+    21300096: JumpUp_WithShot_SpriteSheet_125x125_52
+    21300098: JumpUp_WithShot_SpriteSheet_125x125_53
+    21300100: JumpUp_WithShot_SpriteSheet_125x125_54
+    21300102: JumpUp_WithShot_SpriteSheet_125x125_55
+    21300104: JumpUp_WithShot_SpriteSheet_125x125_56
+    21300106: JumpUp_WithShot_SpriteSheet_125x125_57
+    21300108: JumpUp_WithShot_SpriteSheet_125x125_59
+    21300110: JumpUp_WithShot_SpriteSheet_125x125_60
+    21300112: JumpUp_WithShot_SpriteSheet_125x125_61
+    21300114: JumpUp_WithShot_SpriteSheet_125x125_62
+    21300116: JumpUp_WithShot_SpriteSheet_125x125_63
+    21300118: JumpUp_WithShot_SpriteSheet_125x125_64
+    21300120: JumpUp_WithShot_SpriteSheet_125x125_65
+    21300122: JumpUp_WithShot_SpriteSheet_125x125_66
+    21300124: JumpUp_WithShot_SpriteSheet_125x125_67
+    21300126: JumpUp_WithShot_SpriteSheet_125x125_68
+    21300128: JumpUp_WithShot_SpriteSheet_125x125_69
+    21300130: JumpUp_WithShot_SpriteSheet_125x125_70
+    21300132: JumpUp_WithShot_SpriteSheet_125x125_72
+    21300134: JumpUp_WithShot_SpriteSheet_125x125_73
+    21300136: JumpUp_WithShot_SpriteSheet_125x125_74
+    21300138: JumpUp_WithShot_SpriteSheet_125x125_75
+    21300140: JumpUp_WithShot_SpriteSheet_125x125_76
+    21300142: JumpUp_WithShot_SpriteSheet_125x125_77
+    21300144: JumpUp_WithShot_SpriteSheet_125x125_78
+    21300146: JumpUp_WithShot_SpriteSheet_125x125_79
+    21300148: JumpUp_WithShot_SpriteSheet_125x125_80
+    21300150: JumpUp_WithShot_SpriteSheet_125x125_81
+    21300152: JumpUp_WithShot_SpriteSheet_125x125_82
+    21300154: JumpUp_WithShot_SpriteSheet_125x125_83
+    21300156: JumpUp_WithShot_SpriteSheet_125x125_85
+    21300158: JumpUp_WithShot_SpriteSheet_125x125_86
+    21300160: JumpUp_WithShot_SpriteSheet_125x125_87
+    21300162: JumpUp_WithShot_SpriteSheet_125x125_88
+    21300164: JumpUp_WithShot_SpriteSheet_125x125_89
+    21300166: JumpUp_WithShot_SpriteSheet_125x125_90
+    21300168: JumpUp_WithShot_SpriteSheet_125x125_6
+    21300170: JumpUp_WithShot_SpriteSheet_125x125_19
+    21300172: JumpUp_WithShot_SpriteSheet_125x125_32
+    21300174: JumpUp_WithShot_SpriteSheet_125x125_45
+    21300176: JumpUp_WithShot_SpriteSheet_125x125_58
+    21300178: JumpUp_WithShot_SpriteSheet_125x125_71
+    21300180: JumpUp_WithShot_SpriteSheet_125x125_84
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_7
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 529
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_9
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_10
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_11
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_12
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 529
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_17
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_20
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 441
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_22
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_24
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_25
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 441
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_30
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_31
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_33
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 353
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_35
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_36
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_37
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_38
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 353
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_40
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_42
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_44
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_46
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 265
+        width: 85
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_47
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_48
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_49
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_50
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_51
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 265
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_53
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_54
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_55
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_56
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_57
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_59
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 177
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_60
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_61
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_62
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_63
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_64
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 177
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_66
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_68
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_70
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_72
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 89
+        width: 83
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_73
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_74
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_75
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_76
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_77
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 89
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_79
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_80
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_81
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_82
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_83
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_85
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_86
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_87
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_88
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_89
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpUp_WithShot_SpriteSheet_125x125_90
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
