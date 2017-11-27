@@ -19,7 +19,8 @@ public class EventTrigger : MonoBehaviour {
             {
                 hasHappened = true;
                 Instantiate(spawnObject);
-                player2 = GameObject.FindGameObjectWithTag("Player2");
+                if (movePlayer)
+                    player2 = GameObject.FindGameObjectWithTag("Player2");
             }
         }       
     }

@@ -7,12 +7,14 @@ public class PlayerAbilities : MonoBehaviour
     public string nextAbilityInput;
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
+    public int level; //The level that is currentry played
 
     int layer_mask;
     int ball_layer;
     float mana;
     float shots;
     bool buttonPressed;
+    bool addedAbility = false;
 
     Vector2 direction;
     List<string> abilityList;
@@ -29,11 +31,14 @@ public class PlayerAbilities : MonoBehaviour
         abilityList = new List<string>();
         abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
 
-        //the code below should be deleted when the system for choosing abilities has been added
-        abilityList.Add("SizeGun");
+        if (level >= 3)
+            abilityList.Add("SizeGun");
+        if (level >= 4)
+            abilityList.Add("ShootTeleportBall");
+        if (level >= 5)
         abilityList.Add("Shield");
-        abilityList.Add("ShootTeleportBall");
-        abilityList.Add("RopeAbility");
+        
+        //abilityList.Add("RopeAbility");
 
         chosenAbility = abilityList[0];
 
@@ -186,5 +191,15 @@ public class PlayerAbilities : MonoBehaviour
     public void ResetShot(int newShotsValue)
     {
         shots = newShotsValue;
+    }
+
+    public void AddAbility(string ability)
+    {
+        if (!addedAbility)
+        {
+            abilityList.Add(ability);
+            addedAbility = true;
+            print("Success!");
+        }
     }
 }
