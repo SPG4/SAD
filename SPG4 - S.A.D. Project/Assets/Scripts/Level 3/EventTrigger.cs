@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EventTrigger : MonoBehaviour {
 
+    public bool movePlayer;
     public GameObject spawnObject;
     GameObject player2;
     bool hasHappened = false;
@@ -25,7 +26,7 @@ public class EventTrigger : MonoBehaviour {
 
     private void Update()
     {
-        if (!playerMoved && hasHappened)
+        if (!playerMoved && hasHappened && movePlayer)
         {
             if (player2.transform.position.x != 100)
             {
