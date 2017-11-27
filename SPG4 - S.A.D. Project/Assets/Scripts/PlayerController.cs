@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour{
 
     private float fanPushForce = 200;
 
+    private Transform blackHoleCheckPoint;
 
     public float blendIdle = 0;
     public float blendSpeed = 3.0f;
@@ -101,6 +102,10 @@ public class PlayerController : MonoBehaviour{
 
         playerAbilities = gameObject.GetComponent<PlayerAbilities>();
 
+        blackHoleCheckPoint = GameObject.Find("StartPoint").GetComponent<Transform>();
+
+        Debug.Log(blackHoleCheckPoint);
+
         //BallSpawnPoint = transform.Find("BallSpawnPoint");
     }
 
@@ -115,6 +120,13 @@ public class PlayerController : MonoBehaviour{
                 DecreaseEnergy(1);
                 otherPlayer.SendMessage("DecreaseEnergy", 1);
             }
+        }
+
+        if (collision.gameObject.tag == "Death trigger")
+        {
+            gameObject.transform.position = blackHoleCheckPoint.transform.position;
+            otherPlayer.transform.position = blackHoleCheckPoint.transform.position;
+            Debug.Log(blackHoleCheckPoint);
         }
     }
 
@@ -498,5 +510,12 @@ public class PlayerController : MonoBehaviour{
     private void SetActiveAbility(string value)
     {
         activeAbility = value;
+    }
+
+    private void SetBlackHoleCheckPoint(GameObject blackHole)
+    {
+        Transform blackHoleExit;
+        blackHoleExit = blackHole.transform.Find("Black hole exit");
+        blackHoleCheckPoint = blackHoleExit;
     }
 }

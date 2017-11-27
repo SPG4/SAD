@@ -16,6 +16,8 @@ TagManager:
   - Black hole exit
   - Fan
   - Energy button
+  - Eyeball respawn trigger
+  - Death trigger
   layers:
   - Default
   - TransparentFX
@@ -39,7 +41,7 @@ TagManager:
   - Mud floor
   - Fan trigger area
   - Interactable ball object
-  - 
+  - Eyeball respawn trigger
   - 
   - 
   - 

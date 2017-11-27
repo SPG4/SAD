@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableObjects : MonoBehaviour
 {
-    float force = 300;
+    float force = 500;
     // Vector2 direction = new Vector2(1, 0);
 
     Vector3 maxLocalScale, scale;

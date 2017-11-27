@@ -12,6 +12,7 @@ public class ShootBall : MonoBehaviour
     GameObject playerBeingTeleported;
     GameObject playerShooting;
     BlackHoleController blackHole;
+    GameObject blackHoleCheckPoint;
     Vector2 playerShootingLocalScale;
     Vector2 ballDirection;
 
@@ -105,6 +106,9 @@ public class ShootBall : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Black hole"))
         {
             blackHole = collision.transform.gameObject.GetComponent<BlackHoleController>();
+            blackHoleCheckPoint = collision.transform.gameObject;
+            playerBeingTeleported.SendMessage("SetBlackHoleCheckPoint", blackHoleCheckPoint);
+            playerShooting.SendMessage("SetBlackHoleCheckPoint", blackHoleCheckPoint);
             TeleportBothPlayers();
         }
 

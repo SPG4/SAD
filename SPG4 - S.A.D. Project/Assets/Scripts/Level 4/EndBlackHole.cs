@@ -11,7 +11,7 @@ public class EndBlackHole : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (gameObject.transform.childCount == 0)
+        if (gameObject.transform.childCount == 1)
             gameObject.transform.localScale *= 1.07f;
 	}
 }
