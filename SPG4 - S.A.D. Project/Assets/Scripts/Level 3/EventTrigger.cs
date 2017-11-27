@@ -29,7 +29,7 @@ public class EventTrigger : MonoBehaviour {
     {
         if (!playerMoved && hasHappened && movePlayer)
         {
-            if (player2.transform.position.x != 100)
+            if (player2.transform.position.x != 115)
             {
                 float step = speed * Time.deltaTime;
                 player2.transform.position = Vector3.MoveTowards(player2.transform.position, new Vector3(115, -14.6f, 0), step);

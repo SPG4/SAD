@@ -31,13 +31,19 @@ public class PlayerAbilities : MonoBehaviour
         abilityList = new List<string>();
         abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
 
-        //if (level >= 3)
+        if (level >= 3)
             abilityList.Add("SizeGun");
-        //if (level >= 4)
+        if (level >= 4)
             abilityList.Add("ShootTeleportBall");
-        //if (level >= 5)
-        abilityList.Add("Shield");
+        if (level >= 5)
+            abilityList.Add("Shield");
         
+        if (level == 0)
+        {
+            abilityList.Add("SizeGun");
+            abilityList.Add("ShootTeleportBall");
+            abilityList.Add("Shield");
+        }
         //abilityList.Add("RopeAbility");
 
         chosenAbility = abilityList[0];
