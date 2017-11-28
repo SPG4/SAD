@@ -7,6 +7,7 @@ public class MovingObject : MonoBehaviour {
     public Vector2 direction; //y or x movement
     public float speed;
     public float timer;
+    public bool wait;
     float time;
     float movementSpeed;
     Vector2 startpos;
@@ -22,20 +23,28 @@ public class MovingObject : MonoBehaviour {
 	
 	void Update ()
     {
-        if (time > 0)
+        if (!wait)
         {
-            time -= Time.deltaTime;
-            gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * movementSpeed;
-        }
-        else
-        {
-            if (new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) == startpos)
+            if (time > 0)
             {
-                time = timer;
+                time -= Time.deltaTime;
+                gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * movementSpeed;
             }
             else
-                gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * -movementSpeed;
+            {
+                if (new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) == startpos)
+                {
+                    time = timer;
+                }
+                else
+                    gameObject.transform.position += new Vector3(direction.x, direction.y, 0) * -movementSpeed;
 
-        }     
+            }
+        }
+    }
+
+    public void StartMove()
+    {
+        wait = false;
     }
 }

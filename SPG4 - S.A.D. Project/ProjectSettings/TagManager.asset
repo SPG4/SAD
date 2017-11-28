@@ -18,6 +18,7 @@ TagManager:
   - Energy button
   - Eyeball respawn trigger
   - Death trigger
+  - PuzzlePiece
   layers:
   - Default
   - TransparentFX
