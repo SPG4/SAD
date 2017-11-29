@@ -15,14 +15,18 @@ public class DialogueManager : MonoBehaviour
     public bool useList;
     bool player1Input = false;
     bool player2Input = false;
+    public bool mayContinue = true;
 
     void Update()
     {
-        if (Input.GetButtonDown("Next1"))
-            player1Input = true;
+        if (mayContinue)
+        {
+            if (Input.GetButtonDown("Next1"))
+                player1Input = true;
 
-        if (Input.GetButtonDown("Next2"))
-            player2Input = true;
+            if (Input.GetButtonDown("Next2"))
+                player2Input = true;
+        }
 
         if (diaActive && player1Input && player2Input)
         {

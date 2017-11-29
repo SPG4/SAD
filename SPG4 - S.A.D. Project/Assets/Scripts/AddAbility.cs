@@ -14,7 +14,6 @@ public class AddAbility : MonoBehaviour {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             collision.gameObject.GetComponent<Transform>().root.SendMessage("AddAbility", abilityToAdd);
-            print("Col");
         }
     }
 }

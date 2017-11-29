@@ -8,6 +8,7 @@ public class MovingObject : MonoBehaviour {
     public float speed;
     public float timer;
     public bool wait;
+    public bool notRando;
     float time;
     float movementSpeed;
     Vector2 startpos;
@@ -16,7 +17,10 @@ public class MovingObject : MonoBehaviour {
     {
         //timer = Random.Range(0, movementTimeLimit);
         time = timer;
-        movementSpeed = Random.Range(speed - 0.1f, speed + 0.1f);
+        if (!notRando)
+            movementSpeed = Random.Range(speed - 0.1f, speed + 0.1f);
+        else
+            movementSpeed = speed;
         startpos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
 
     }

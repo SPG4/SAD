@@ -205,7 +205,8 @@ public class PlayerAbilities : MonoBehaviour
         {
             abilityList.Add(ability);
             addedAbility = true;
-            print("Success!");
+            chosenAbility = ability;
+            Debug.Log("Added" + ability + buttonInput);
         }
     }
 }

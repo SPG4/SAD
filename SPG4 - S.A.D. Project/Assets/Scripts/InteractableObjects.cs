@@ -9,6 +9,7 @@ public class InteractableObjects : MonoBehaviour
 
     Vector3 maxLocalScale, scale;
     float maxlocalScaleMagnitude;
+    public bool usedP1 = false, usedP2 = false;
 
     void Start()
     {
@@ -42,9 +43,16 @@ public class InteractableObjects : MonoBehaviour
 
         if (newLocalScaleMagnitude < maxlocalScaleMagnitude) //The object can be scaled as long it hasn't reached its max/min-scale
             if (player == "UseAbilityP1")
+            {
                 transform.localScale += scale; //Scale up
+                usedP1 = true;
+            }
 
         if (player == "UseAbilityP2")
+        {
+            usedP2 = true;
             transform.localScale += -scale; //Scale down
+        }
+
     }
 }
