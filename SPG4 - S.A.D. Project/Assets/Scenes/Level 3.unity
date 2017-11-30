@@ -244,7 +244,6 @@ Transform:
   - {fileID: 1325405094}
   - {fileID: 1215335837}
   - {fileID: 319273302}
-  - {fileID: 2127045093}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -430,6 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!1 &319273301
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,9 +472,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useAbilityP1: -1
+  useAbilityP2: -1
+  newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:
-  - Watch out for that rat trap down there!
+  - 'Green: Watch out for that rat trap down there!'
+  useSpecial: 0
 --- !u!61 &319273304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -693,7 +698,7 @@ Prefab:
       objectReference: {fileID: 909748017}
     - target: {fileID: 1967521296056078, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
@@ -712,11 +717,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4854632597042652, guid: e85bccefe397c694c941264208c2bd87, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.0599847
+      value: -0.859987
       objectReference: {fileID: 0}
     - target: {fileID: 4854632597042652, guid: e85bccefe397c694c941264208c2bd87, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.7460754
+      value: -3.2460756
       objectReference: {fileID: 0}
     - target: {fileID: 4854632597042652, guid: e85bccefe397c694c941264208c2bd87, type: 2}
       propertyPath: m_LocalPosition.z
@@ -868,11 +873,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.9
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1033,6 +1038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!61 &511416851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1277,9 +1284,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useAbilityP1: -1
+  useAbilityP2: -1
+  newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:
   - Phew, we did it!
+  useSpecial: 0
 --- !u!114 &579746686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,6 +1635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!70 &730606148
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1702,7 +1715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &764960115
 Animator:
   serializedVersion: 3
@@ -2273,6 +2286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!50 &1025163423
 Rigidbody2D:
   serializedVersion: 4
@@ -2471,73 +2486,6 @@ Prefab:
     - {fileID: 61133864679422260, guid: 44a8309eace0dc4409c7e6d69d021c95, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 44a8309eace0dc4409c7e6d69d021c95, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1060708378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1060708381}
-  - component: {fileID: 1060708380}
-  - component: {fileID: 1060708379}
-  m_Layer: 0
-  m_Name: AbilityTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1060708379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1060708378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6858909f864afe439280a7511765d21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityToAdd: ShootTeleportBall
---- !u!61 &1060708380
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1060708378}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.989975, y: -0.4151554}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.02005, y: 2.1696892}
-  m_EdgeRadius: 0
---- !u!4 &1060708381
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1060708378}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 145.95, y: -13.2, z: -0.8515625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1119831075
 Prefab:
   m_ObjectHideFlags: 0
@@ -2668,8 +2616,13 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114805454834395838, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
-      propertyPath: diaLines.Array.size
+      propertyPath: diaList.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805454834395838, guid: cb1254f159679984eaccc0af74772536,
+        type: 2}
+      propertyPath: diaLines.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
@@ -2714,12 +2667,12 @@ Prefab:
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
+      value: 181.00002
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
@@ -2734,22 +2687,22 @@ Prefab:
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224246771405965932, guid: cb1254f159679984eaccc0af74772536,
         type: 2}
@@ -2902,6 +2855,22 @@ Prefab:
       value: "I don\u2019t know, let\u2019s just get out of this place as fast as
         possible!"
       objectReference: {fileID: 0}
+    - target: {fileID: 114805454834395838, guid: cb1254f159679984eaccc0af74772536,
+        type: 2}
+      propertyPath: diaList.Array.data[0]
+      value: "Green: What\u2019s all this noise about?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805454834395838, guid: cb1254f159679984eaccc0af74772536,
+        type: 2}
+      propertyPath: diaList.Array.data[1]
+      value: "Blue: I don\u2019t know, let\u2019s just get out of this place as fast
+        as possible!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114805454834395838, guid: cb1254f159679984eaccc0af74772536,
+        type: 2}
+      propertyPath: useList
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb1254f159679984eaccc0af74772536, type: 2}
   m_IsPrefabParent: 0
@@ -2983,12 +2952,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useAbilityP1: -1
+  useAbilityP2: -1
+  newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:
-  - Oh, no! I fell down!
-  - God, you're so clumsy!
-  - Hey, stop that, and help me out of here
-  - Urgh, fine. Let's have a look around
+  - 'Green: Oh, no! I fell down!'
+  - 'Blue: God, you''re so clumsy!'
+  - 'Green: Hey, stop that, and help me out of here'
+  - 'Blue: Urgh, fine. Let''s have a look around'
+  useSpecial: 0
 --- !u!61 &1215335839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3186,6 +3159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!1 &1325405093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,11 +3202,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useAbilityP1: -1
+  useAbilityP2: -1
+  newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:
-  - This music is too loud!
-  - You call this noise music?
-  - Whatever, we have to stop it somehow
+  - 'Green: This music is too loud!'
+  - 'Blue: You call this noise music?'
+  - 'Green: Whatever, we have to stop it somehow'
+  useSpecial: 0
 --- !u!61 &1325405096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4196,6 +4175,166 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8352356, y: 5.40402}
   m_EdgeRadius: 0
+--- !u!1 &1882705316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1882705321}
+  - component: {fileID: 1882705320}
+  - component: {fileID: 1882705319}
+  - component: {fileID: 1882705317}
+  - component: {fileID: 1882705318}
+  - component: {fileID: 1882705322}
+  m_Layer: 21
+  m_Name: AbilityObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1882705317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
+--- !u!61 &1882705318
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.36, y: 2.36}
+    newSize: {x: 2.36, y: 2.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.36, y: 2.36}
+  m_EdgeRadius: 0
+--- !u!50 &1882705319
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!212 &1882705320
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 27e2321de44c9514cb680998f57f258c, type: 3}
+  m_Color: {r: 0.72794116, g: 0.17663278, b: 0.17663278, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.36, y: 2.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1882705321
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 148.78, y: -14.887, z: 0}
+  m_LocalScale: {x: 1.4396341, y: 0.3663177, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1882705322
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882705316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.36, y: 2.36}
+    newSize: {x: 2.36, y: 2.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.36, y: 2.36}
+  m_EdgeRadius: 0
 --- !u!4 &1978783092 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946,
@@ -4332,6 +4471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!61 &2036528138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4528,7 +4669,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095930316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 930146dff0e027042928a227ca7634b4, type: 3}
   m_Name: 
@@ -4550,9 +4691,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2127045093}
   - component: {fileID: 2127045092}
+  - component: {fileID: 2127045094}
   - component: {fileID: 2127045091}
   m_Layer: 0
-  m_Name: 4DialogueTrigger
+  m_Name: AbilityGain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4569,13 +4711,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useAbilityP1: 14
+  useAbilityP2: 16
+  newAbilityObject: {fileID: 1882705316}
   dialogue: 
   diaLines:
-  - "Wow, that was intense, I\u2019m glad it\u2019s over."
-  - "Well, now you know what it\u2019s like hanging around you."
-  - "Hey! That\u2019s not very nice."
-  - "Maybe not, but it\u2019s true. Sometimes I wish I could just teleport you away\u2026
-    Hmm, hold on, maybe I can"
+  - "Green: Wow, that was intense, I\u2019m glad it\u2019s over."
+  - "Blue: Well, now you know what it\u2019s like hanging around you."
+  - "Green: Hey! That\u2019s not very nice."
+  - "Blue: Maybe not, but it\u2019s true. Sometimes I wish I could just teleport you
+    away\u2026 hm, hold on, maybe I can."
+  - Try to teleport the green player to the red object
+  - 'Green: Well, you know what? Sometimes I feel the same way about you.'
+  - Try teleport the blue player to the red object
+  - "Blue: Oh this is pointless, let\u2019s just move on."
+  useSpecial: 1
 --- !u!61 &2127045092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4608,12 +4758,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2127045090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 142.37, y: -13.73, z: -0.8515625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 125539096}
-  m_RootOrder: 3
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2127045094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127045090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6858909f864afe439280a7511765d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityToAdd: ShootTeleportBall
 --- !u!1 &2135630395
 GameObject:
   m_ObjectHideFlags: 0

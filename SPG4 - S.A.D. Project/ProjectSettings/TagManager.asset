@@ -19,6 +19,8 @@ TagManager:
   - Eyeball respawn trigger
   - Death trigger
   - PuzzlePiece
+  - Ball1
+  - Ball2
   layers:
   - Default
   - TransparentFX
