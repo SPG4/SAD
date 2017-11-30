@@ -305,7 +305,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1722864141588178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.21, y: 1.7, z: 0}
+  m_LocalPosition: {x: 73.05, y: 6.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4401623427380436}
@@ -325,7 +325,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1018328886884416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.682, z: 0}
+  m_LocalPosition: {x: 0, y: -0.83, z: 0}
   m_LocalScale: {x: 1, y: 0.27000028, z: 1}
   m_Children: []
   m_Father: {fileID: 4854632597042652}
@@ -401,7 +401,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048773885, y: 0.12896279}
+  m_Offset: {x: -0.048773885, y: 0.13394362}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -412,7 +412,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0650306, y: 0.6152831}
+  m_Size: {x: 1.0650306, y: 0.7746651}
   m_EdgeRadius: 0
 --- !u!61 &61931521823135574
 BoxCollider2D:
@@ -580,6 +580,7 @@ MonoBehaviour:
   nextAbilityInput: NextAbilityP1
   buttonInput: UseAbilityP1
   chosenAbility: ShootTeleportBall
+  level: 0
 --- !u!114 &114700476049697734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -705,7 +706,7 @@ SpriteRenderer:
   m_SortingLayerID: 416759127
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300030, guid: a865913a67aebc647809998784f4c377, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 4982252a0b8f5f447825213841b41193, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

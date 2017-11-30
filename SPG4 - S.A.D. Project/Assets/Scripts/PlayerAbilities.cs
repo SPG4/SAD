@@ -86,7 +86,7 @@ public class PlayerAbilities : MonoBehaviour
             //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
             //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
             //change shot in another script but we can fix that later
-            if (chosenAbility == "ShootTeleportBall" && shots > 0)
+            if (chosenAbility == "ShootTeleportBall" && shots > 0 && player.InsideAntiGravArea() == false)
             {
                 shots--;
                 gameObject.SendMessage(chosenAbility);

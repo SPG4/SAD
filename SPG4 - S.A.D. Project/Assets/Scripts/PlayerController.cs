@@ -79,6 +79,8 @@ public class PlayerController : MonoBehaviour{
 
     public string activeAbility;
 
+    private bool hasJumped;
+
 
     /// <summary>
     /// initialize conponents of the player here
@@ -149,8 +151,6 @@ public class PlayerController : MonoBehaviour{
         if (collision.gameObject.tag == "Teleport antigrav field")
         {
             insideAntigravArea = false;
-            shooting = false;
-            playerAbilities.SendMessage("ResetShot", 1);
         }
     }
 
@@ -209,6 +209,8 @@ public class PlayerController : MonoBehaviour{
 
         bodyAnimator.SetBool("IsOnWall", isOnWall);
         bodyAnimator.SetBool("DoubleJumped", hasDoubleJumped);
+        bodyAnimator.SetFloat("vSpeed", ridgidbodyPlayer.velocity.y);
+        bodyAnimator.SetBool("hasJumped", hasJumped);
 
         bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
         handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
@@ -235,6 +237,7 @@ public class PlayerController : MonoBehaviour{
         //Walljump is ended when on ground and ability to doublejump is reset
         if (grounded)
         {
+            hasJumped = false;
             hasDoubleJumped = false;
             wallJumping = false;
         }
@@ -346,6 +349,7 @@ public class PlayerController : MonoBehaviour{
     public void Jump()
     {
         jumping.Play();
+        hasJumped = true;
         ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
         velocity = ridgidbodyPlayer.velocity;
         ridgidbodyPlayer.AddForce(Vector2.up * jumpForce);
@@ -517,5 +521,10 @@ public class PlayerController : MonoBehaviour{
         Transform blackHoleExit;
         blackHoleExit = blackHole.transform.Find("Black hole exit");
         blackHoleCheckPoint = blackHoleExit;
+    }
+
+    public bool InsideAntiGravArea()
+    {
+        return insideAntigravArea;
     }
 }
