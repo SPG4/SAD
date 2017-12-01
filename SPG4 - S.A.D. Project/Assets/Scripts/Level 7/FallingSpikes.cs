@@ -6,7 +6,8 @@ public class FallingSpikes : MonoBehaviour {
     public float spikeTime;
     public bool falling;
     public bool fallTime;
-    
+    Rigidbody2D rb;
+    public GameObject obj;
 	// Use this for initialization
 	void Start () {
 		
@@ -22,6 +23,8 @@ public class FallingSpikes : MonoBehaviour {
         if (spikeTime >= 10.0f)
         {
             falling = true;
+            rb = gameObject.GetComponent<Rigidbody2D>();
+            rb.bodyType = RigidbodyType2D.Dynamic;
         }
 	}
 
