@@ -17,22 +17,39 @@ public class InsideTAM : MonoBehaviour {
         orgTime = time;
 	}
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        startTimer = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        startTimer = false;
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == LayerMask.NameToLayer("Player") || 
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player") ||
             collision.gameObject.layer == LayerMask.NameToLayer("Projectiles"))
         {
-            startTimer = true;
+            //startTimer = true;
             if (time <= 0)
             {
-                moveObjects(collision.gameObject);
+                //moveObjects(collision.gameObject);
+                MovePlayers();
                 time = orgTime;
             }
         }
-        else
+
+        // Check for projectile and move it outside.
+        if (time <= 0 && collision.gameObject.name == "Crate1 (3)")
         {
-            startTimer = false;
+            MoveObjects(collision.gameObject);
         }
+        //else
+        //{
+        //    startTimer = false;
+        //}
     }
 
     void Update()
@@ -44,10 +61,15 @@ public class InsideTAM : MonoBehaviour {
 
     }
 
-    void moveObjects(GameObject obj)
+    void MoveObjects(GameObject obj)
+    {
+        //ply2.gameObject.transform.position = exit.transform.position;
+        //ply1.gameObject.transform.position = exit.transform.position;
+        obj.gameObject.transform.position = exit.transform.position;
+    }
+    void MovePlayers()
     {
         ply1.gameObject.transform.position = exit.transform.position;
         ply2.gameObject.transform.position = exit.transform.position;
-        obj.gameObject.transform.position = exit.transform.position;
     }
 }

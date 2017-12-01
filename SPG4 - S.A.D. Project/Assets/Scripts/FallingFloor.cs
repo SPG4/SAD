@@ -29,6 +29,9 @@ public class FallingFloor : MonoBehaviour
     private bool switchChild = false;
     private bool canStart = false;
 
+    public GameObject go;
+    Rigidbody2D rbb;
+
     // Use this for initialization
     void Start()
     {
@@ -39,6 +42,7 @@ public class FallingFloor : MonoBehaviour
             children[i] = transform.GetChild(i).gameObject;
             ++numberOfChildren;
         }
+        
     }
 
     void FixedUpdate()
@@ -48,7 +52,7 @@ public class FallingFloor : MonoBehaviour
             if (switchChild == false && i < numberOfChildren)
             {
                 Rigidbody2D rb = children[i].GetComponent<Rigidbody2D>();
-
+                
                 if (0 < dropEverySeconds)
                 {
                     dropEverySeconds -= Time.fixedDeltaTime;
