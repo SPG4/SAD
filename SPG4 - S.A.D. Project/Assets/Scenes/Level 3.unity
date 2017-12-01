@@ -1305,19 +1305,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d49f30144bb054195cc2ca948d23bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 
---- !u!65 &530640101
-BoxCollider:
+  LevelToLoad: Level 4
+--- !u!61 &530640101
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 530640099}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.82}
+    newSize: {x: 2.86, y: 2.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.86, y: 2.82, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.86, y: 2.82}
+  m_EdgeRadius: 0
 --- !u!212 &530640102
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1413,7 +1426,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579746683}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 

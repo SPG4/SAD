@@ -64,5 +64,12 @@ public class CollisionEvent : MonoBehaviour {
         
     }
 
-
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.layer == LayerMask.NameToLayer("Boss"))
+        {
+            coll.gameObject.SendMessage("ApplyDamage");
+            Destroy(gameObject);
+        }
+    }
 }

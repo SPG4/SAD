@@ -15,7 +15,6 @@ public class TAM : MonoBehaviour
     private float currentPosition = 0.0f;
 
     public float health = 3;
-    float damage;
 
     void Update()
     {
@@ -36,6 +35,7 @@ public class TAM : MonoBehaviour
             direction = 1.0f;
 
         transform.position = Vector3.Lerp(startPoint.position, endPoint.position, currentPosition);
+        transform.rotation = Quaternion.identity;
 
         if (currentPosition >= 0.99f)
             hasPaused = false;
@@ -48,9 +48,9 @@ public class TAM : MonoBehaviour
         }
     }
 
-    public void ApplyDamage(float damage)
+    public void ApplyDamage()
     {
-        health -= damage;
+        health -= 1;
     }
 
     /// <summary>
