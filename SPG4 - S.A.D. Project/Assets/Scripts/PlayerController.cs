@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour{
 
     //Public fields
     public int playerNumber;
+    public string activeAbility;
 
     [SerializeField]
     private float speed = 3f;
@@ -35,7 +36,6 @@ public class PlayerController : MonoBehaviour{
     public PlayerController otherPlayer;
 
     public Animator bodyAnimator;
-    public Animator handsAnimator;
 
     //Private fields 
     private bool jumpState;
@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour{
     private bool shooting;
     private bool wallJumped = false;
     private bool wallJumping = false;
+    private bool hasJumped;
     private bool insideAntigravArea;
 
     [SerializeField]
@@ -57,6 +58,10 @@ public class PlayerController : MonoBehaviour{
     private float aimInput;
     private float aimingSpeed;
     private float worldHalfSize;
+    private float fanPushForce = 200;
+    private float blendIdle = 0;
+    private float blendSpeed = 3.0f;
+    private float blendMax = 100.0f;
     private Vector2 velocity;
     private Vector3 initialVector = Vector3.forward;
     private Vector3 worldSize;
@@ -64,23 +69,11 @@ public class PlayerController : MonoBehaviour{
     private Rigidbody2D ridgidbodyPlayer;
     private GameObject defaultCollider;
     private GameObject crouchCollider;
+    private Transform blackHoleCheckPoint;
 
     private PlayerAbilities playerAbilities;
     private EnergyButtonController energyBtn;
     private AudioSource jumping;
-
-    private float fanPushForce = 200;
-
-    private Transform blackHoleCheckPoint;
-
-    public float blendIdle = 0;
-    public float blendSpeed = 3.0f;
-    public float blendMax = 100.0f;
-
-    public string activeAbility;
-
-    private bool hasJumped;
-
 
     /// <summary>
     /// initialize conponents of the player here
@@ -205,7 +198,6 @@ public class PlayerController : MonoBehaviour{
         isOnWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
 
         bodyAnimator.SetBool("Ground", grounded);
-        handsAnimator.SetBool("Ground", grounded);
 
         bodyAnimator.SetBool("IsOnWall", isOnWall);
         bodyAnimator.SetBool("DoubleJumped", hasDoubleJumped);
@@ -213,7 +205,6 @@ public class PlayerController : MonoBehaviour{
         bodyAnimator.SetBool("hasJumped", hasJumped);
 
         bodyAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
-        handsAnimator.SetFloat("xSpeed", Mathf.Abs(horizontalInput));
 
         oldJumpState = jumpState;
         jumpState = Input.GetButton("Jump" + playerNumber);
