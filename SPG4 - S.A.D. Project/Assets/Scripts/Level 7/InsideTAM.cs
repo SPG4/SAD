@@ -19,12 +19,16 @@ public class InsideTAM : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        startTimer = true;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player")){
+            startTimer = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        startTimer = false;
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player")){
+            startTimer = false;
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
