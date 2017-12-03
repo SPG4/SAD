@@ -5,6 +5,7 @@ using UnityEngine;
 public class TeleportwallController : MonoBehaviour {
 
     public bool isUsableOnce;
+    public bool isRetarded;
 
     private bool hasBeenUsed;
     private GameObject parent;
@@ -30,7 +31,13 @@ public class TeleportwallController : MonoBehaviour {
                 hasBeenUsed = true;
             }
 
-            teleportBall.SendMessage("TeleportBallEvent");
+            if (isRetarded)
+            {
+                Vector3 position = new Vector3(teleportBall.transform.position.x, teleportBall.transform.position.y + 1, teleportBall.transform.position.y);
+                teleportBall.SendMessage("TeleportBallEventForTeleportWall", position);
+            }
+            else if (!isRetarded)
+                teleportBall.SendMessage("TeleportBallEvent");
         }
     }
 

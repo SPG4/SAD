@@ -134,6 +134,7 @@ public class ShootBall : MonoBehaviour
         {
             insideAntigravField = false;
             ReturnToNormal();
+            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x+1, GetComponent<Rigidbody2D>().velocity.y+1);
         }
     }
 
@@ -158,6 +159,13 @@ public class ShootBall : MonoBehaviour
     {
         Destroy(gameObject);
         playerBeingTeleported.SendMessage("Teleport", gameObject.transform.position);
+        ResetShootingVariables();
+    }
+
+    private void TeleportBallEventForTeleportWall(Vector3 position)
+    {
+        Destroy(gameObject);
+        playerBeingTeleported.SendMessage("Teleport", position);
         ResetShootingVariables();
     }
 

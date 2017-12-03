@@ -14,6 +14,7 @@ public class PlayerAbilities : MonoBehaviour
     int layer_mask;
     int ball_layer;
     float mana;
+    [SerializeField]
     float shots;
     bool buttonPressed;
     bool addedAbility = false;
@@ -84,7 +85,7 @@ public class PlayerAbilities : MonoBehaviour
 
         else if (Input.GetButtonDown(buttonInput))
         {
-            analyticsTracker.TriggerEvent();
+            //analyticsTracker.TriggerEvent();
             if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility" || chosenAbility == "RopeAbility")
                 CastRayAbility();
 
@@ -95,11 +96,6 @@ public class PlayerAbilities : MonoBehaviour
             {
                 shots--;
                 gameObject.SendMessage(chosenAbility);
-
-                if (gameObject.name == "Player 1")
-                    usedP1 = true;
-                if (gameObject.name == "Player 2")
-                    usedP2 = true;
             }
         }
         if (transform.GetChild(0).gameObject.tag == "ShieldP1")
