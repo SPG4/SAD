@@ -20,7 +20,7 @@ public class PuzzleSlot : MonoBehaviour {
     {
         if (collision.gameObject.tag == "PuzzlePiece")
         {
-            collision.gameObject.GetComponent<Transform>().position = gameObject.GetComponent<Transform>().position;
+            //collision.gameObject.GetComponent<Transform>().position = gameObject.GetComponent<Transform>().position;
 
             if (slot == 1)
             {

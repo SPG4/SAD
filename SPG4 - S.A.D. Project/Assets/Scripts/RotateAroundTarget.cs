@@ -41,7 +41,7 @@ public class RotateAroundTarget : MonoBehaviour {
             rotateDegrees = newAngle - angleBetween;
 
             transform.RotateAround(target.position, Vector3.forward, rotateDegrees);
-            Debug.Log(newAngle);
+            //Debug.Log(newAngle);
         }
     }
 
