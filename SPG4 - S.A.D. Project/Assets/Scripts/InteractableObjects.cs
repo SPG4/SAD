@@ -54,13 +54,4 @@ public class InteractableObjects : MonoBehaviour
             transform.localScale += -scale; //Scale down
         }
     }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Ball1")
-            usedP1 = true;
-
-        if (other.gameObject.tag == "Ball2")
-            usedP2 = true;
-    }
 }
