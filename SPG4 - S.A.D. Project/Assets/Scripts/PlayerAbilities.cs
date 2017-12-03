@@ -17,6 +17,7 @@ public class PlayerAbilities : MonoBehaviour
     float shots;
     bool buttonPressed;
     bool addedAbility = false;
+    public bool usedP1, usedP2;
 
     Vector2 direction;
     List<string> abilityList;
@@ -96,7 +97,12 @@ public class PlayerAbilities : MonoBehaviour
                 gameObject.SendMessage(chosenAbility);
             }
         }
-
+        if (transform.GetChild(0).gameObject.tag == "ShieldP1")
+            if (transform.GetChild(0).gameObject.activeSelf)
+                usedP1 = true;
+        if (transform.GetChild(0).gameObject.tag == "ShieldP2")
+            if (transform.GetChild(0).gameObject.activeSelf)
+                usedP2 = true;
         //Debug.Log(chosenAbility);
     }
     /// <summary>

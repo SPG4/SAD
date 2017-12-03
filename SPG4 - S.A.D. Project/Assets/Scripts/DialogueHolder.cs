@@ -8,6 +8,7 @@ public class DialogueHolder : MonoBehaviour
     public GameObject newAbilityObject;
     public string dialogue;
     private DialogueManager diaManager;
+    private PlayerAbilities P1, P2;
     public string[] diaLines;
     public bool useSpecial;
     bool doneOnce = false;
@@ -18,6 +19,9 @@ public class DialogueHolder : MonoBehaviour
     void Start()
     {
         diaManager = FindObjectOfType<DialogueManager>();
+
+        P1 = GameObject.Find("Player 1").GetComponent<PlayerAbilities>();
+        P2 = GameObject.Find("Player 2").GetComponent<PlayerAbilities>();
     }
 
     private void Update()
@@ -27,7 +31,7 @@ public class DialogueHolder : MonoBehaviour
             if (diaManager.currentLine == useAbilityP1)
             {
                 diaManager.mayContinue = false;
-                if (newAbilityObject != null && newAbilityObject.GetComponent<InteractableObjects>().usedP1 == true)
+                if (newAbilityObject != null && newAbilityObject.GetComponent<InteractableObjects>().usedP1 == true || P1.usedP1 == true)
                 {
                     diaManager.currentLine++;
                     //newAbilityObject.GetComponent<InteractableObjects>().usedP1 = false;
@@ -37,7 +41,7 @@ public class DialogueHolder : MonoBehaviour
             else if (diaManager.currentLine == useAbilityP2)
             {
                 diaManager.mayContinue = false;
-                if (newAbilityObject != null && newAbilityObject.GetComponent<InteractableObjects>().usedP2 == true)
+                if (newAbilityObject != null && newAbilityObject.GetComponent<InteractableObjects>().usedP2 == true || P2.usedP2 == true)
                 {
                     diaManager.currentLine++;
                     //newAbilityObject.GetComponent<InteractableObjects>().usedP2 = false;

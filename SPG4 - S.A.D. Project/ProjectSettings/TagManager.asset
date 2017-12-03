@@ -23,6 +23,8 @@ TagManager:
   - Ball2
   - P1Collider
   - P2Collider
+  - ShieldP1
+  - ShieldP2
   layers:
   - Default
   - TransparentFX
