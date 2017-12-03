@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
+
 
 public class PlayerAbilities : MonoBehaviour
 {
@@ -21,6 +23,7 @@ public class PlayerAbilities : MonoBehaviour
     DistanceJoint2D distanceJoint;
     SpringJoint2D springJoint;
     PlayerController player;
+    public AnalyticsTracker analyticsTracker;
 
     void Start()
     {
@@ -80,6 +83,7 @@ public class PlayerAbilities : MonoBehaviour
 
         else if (Input.GetButtonDown(buttonInput))
         {
+            analyticsTracker.TriggerEvent();
             if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility" || chosenAbility == "RopeAbility")
                 CastRayAbility();
 

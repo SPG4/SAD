@@ -21,6 +21,8 @@ TagManager:
   - PuzzlePiece
   - Ball1
   - Ball2
+  - P1Collider
+  - P2Collider
   layers:
   - Default
   - TransparentFX

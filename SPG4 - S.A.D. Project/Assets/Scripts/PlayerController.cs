@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour{
             insideAntigravArea = true;
         }
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Fan trigger area"))
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Fan trigger area"))
         {
             if (collision.GetComponent<FanController>().IsFanOn())
                 AffectedByFan(fanPushForce);

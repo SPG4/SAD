@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 61737284919540348}
   m_Layer: 9
   m_Name: Default Collider
-  m_TagString: Untagged
+  m_TagString: P1Collider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 114700476049697734}
   - component: {fileID: 114670875342534266}
   - component: {fileID: 82401092193889090}
+  - component: {fileID: 114696003308232266}
   m_Layer: 9
   m_Name: Player 1
   m_TagString: Player
@@ -274,7 +275,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1722864141588178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.05, y: 6.3, z: 0}
+  m_LocalPosition: {x: -24.46, y: 21.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4401623427380436}
@@ -533,6 +534,34 @@ MonoBehaviour:
   buttonInput: UseAbilityP1
   chosenAbility: ShootTeleportBall
   level: 0
+  analyticsTracker: {fileID: 0}
+--- !u!114 &114696003308232266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1722864141588178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 207469858, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventName: Ability Used
+  m_TrackableProperty:
+    m_Fields:
+    - m_ParamName: Player
+      m_Target: {fileID: 114670875342534266}
+      m_FieldPath: 
+      m_TypeString: 
+      m_DoStatic: 1
+      m_StaticString: 1
+    - m_ParamName: Ability
+      m_Target: {fileID: 114670875342534266}
+      m_FieldPath: chosenAbility
+      m_TypeString: 
+      m_DoStatic: 0
+      m_StaticString: 1
+  m_Trigger: 0
 --- !u!114 &114700476049697734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -589,6 +618,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -604,6 +634,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -631,6 +662,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -646,6 +678,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -673,6 +706,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -688,6 +722,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
