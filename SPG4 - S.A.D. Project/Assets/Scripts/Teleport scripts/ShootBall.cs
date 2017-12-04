@@ -183,5 +183,7 @@ public class ShootBall : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerController>().SendMessage("ResetShootingValue", false);
         GameObject.FindGameObjectWithTag(playerShootingString).GetComponent<PlayerAbilities>().SendMessage("ResetShot", 1);
+        GameObject.FindGameObjectWithTag(playerBeingTeleportedString).GetComponent<PlayerController>().SendMessage("ResetShootingValue", false);
+        GameObject.FindGameObjectWithTag(playerBeingTeleportedString).GetComponent<PlayerAbilities>().SendMessage("ResetShot", 1);
     }
 }

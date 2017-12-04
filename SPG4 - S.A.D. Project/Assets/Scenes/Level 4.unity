@@ -5900,6 +5900,10 @@ Prefab:
       propertyPath: m_Text
       value: Press space to continue
       objectReference: {fileID: 0}
+    - target: {fileID: 1613654572351324, guid: cb1254f159679984eaccc0af74772536, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb1254f159679984eaccc0af74772536, type: 2}
   m_IsPrefabParent: 0
