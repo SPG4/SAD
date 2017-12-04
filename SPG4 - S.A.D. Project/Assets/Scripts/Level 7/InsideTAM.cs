@@ -6,9 +6,11 @@ public class InsideTAM : MonoBehaviour {
 
     public GameObject exit;
     public float time;
+    public string nameOfProjectile;
 
     public GameObject ply1;
     public GameObject ply2;
+    public GameObject projectile;
 
     private bool startTimer = false;
     float orgTime;
@@ -36,24 +38,19 @@ public class InsideTAM : MonoBehaviour {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player") ||
             collision.gameObject.layer == LayerMask.NameToLayer("Projectiles"))
         {
-            //startTimer = true;
             if (time <= 0)
             {
-                //moveObjects(collision.gameObject);
                 MovePlayers();
                 time = orgTime;
             }
         }
 
         // Check for projectile and move it outside.
-        if (time <= 0 && collision.gameObject.name == "Crate1 (3)")
+        if (time <= 0 && collision.gameObject.name == nameOfProjectile)
         {
             MoveObjects(collision.gameObject);
+            projectile.gameObject.SendMessage("ExitTAM");
         }
-        //else
-        //{
-        //    startTimer = false;
-        //}
     }
 
     void Update()
@@ -67,13 +64,15 @@ public class InsideTAM : MonoBehaviour {
 
     void MoveObjects(GameObject obj)
     {
-        //ply2.gameObject.transform.position = exit.transform.position;
-        //ply1.gameObject.transform.position = exit.transform.position;
         obj.gameObject.transform.position = exit.transform.position;
     }
     void MovePlayers()
     {
         ply1.gameObject.transform.position = exit.transform.position;
         ply2.gameObject.transform.position = exit.transform.position;
+    }
+    void NoTime()
+    {
+        time = 2;
     }
 }

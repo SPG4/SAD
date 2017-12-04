@@ -25,6 +25,7 @@ TagManager:
   - P2Collider
   - ShieldP1
   - ShieldP2
+  - ProjectileTAM
   layers:
   - Default
   - TransparentFX

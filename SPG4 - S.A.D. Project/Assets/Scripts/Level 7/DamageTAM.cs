@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageTAM : MonoBehaviour
 {
     public GameObject tam;
+    public GameObject tamTime;
     //TAM tam = new TAM();
     // Use this for initialization
     void Start()
@@ -13,12 +14,11 @@ public class DamageTAM : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Projectiles"))
-
-            
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Interactable Objects"))  
         {
             tam.gameObject.SendMessage("ApplyDamage");
-            //tam.ApplyDamage();
+            tamTime.gameObject.SendMessage("NoTime");
+            MouthTAM.isDamaged = true;
             Destroy(collision.gameObject);
         }
     }
