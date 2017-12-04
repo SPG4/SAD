@@ -8,12 +8,14 @@ public class CameraController : MonoBehaviour
     public float minSizeY = 4f;
     public float maxSizeY = 7f;
     public float dampTime = 0.15f;
+    public float camYOffset = 10f;
+    public float camXoffset = 0;
     private Vector3 middle, point, delta, destination;
     private Vector3 velocity = Vector3.zero;
 
     void SetCameraPos()
     {
-        middle = (playerOne.position + playerTwo.position) * 0.5f;
+        middle = (playerOne.position + playerTwo.position + (new Vector3(camXoffset,camYOffset,0))) * 0.5f;
         point = GetComponent<Camera>().WorldToViewportPoint(middle);
         delta = middle - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
         destination = transform.position + delta;
