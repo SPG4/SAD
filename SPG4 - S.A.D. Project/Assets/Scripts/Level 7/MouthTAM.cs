@@ -29,10 +29,14 @@ public class MouthTAM : MonoBehaviour
                 }
                 if(collision.gameObject.tag == "ProjectileTAM")
                 {
-                    projectile.gameObject.SendMessage("EnterTAM");
+                    //projectile.gameObject.SendMessage("EnterTAM");
+                    collision.gameObject.SendMessage("EnterTAM");
                     collision.gameObject.transform.position = teleBall.transform.position;
                 }
-                TelePlayers();
+                if(collision.gameObject.layer == LayerMask.NameToLayer("Player") || collision.gameObject.layer == LayerMask.NameToLayer("Ball"))
+                {
+                    TelePlayers();
+                }
             }
             if (collision.gameObject.layer == LayerMask.NameToLayer("Projectile"))
             {
