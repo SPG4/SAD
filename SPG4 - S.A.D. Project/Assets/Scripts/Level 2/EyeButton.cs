@@ -8,9 +8,11 @@ public class EyeButton : MonoBehaviour {
     public Sprite eyeWithBall;
     public GameObject platform;
     float timer = -1;
+    AudioSource activated;
 
-	void Start () {
-		
+	void Start ()
+    {
+        activated = gameObject.GetComponent<AudioSource>();
 	}
 	
 
@@ -33,7 +35,8 @@ public class EyeButton : MonoBehaviour {
     {
         if (collision.gameObject.name == "EyeBall")
         {
-            timer = 1;
+            activated.Play();
+            timer = 0.5f;
             Destroy(collision.gameObject);
         }
     }

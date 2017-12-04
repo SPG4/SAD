@@ -7,15 +7,17 @@ public class MainPuzzleLvl2 : MonoBehaviour {
     public GameObject bridge;
     public bool slot1, slot2, slot3;
     bool canBreak = true;
+    AudioSource success;
 	void Start ()
     {
-		
+        success = gameObject.GetComponent<AudioSource>();
 	}
 	
 	void Update ()
     {
 		if (slot1 && slot2 && slot3 && canBreak)
         {
+            success.Play();
             bridge.GetComponent<HingeJoint2D>().breakForce = 1;
             canBreak = false;
         }

@@ -12,22 +12,31 @@ public class MovingObject : MonoBehaviour {
     float time;
     float movementSpeed;
     Vector2 startpos;
+    public float startTime = 0;
 
 	void Start ()
     {
         //timer = Random.Range(0, movementTimeLimit);
         time = timer;
         if (!notRando)
-            movementSpeed = Random.Range(speed - 0.1f, speed + 0.1f);
-        else
-            movementSpeed = speed;
+        {
+            startTime = 1;
+            startTime = Random.Range(startTime - 0.2f, startTime + 0.2f);
+        }
+
+        movementSpeed = speed;
         startpos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
 
     }
 	
 	void Update ()
     {
-        if (!wait)
+        if (startTime > 0)
+        {
+            startTime -= Time.deltaTime;
+        }
+
+        if (!wait && startTime < 0)
         {
             if (time > 0)
             {

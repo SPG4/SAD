@@ -11,11 +11,13 @@ public class LampButton : MonoBehaviour {
     bool unpress = false;
     public GameObject lamps;
     float timer;
+    AudioSource activated;
 
 	void Start ()
     {
         startPos = gameObject.GetComponent<Transform>().position;
         pressedPos = new Vector3(startPos.x, startPos.y - 0.20f, 0);
+        activated = gameObject.GetComponent<AudioSource>();
 
 	}
 	
@@ -34,6 +36,7 @@ public class LampButton : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        activated.Play();
         pressed = true;
         timer = 1;
 
