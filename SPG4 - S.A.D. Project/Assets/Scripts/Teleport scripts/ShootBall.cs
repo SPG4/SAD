@@ -107,6 +107,7 @@ public class ShootBall : MonoBehaviour
         {
             blackHole = collision.transform.gameObject.GetComponent<BlackHoleController>();
             blackHoleCheckPoint = collision.transform.gameObject;
+            blackHole.SendMessage("PlayTeleportSound");
             playerBeingTeleported.SendMessage("SetBlackHoleCheckPoint", blackHoleCheckPoint);
             playerShooting.SendMessage("SetBlackHoleCheckPoint", blackHoleCheckPoint);
             TeleportBothPlayers();

@@ -29,8 +29,13 @@ public class InteractableObjects : MonoBehaviour
     void StandardAbility(Vector2 direction)
     {
         // Debug.Log("Using Ability");
-        float mass = GetComponent<Rigidbody2D>().mass;
-        GetComponent<Rigidbody2D>().AddForce(direction * mass * force);
+        if (this.gameObject.tag == "Ball1" || this.gameObject.tag == "Ball2" || this.gameObject.name == "eyeball")
+            GetComponent<Rigidbody2D>().AddForce(direction * force * 35);
+        else
+        {
+            float mass = GetComponent<Rigidbody2D>().mass;
+            GetComponent<Rigidbody2D>().AddForce(direction * mass * force);
+        }
     }
 
     /// <summary>

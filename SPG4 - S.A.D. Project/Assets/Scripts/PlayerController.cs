@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour{
     public PlayerController otherPlayer;
 
     public Animator bodyAnimator;
+    public GameObject DialogueBox; 
 
     //Private fields 
     private bool jumpState;
@@ -111,6 +112,7 @@ public class PlayerController : MonoBehaviour{
             energyBtn = collision.gameObject.GetComponent<EnergyButtonController>();
             if (energyBtn.hasBeenTriggered == false && energy > 0)
             {
+                energyBtn.SendMessage("PlayeTeleportSound");
                 energyBtn.hasBeenTriggered = true;
                 DecreaseEnergy(1);
                 otherPlayer.SendMessage("DecreaseEnergy", 1);
@@ -234,11 +236,13 @@ public class PlayerController : MonoBehaviour{
         }
 
         //Dont allow the player to turn or move during a walljump
-        if (!wallJumping)
+        if (!wallJumping && !DialogueBox.activeInHierarchy)
         {
             TurnToInputDirection();
             Movement();
         }
+        else if (DialogueBox.activeInHierarchy)
+            ridgidbodyPlayer.velocity = Vector2.zero;
 
         if (wallJumped)
         {

@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 61815954649260706}
   - component: {fileID: 114299747392010766}
   - component: {fileID: 50538377049175152}
+  - component: {fileID: 82828541357540570}
   m_Layer: 0
   m_Name: Eye button
   m_TagString: Untagged
@@ -97,7 +98,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1815962680481566
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -106,7 +107,7 @@ GameObject:
   - component: {fileID: 61405840417439444}
   m_Layer: 0
   m_Name: Respawn trigger
-  m_TagString: Untagged
+  m_TagString: Eyeball respawn trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,11 +199,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1815962680481566}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 22.7, y: 39.7, z: 0}
+  m_LocalPosition: {x: -48.49999, y: 17.552406, z: 0}
   m_LocalScale: {x: 72.279205, y: 3.7353604, z: 3.7353604}
   m_Children: []
-  m_Father: {fileID: 4480306621477606}
-  m_RootOrder: 0
+  m_Father: {fileID: 4970416234506014}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4420493710595838
 Transform:
@@ -224,10 +225,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1873293151404126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -71.2, y: -22.147594, z: 0}
+  m_LocalPosition: {x: -72.6, y: -22.147594, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4294369608258036}
+  m_Children: []
   m_Father: {fileID: 4970416234506014}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -258,6 +258,7 @@ Transform:
   - {fileID: 4133039628925354}
   - {fileID: 4480306621477606}
   - {fileID: 4182710883143210}
+  - {fileID: 4294369608258036}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -332,7 +333,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -456,6 +457,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6938152, y: 2.9411988}
   m_EdgeRadius: 0
+--- !u!82 &82828541357540570
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1575046333724884}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5ae4d0122c9f21f4b864807b4a3059a1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114299747392010766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -489,6 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d28dcfcd662c940b9f0f31fd979cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usedP1: 0
+  usedP2: 0
 --- !u!212 &212188713191586982
 SpriteRenderer:
   m_ObjectHideFlags: 1

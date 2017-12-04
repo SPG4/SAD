@@ -7,6 +7,7 @@ public class ButtonController : MonoBehaviour {
     private bool activated;
     private GameObject eyeSprite;
     private GameObject eyeBall;
+    private AudioSource ButtonSound;
 
     private float timer = 0;
 
@@ -15,7 +16,14 @@ public class ButtonController : MonoBehaviour {
     {
         eyeSprite = this.gameObject.transform.Find("eyesocket_eye").gameObject;
         eyeBall = this.gameObject.transform.Find("eyeball").gameObject;
+        ButtonSound = gameObject.GetComponent<AudioSource>();
 	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == eyeBall.gameObject)
+            ButtonSound.Play();
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {

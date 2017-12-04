@@ -180,7 +180,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1084275788631998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.6, y: 1.5, z: 0}
+  m_LocalPosition: {x: -59.19, y: 1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4669587869397446}
@@ -539,6 +539,7 @@ MonoBehaviour:
   BallSpawnPoint: {fileID: 4629608429157314}
   otherPlayer: {fileID: 0}
   bodyAnimator: {fileID: 95101800538596398}
+  DialogueBox: {fileID: 0}
   energy: 0
 --- !u!114 &114082667518353088
 MonoBehaviour:

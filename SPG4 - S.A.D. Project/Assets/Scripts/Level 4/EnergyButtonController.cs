@@ -6,6 +6,7 @@ public class EnergyButtonController : MonoBehaviour {
 
     Transform parent;
     Vector2 direction;
+    AudioSource teleportSound;
     public bool hasBeenTriggered;
     float speed = 1;
 
@@ -13,6 +14,7 @@ public class EnergyButtonController : MonoBehaviour {
 	void Start () {
         parent = gameObject.transform.parent;
         direction = parent.transform.position - this.gameObject.transform.position;
+        teleportSound = gameObject.GetComponent<AudioSource>();
 	}
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,4 +30,9 @@ public class EnergyButtonController : MonoBehaviour {
             this.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(direction.x * speed, direction.y * speed);
         }
 	}
+
+    private void PlayeTeleportSound()
+    {
+        teleportSound.Play();
+    }
 }

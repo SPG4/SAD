@@ -96,6 +96,11 @@ public class PlayerAbilities : MonoBehaviour
             {
                 shots--;
                 gameObject.SendMessage(chosenAbility);
+
+                if (gameObject.name == "Player 1")
+                    usedP1 = true;
+                if (gameObject.name == "Player 2")
+                    usedP2 = true;
             }
         }
         if (transform.GetChild(0).gameObject.tag == "ShieldP1")
