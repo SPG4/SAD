@@ -12,7 +12,7 @@ public class MovingObject : MonoBehaviour {
     float time;
     float movementSpeed;
     Vector2 startpos;
-    public float startTime = 0;
+    public float startTime = -1;
 
 	void Start ()
     {
@@ -36,7 +36,7 @@ public class MovingObject : MonoBehaviour {
             startTime -= Time.deltaTime;
         }
 
-        if (!wait && startTime < 0)
+        if (!wait && startTime <= 0)
         {
             if (time > 0)
             {

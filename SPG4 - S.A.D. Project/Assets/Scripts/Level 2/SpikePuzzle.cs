@@ -21,6 +21,7 @@ public class SpikePuzzle : MonoBehaviour
         Debug.Log("Using Ability");
         
         gameObject.GetComponent<Rigidbody2D>().MoveRotation(angle);
+        gameObject.GetComponent<Transform>().position += new Vector3(-0.25f, 0, 0);
     }
 
 }
