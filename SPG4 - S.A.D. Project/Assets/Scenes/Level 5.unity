@@ -1251,9 +1251,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerOne: {fileID: 1630647578}
   playerTwo: {fileID: 359021421}
-  minSizeY: 7
-  maxSizeY: 12
+  minSizeY: 10
+  maxSizeY: 16
   dampTime: 0.15
+  camYOffset: 10
+  camXoffset: 0
 --- !u!114 &530755083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,6 +1340,11 @@ Prefab:
       propertyPath: m_Mass
       value: 1.35
       objectReference: {fileID: 0}
+    - target: {fileID: 114046017369128610, guid: d720ef3bfbdf7a742840d288530a7946,
+        type: 2}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 1376260839}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
   m_IsPrefabParent: 0
@@ -5115,6 +5122,11 @@ Prefab:
       propertyPath: m_Mass
       value: 1.35
       objectReference: {fileID: 0}
+    - target: {fileID: 114700476049697734, guid: e85bccefe397c694c941264208c2bd87,
+        type: 2}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 1376260839}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e85bccefe397c694c941264208c2bd87, type: 2}
   m_IsPrefabParent: 0
