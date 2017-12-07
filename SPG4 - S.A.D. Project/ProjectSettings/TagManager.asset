@@ -26,6 +26,7 @@ TagManager:
   - ShieldP1
   - ShieldP2
   - ProjectileTAM
+  - Eye
   layers:
   - Default
   - TransparentFX
