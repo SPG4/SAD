@@ -10,6 +10,9 @@ public class PlayerAbilities : MonoBehaviour
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
     public int level; //The level that is currentry played
+    public AudioSource standardSound;
+    public AudioSource teleportSound;
+    public AudioSource sizeSound;
 
     int layer_mask;
     int ball_layer;
@@ -94,6 +97,7 @@ public class PlayerAbilities : MonoBehaviour
             //change shot in another script but we can fix that later
             if (chosenAbility == "ShootTeleportBall" && shots > 0 && player.InsideAntiGravArea() == false)
             {
+                teleportSound.Play();
                 shots--;
                 gameObject.SendMessage(chosenAbility);
 
@@ -130,14 +134,20 @@ public class PlayerAbilities : MonoBehaviour
                 if (buttonInput == "UseAbilityP2") // find direction object should move in
                     direction = direction * -1;
 
-                    if(hit)
-                        hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
-                    else if (ballHit)
-                        ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
+                if (hit)
+                {
+                    standardSound.Play();
+                    hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
+                }
+                else if (ballHit)
+                    ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
             }
 
             else if (chosenAbility == "SizeGun")
+            {
+                sizeSound.Play();
                 hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
+            }
 
             else if (chosenAbility == "RopeAbility" && !buttonPressed) //If the input button has not been pressed, the ability can be used
             {
@@ -181,7 +191,7 @@ public class PlayerAbilities : MonoBehaviour
 
     void UseShield()
     {
-        if (Input.GetButton(buttonInput) && mana > 0)    //if button is pressed down the shield is active and mana is used       
+        if (Input.GetButton(buttonInput) && mana > 0 && chosenAbility == "Shield")    //if button is pressed down the shield is active and mana is used       
         {
             transform.GetChild(0).gameObject.SetActive(true);
             mana -= Time.deltaTime;
