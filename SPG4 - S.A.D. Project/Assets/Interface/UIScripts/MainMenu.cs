@@ -20,14 +20,6 @@ public class MainMenu : MonoBehaviour {
     // Level Menu Buttons
     public GameObject levelOneBtn;
 
-    // Highlights
-    public GameObject lineGame;
-    public GameObject lineVideo;
-    public GameObject lineControls;
-    public GameObject lineKeyBindings;
-    public GameObject lineMovement;
-    public GameObject lineCombat;
-    public GameObject lineGeneral;
 
     public void PlayCampaign()
     {
@@ -68,11 +60,6 @@ public class MainMenu : MonoBehaviour {
     public void GamePanel()
     {
         PanelGame.gameObject.SetActive(true);
-
-        lineGame.gameObject.SetActive(true);
-        lineControls.gameObject.SetActive(false);
-        lineVideo.gameObject.SetActive(false);
-        lineKeyBindings.gameObject.SetActive(false);
     }
 
     public void PlayHover()
