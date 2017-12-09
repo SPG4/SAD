@@ -4305,9 +4305,9 @@ MonoBehaviour:
   newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:
-  - 'Hey, look down there. '
+  - 'Hey, look there. '
   - "That\u2019s where we\u2019re headed. "
-  - 'There must be a better way to get down there. '
+  - Hmm, I got a bad feeling about this.
   useSpecial: 0
 --- !u!114 &1287832760
 MonoBehaviour:
