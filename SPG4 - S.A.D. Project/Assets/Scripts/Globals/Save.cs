@@ -9,15 +9,15 @@ public class Save : MonoBehaviour {
 
     void Start()
     {
-        totalAdded = PlayerPrefs.GetFloat("Player1Score");
+        totalAdded = PlayerPrefs.GetInt("Player1Score");
     }
     public void SavePlayerUse()
     {
-        PlayerPrefs.SetFloat("Player1", totalAdded);
+        PlayerPrefs.SetInt("Player1Score", totalAdded);
     }
 
     public void AddUseOfStandard(int add)
     {
-        PlayerPrefs.GetFloat("PlayerSc0re", ++add);
+        PlayerPrefs.GetInt("Player1Score", ++add);
     }
 }
