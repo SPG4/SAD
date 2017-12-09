@@ -28,6 +28,7 @@ public class PlayerAbilities : MonoBehaviour
     DistanceJoint2D distanceJoint;
     SpringJoint2D springJoint;
     PlayerController player;
+    public Save abilityTracker;
     public AnalyticsTracker analyticsTracker;
 
     void Start()
@@ -131,13 +132,20 @@ public class PlayerAbilities : MonoBehaviour
             if (chosenAbility == "StandardAbility")
             {
                 Debug.DrawRay(transform.position, direction, Color.red, 10);
-                if (buttonInput == "UseAbilityP2") // find direction object should move in
+                if (buttonInput == "UseAbilityP2")// find direction object should move in
+                {
                     direction = direction * -1;
+                    abilityTracker.SendMessage("AddOneUseOfStandard", 2);  //Sends message to Save to save use of ability
+                    Debug.Log("totally happened");
+                }
+                else
+                    abilityTracker.SendMessage("AddOneUseOfStandard", 1);
 
                 if (hit)
                 {
                     standardSound.Play();
                     hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
+                    
                 }
                 else if (ballHit)
                     ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
@@ -153,7 +161,7 @@ public class PlayerAbilities : MonoBehaviour
             {
                 if (buttonInput == "UseAbilityP1")
                 {
-                    //Creates a dinstance joint connected between the player and the interactable object
+                    //Creates a distance joint connected between the player and the interactable object
                     distanceJoint = gameObject.AddComponent<DistanceJoint2D>();
                     distanceJoint.enabled = true;
                     distanceJoint.maxDistanceOnly = true;

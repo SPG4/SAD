@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour{
 
         blackHoleCheckPoint = GameObject.Find("StartPoint").GetComponent<Transform>();
 
-        Debug.Log(blackHoleCheckPoint);
+        //Debug.Log(blackHoleCheckPoint);
 
         //BallSpawnPoint = transform.Find("BallSpawnPoint");
     }
