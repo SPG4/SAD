@@ -3859,6 +3859,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114817387357696094, guid: d720ef3bfbdf7a742840d288530a7946,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1644033162}
     - target: {fileID: 114046017369128610, guid: d720ef3bfbdf7a742840d288530a7946,
         type: 2}
       propertyPath: otherPlayer
@@ -16411,6 +16416,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e85bccefe397c694c941264208c2bd87, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1644033162 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114670875342534266, guid: e85bccefe397c694c941264208c2bd87,
+    type: 2}
+  m_PrefabInternal: {fileID: 1644033161}
+  m_Script: {fileID: 11500000, guid: 85bea46aafca9c840bb3af369a0dc4df, type: 3}
 --- !u!1001 &1644812439
 Prefab:
   m_ObjectHideFlags: 0

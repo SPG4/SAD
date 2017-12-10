@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 50406557301513914}
   - component: {fileID: 114046017369128610}
   - component: {fileID: 114082667518353088}
+  - component: {fileID: 114817387357696094}
   m_Layer: 9
   m_Name: Player 2
   m_TagString: Player2
@@ -497,6 +498,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 4105625493051544}
   angleMax: 70
+--- !u!114 &114817387357696094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1084275788631998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 207469858, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventName: Ability Used
+  m_TrackableProperty:
+    m_Fields:
+    - m_ParamName: Player
+      m_Target: {fileID: 0}
+      m_FieldPath: 
+      m_TypeString: 
+      m_DoStatic: 1
+      m_StaticString: 2
+    - m_ParamName: Ability
+      m_Target: {fileID: 114082667518353088}
+      m_FieldPath: chosenAbility
+      m_TypeString: 
+      m_DoStatic: 0
+      m_StaticString: 1
+  m_Trigger: 0
 --- !u!212 &212027880767222238
 SpriteRenderer:
   m_ObjectHideFlags: 1
