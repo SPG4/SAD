@@ -22,6 +22,9 @@ public class TAM : MonoBehaviour
     GameObject dialogue;
     GameObject player;
 
+    public float speedTime;
+    public float maxRotation;
+
     void Start()
     {
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 0);
@@ -32,6 +35,9 @@ public class TAM : MonoBehaviour
     void Update()
     {
         TAMMovement();
+
+        if (transform.GetChild(0).gameObject.tag == "Tentacle")
+            transform.GetChild(0).localEulerAngles = new Vector3(0, 0, -Mathf.PingPong(Time.time * speedTime, maxRotation));
     }
 
     /// <summary>

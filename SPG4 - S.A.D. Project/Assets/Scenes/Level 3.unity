@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &125539096
 Transform:
   m_ObjectHideFlags: 0
@@ -571,16 +571,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 319273301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
+  m_Script: {fileID: 11500000, guid: a50a1b97798e50b40b2769ca911fc4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useAbilityP1: -1
-  useAbilityP2: -1
-  newAbilityObject: {fileID: 0}
-  dialogue: 
-  diaLines:
-  - 'Green: Watch out for that rat trap down there!'
-  useSpecial: 0
+  index: 4
 --- !u!61 &319273304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -593,7 +587,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0607042, y: -2.233593}
+  m_Offset: {x: -1.6570246, y: 0.16073799}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -604,7 +598,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0244956, y: 1.5325241}
+  m_Size: {x: 1.2171369, y: 6.321186}
   m_EdgeRadius: 0
 --- !u!4 &329968204 stripped
 Transform:
@@ -758,12 +752,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 526
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 319
+      value: 181
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -937,7 +931,7 @@ Prefab:
       objectReference: {fileID: 909748017}
     - target: {fileID: 1967521296056078, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
@@ -1657,8 +1651,8 @@ GameObject:
   - component: {fileID: 579746684}
   - component: {fileID: 579746688}
   - component: {fileID: 579746686}
-  - component: {fileID: 579746685}
   - component: {fileID: 579746687}
+  - component: {fileID: 579746685}
   m_Layer: 0
   m_Name: Stereo
   m_TagString: Untagged
@@ -1685,18 +1679,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579746683}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
+  m_Script: {fileID: 11500000, guid: a50a1b97798e50b40b2769ca911fc4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useAbilityP1: -1
-  useAbilityP2: -1
-  newAbilityObject: {fileID: 0}
-  dialogue: 
-  diaLines:
-  - Phew, we did it!
-  useSpecial: 0
+  index: 2
 --- !u!114 &579746686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3472,19 +3460,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1215335836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
+  m_Script: {fileID: 11500000, guid: a50a1b97798e50b40b2769ca911fc4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useAbilityP1: -1
-  useAbilityP2: -1
-  newAbilityObject: {fileID: 0}
-  dialogue: 
-  diaLines:
-  - 'Green: Oh, no! I fell down!'
-  - 'Blue: God, you''re so clumsy!'
-  - 'Green: Hey, stop that, and help me out of here'
-  - 'Blue: Urgh, fine. Let''s have a look around'
-  useSpecial: 0
+  index: 3
 --- !u!61 &1215335839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3719,18 +3698,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1325405093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
+  m_Script: {fileID: 11500000, guid: a50a1b97798e50b40b2769ca911fc4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useAbilityP1: -1
-  useAbilityP2: -1
-  newAbilityObject: {fileID: 0}
-  dialogue: 
-  diaLines:
-  - 'Green: This music is too loud!'
-  - 'Blue: You call this noise music?'
-  - 'Green: Whatever, we have to stop it somehow'
-  useSpecial: 0
+  index: 1
 --- !u!61 &1325405096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5401,8 +5372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useAbilityP1: 6
-  useAbilityP2: 8
+  useAbilityP1: 15
+  useAbilityP2: 17
   newAbilityObject: {fileID: 0}
   dialogue: 
   diaLines:

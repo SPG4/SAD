@@ -29,6 +29,7 @@ TagManager:
   - Eye
   - DialogueManager
   - Boss
+  - Tentacle
   layers:
   - Default
   - TransparentFX
