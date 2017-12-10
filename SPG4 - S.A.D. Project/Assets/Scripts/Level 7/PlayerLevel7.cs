@@ -22,11 +22,14 @@ public class PlayerLevel7 : MonoBehaviour {
         tam = GameObject.FindGameObjectWithTag("Boss");
 
         gameObject.GetComponent<Transform>().position = tam.GetComponent<Transform>().position - new Vector3(10, 0, 0);
+        gameObject.GetComponent<Transform>().localScale = new Vector3(-1, 1, 1);
         if (player == 1)
         {
             gameObject.GetComponent<Transform>().position -= new Vector3(3, 0, 0);
+            gameObject.GetComponent<Transform>().localScale = new Vector3(1, 1, 1);
             camera = GameObject.FindGameObjectWithTag("MainCamera");
             camera.GetComponent<CameraController>().minSizeY = 7;
+            camera.GetComponent<CameraController>().camYOffset = 6;
             gameHandler = GameObject.FindGameObjectWithTag("GameHandler");
 
             if (gameHandler.GetComponent<Save>().GetTotalPlayerPoint(1) >= gameHandler.GetComponent<Save>().GetTotalPlayerPoint(2) + balanceOffset) // blue bigger
