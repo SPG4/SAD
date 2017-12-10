@@ -36,7 +36,9 @@ public class PlayerController : MonoBehaviour{
     public PlayerController otherPlayer;
 
     public Animator bodyAnimator;
-    public GameObject DialogueBox; 
+    public GameObject DialogueBox;
+
+    public AudioClip jumpSound;
 
     //Private fields 
     private bool jumpState;
@@ -74,7 +76,7 @@ public class PlayerController : MonoBehaviour{
 
     private PlayerAbilities playerAbilities;
     private EnergyButtonController energyBtn;
-    private AudioSource jumping;
+
 
     /// <summary>
     /// initialize conponents of the player here
@@ -93,8 +95,6 @@ public class PlayerController : MonoBehaviour{
 
         worldSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0.0f, 0.0f));
         worldHalfSize = this.GetComponentInChildren<Renderer>().bounds.size.x / 2;
-
-        jumping = gameObject.GetComponent<AudioSource>();
 
         playerAbilities = gameObject.GetComponent<PlayerAbilities>();
 
@@ -343,7 +343,7 @@ public class PlayerController : MonoBehaviour{
     /// </summary>
     public void Jump()
     {
-        jumping.Play();
+        SoundLevelManager.Instance.PlaySingle(jumpSound);
         hasJumped = true;
         ridgidbodyPlayer.velocity = new Vector2(ridgidbodyPlayer.velocity.x, 0);
         velocity = ridgidbodyPlayer.velocity;
@@ -352,7 +352,7 @@ public class PlayerController : MonoBehaviour{
 
     public void WallJump()
     {
-        jumping.Play();
+        SoundLevelManager.Instance.PlaySingle(jumpSound);
         ridgidbodyPlayer.velocity = new Vector2(jumpPushForce * (facingRight ? -1 : 1), wallJumpForce);
         wallJumping = true;
         Flip();

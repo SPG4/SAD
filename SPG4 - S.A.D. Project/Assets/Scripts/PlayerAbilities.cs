@@ -10,9 +10,10 @@ public class PlayerAbilities : MonoBehaviour
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
     public int level; //The level that is currentry played
-    public AudioSource standardSound;
-    public AudioSource teleportSound;
-    public AudioSource sizeSound;
+    
+    public AudioClip standardSound;
+    public AudioClip teleportSound;
+    public AudioClip sizeSound;
 
     int layer_mask;
     int ball_layer;
@@ -98,7 +99,7 @@ public class PlayerAbilities : MonoBehaviour
             //change shot in another script but we can fix that later
             if (chosenAbility == "ShootTeleportBall" && shots > 0 && player.InsideAntiGravArea() == false)
             {
-                teleportSound.Play();
+                SoundLevelManager.Instance.PlaySingle(teleportSound);
                 shots--;
                 gameObject.SendMessage(chosenAbility);
 
@@ -143,7 +144,7 @@ public class PlayerAbilities : MonoBehaviour
 
                 if (hit)
                 {
-                    standardSound.Play();
+                    SoundLevelManager.Instance.PlaySingle(standardSound);
                     hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
                     
                 }
@@ -153,7 +154,7 @@ public class PlayerAbilities : MonoBehaviour
 
             else if (chosenAbility == "SizeGun")
             {
-                sizeSound.Play();
+                SoundLevelManager.Instance.PlaySingle(sizeSound);
                 hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
             }
 
