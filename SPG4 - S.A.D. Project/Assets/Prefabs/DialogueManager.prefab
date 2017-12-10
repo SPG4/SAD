@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114805454834395838}
   m_Layer: 5
   m_Name: DialogueManager
-  m_TagString: Untagged
+  m_TagString: DialogueManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press space to continue...
+  m_Text: Press space to continue
 --- !u!114 &114805454834395838
 MonoBehaviour:
   m_ObjectHideFlags: 1
