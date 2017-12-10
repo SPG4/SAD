@@ -30,6 +30,7 @@ TagManager:
   - DialogueManager
   - Boss
   - Tentacle
+  - GameHandler
   layers:
   - Default
   - TransparentFX

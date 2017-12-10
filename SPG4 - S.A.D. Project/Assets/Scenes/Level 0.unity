@@ -235,7 +235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press space to continue
+  m_Text: Press space and enter to continue
 --- !u!222 &37872556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -949,7 +949,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 540925095}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.000015258789, z: 0}
+  m_LocalPosition: {x: 43, y: -79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1507150499}
@@ -958,8 +958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 43, y: -79}
+  m_SizeDelta: {x: 48.2, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540925097
 MonoBehaviour:
@@ -985,6 +985,7 @@ MonoBehaviour:
     by seeing your ugly face.'
   - I should get up...
   useList: 1
+  mayContinue: 1
 --- !u!1001 &543585960
 Prefab:
   m_ObjectHideFlags: 0
@@ -2056,7 +2057,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1507150498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29, y: -217.20001, z: 0}
+  m_LocalPosition: {x: -38.04001, y: -128.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1700104636}
@@ -2066,8 +2067,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29, y: -217.2}
-  m_SizeDelta: {x: 616.1, y: 98.3}
+  m_AnchoredPosition: {x: -38.04, y: -128.1}
+  m_SizeDelta: {x: 560.98, y: 83.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507150500
 MonoBehaviour:
@@ -2152,7 +2153,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2191,8 +2192,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1563722915}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 526, y: 269, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 514, y: 319, z: 0}
+  m_LocalScale: {x: 1.285, y: 1.285, z: 1.285}
   m_Children:
   - {fileID: 770453411}
   - {fileID: 540925096}
@@ -2284,7 +2285,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700104635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2999992, z: 0}
+  m_LocalPosition: {x: 4.200012, y: 4.177498, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1507150499}
@@ -2292,8 +2293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.3}
-  m_SizeDelta: {x: 581.9, y: 68.9}
+  m_AnchoredPosition: {x: 4.2, y: 4.1774974}
+  m_SizeDelta: {x: 537.98, y: 45.255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700104637
 MonoBehaviour:
