@@ -38,7 +38,7 @@ public class MouthTAM : MonoBehaviour
                     TelePlayers();
                 }
             }
-            if (collision.gameObject.layer == LayerMask.NameToLayer("Projectile"))
+            if (collision.gameObject.tag == "ProjectileTAM")
             {
                 collision.transform.position = teleToThis.transform.position;
             }

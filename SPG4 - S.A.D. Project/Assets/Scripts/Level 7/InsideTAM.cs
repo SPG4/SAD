@@ -46,7 +46,7 @@ public class InsideTAM : MonoBehaviour {
         }
 
         // Check for projectile and move it outside.
-        if (time <= 0 && collision.gameObject.name == nameOfProjectile)
+        if (time <= 0 && collision.gameObject.tag == "ProjectileTAM")
         {
             MoveObjects(collision.gameObject);
             projectile.gameObject.SendMessage("ExitTAM");

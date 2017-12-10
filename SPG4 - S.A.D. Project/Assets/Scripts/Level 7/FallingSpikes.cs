@@ -7,27 +7,31 @@ public class FallingSpikes : MonoBehaviour
     public float spikeTime;
     public bool falling;
     public bool fallTime;
+    bool isHit;
     Rigidbody2D rb;
     public GameObject obj;
     GameObject spike;
 
     void Start()
     {
-
+        fallTime = false;
+        isHit = false;
     }
 
     void Update()
     {
-        if (fallTime == true)
+        if(fallTime == true)
         {
-            spikeTime += Time.deltaTime;
+            Spikefall();
         }
-        if (spikeTime >= 10.0f)
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ProjectileTAM")
         {
-            falling = true;
-            rb = gameObject.GetComponent<Rigidbody2D>();
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            GetComponent<BoxCollider2D>().enabled = false;
+            isHit = true;
         }
     }
 
@@ -35,7 +39,10 @@ public class FallingSpikes : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Boss"))
         {
-            fallTime = true;
+            if(isHit == true)
+            {
+                fallTime = true;
+            }
         }
 
         //If the spike touches the ground, it will be destroyed and a new spike is instantiated
@@ -46,6 +53,21 @@ public class FallingSpikes : MonoBehaviour
                 Destroy(gameObject);
                 spike = Instantiate(Resources.Load("Spike", typeof(GameObject))) as GameObject;
             }
+        }
+    }
+
+    void Spikefall()
+    {
+        if (fallTime == true)
+        {
+            spikeTime -= Time.deltaTime;
+        }
+        if (spikeTime <= 0.0f)
+        {
+            falling = true;
+            rb = gameObject.GetComponent<Rigidbody2D>();
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }

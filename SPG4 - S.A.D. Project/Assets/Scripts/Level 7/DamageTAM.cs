@@ -17,6 +17,7 @@ public class DamageTAM : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Interactable Objects"))  
         {
             tam.gameObject.SendMessage("ApplyDamage");
+            gameObject.SendMessage("EnterTAM");
             tamTime.gameObject.SendMessage("NoTime");
             MouthTAM.isDamaged = true;
             Destroy(collision.gameObject);
