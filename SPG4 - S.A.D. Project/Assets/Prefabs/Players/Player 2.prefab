@@ -478,12 +478,11 @@ MonoBehaviour:
   chosenAbility: StandardAbility
   level: 4
   standardSound: {fileID: 8300000, guid: 4ac77c37d90f4be4b9b7e63e7dfdb259, type: 3}
-  teleportSound: {fileID: 8300000, guid: 402a2b2aa1e2c694899ea4ced34d2d11, type: 3}
+  teleportSound: {fileID: 8300000, guid: 431c569ab2dae3a4698b9f7af337df9a, type: 3}
   sizeSound: {fileID: 8300000, guid: f842edb4f0a98cf418678063e33db775, type: 3}
   shots: 0
   usedP1: 0
   usedP2: 0
-  abilityTracker: {fileID: 0}
   analyticsTracker: {fileID: 0}
 --- !u!114 &114454650921344712
 MonoBehaviour:

@@ -29,7 +29,7 @@ public class PlayerAbilities : MonoBehaviour
     DistanceJoint2D distanceJoint;
     SpringJoint2D springJoint;
     PlayerController player;
-    public Save abilityTracker;
+    Save abilityTracker;
     public AnalyticsTracker analyticsTracker;
 
     void Start()
@@ -37,7 +37,7 @@ public class PlayerAbilities : MonoBehaviour
         layer_mask = LayerMask.GetMask("Interactable Objects"); // Used in raycast to only hit objects on a specific layer
         ball_layer = LayerMask.GetMask("Interactable ball object");
         shots = 1;
-
+        abilityTracker = GameObject.FindGameObjectWithTag("GameHandler").GetComponent<Save>();
         abilityList = new List<string>();
         abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
 
