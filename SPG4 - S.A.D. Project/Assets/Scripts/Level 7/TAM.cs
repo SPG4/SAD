@@ -20,6 +20,7 @@ public class TAM : MonoBehaviour
     bool isDead;
 
     GameObject dialogue;
+    GameObject player;
 
     void Start()
     {
@@ -74,11 +75,14 @@ public class TAM : MonoBehaviour
 
         if (health <= 0)
         {
+            player = GameObject.FindGameObjectWithTag("Player");
+            player.SendMessage("TamDead");
+            player = GameObject.FindGameObjectWithTag("Player2");
+            player.SendMessage("TamDead");
+
             speed = 0;
             isDead = true;
-
-            dialogue.SendMessage("AddText", "Hey, we actually did it! Together!");
-            dialogue.SendMessage("AddText", "Yeah, would you look at that, we’re a pretty good team! Maybe if we try to work together more from now on, things will get easier in the future!");
+           
         }
     }
 

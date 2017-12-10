@@ -27,6 +27,8 @@ TagManager:
   - ShieldP2
   - ProjectileTAM
   - Eye
+  - DialogueManager
+  - Boss
   layers:
   - Default
   - TransparentFX
