@@ -10,7 +10,6 @@ public class Save : MonoBehaviour {
     int sessionAddedP1, sessionAddedP2;
     string currentpoints;
     public GameObject player1, player2;
-    public Text testingText;
 
     private void Awake()
     {
@@ -48,7 +47,6 @@ public class Save : MonoBehaviour {
         //Below is for TESTING PURPOSE
         totalAdded = PlayerPrefs.GetInt("Player2Score");
         currentpoints = " " + totalAdded;
-        testingText.text = "Player 1"+ currentpoints + "also session " + sessionAddedP2;
         if (Input.GetKeyDown("return"))
         {
             SavePlayerUse(sessionAddedP1, sessionAddedP2);

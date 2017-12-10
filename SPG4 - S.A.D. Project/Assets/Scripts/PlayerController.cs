@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour{
 
@@ -98,7 +99,11 @@ public class PlayerController : MonoBehaviour{
 
         playerAbilities = gameObject.GetComponent<PlayerAbilities>();
 
-        blackHoleCheckPoint = GameObject.Find("StartPoint").GetComponent<Transform>();
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        if (scene == 4)
+        {
+            blackHoleCheckPoint = GameObject.Find("StartPoint").GetComponent<Transform>();
+        }
 
         //Debug.Log(blackHoleCheckPoint);
 

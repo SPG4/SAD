@@ -40,7 +40,7 @@ public class SoundLevelManager : MonoBehaviour {
 
     public void Start()
     {
-        musicClips[1] = menuMusic;
+        musicClips[0] = menuMusic;
         musicClips[1] = level1Music;
         musicClips[2] = level2Music;
         musicClips[3] = level3Music;
