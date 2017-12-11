@@ -59,6 +59,22 @@ public class SoundLevelManager : MonoBehaviour {
 
     }
 
+    public void Update()
+    {
+        UpdateMusicVolume();
+        UpdateSFXVolume();
+    }
+
+    public void UpdateMusicVolume()
+    {
+        musicSource.volume = PlayerPrefs.GetFloat("MusicVolume");
+    }
+
+    public void UpdateSFXVolume()
+    {
+        sfxSource.volume = PlayerPrefs.GetFloat("SFXVolume");
+    }
+
     public void PlaySingle(AudioClip clip)
     {
         //Debug.Log("played" + clip);

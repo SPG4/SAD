@@ -18,9 +18,22 @@ public class MainMenu : MonoBehaviour {
     public GameObject loadGameBtn;
 
     // Level Menu Buttons
-    public GameObject levelOneBtn;
+    public GameObject level1, level2, level3, level4, level5, level6;
 
+    public GameObject[] levelbuttons;
 
+    public int completedLevels;
+
+    public void Start()
+    {
+        levelbuttons = new GameObject[6];
+        levelbuttons[0] = level1;
+        levelbuttons[1] = level2;
+        levelbuttons[2] = level3;
+        levelbuttons[3] = level4;
+        levelbuttons[4] = level5;
+        levelbuttons[5] = level6;
+    }
     public void PlayCampaign()
     {
         areYouSure.gameObject.SetActive(false);
@@ -38,12 +51,19 @@ public class MainMenu : MonoBehaviour {
 
     public void SelectLevel()
     {
-        levelOneBtn.gameObject.SetActive(true);
+        for (int i = 0; i < completedLevels; i++)
+        {
+            levelbuttons[i].gameObject.SetActive(true);
+        }
+        
     }
 
     public void DisableSelectLevel()
     {
-        levelOneBtn.gameObject.SetActive(false);
+        for (int i = 0; i < completedLevels; i++)
+        {
+            levelbuttons[i].gameObject.SetActive(false);
+        }
     }
 
     public void Position2()
@@ -66,11 +86,6 @@ public class MainMenu : MonoBehaviour {
     {
         hoverSound.GetComponent<AudioSource>();
         hoverSound.Play();
-    }
-    public void PlaySFXHover()
-    {
-        sfxhoversound.GetComponent<AudioSource>();
-        sfxhoversound.Play();
     }
 
     public void PlayClick()
@@ -98,5 +113,10 @@ public class MainMenu : MonoBehaviour {
     public void LoadScene(int level)
     {
         SceneManager.LoadScene(level);
+    }
+
+    public void continueLastPlayedScene()
+    {
+        LoadScene(PlayerPrefs.GetInt("CurrentScene"));
     }
 }

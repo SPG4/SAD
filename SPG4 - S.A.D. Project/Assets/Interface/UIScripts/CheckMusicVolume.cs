@@ -14,7 +14,6 @@ public class CheckMusicVolume : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         UpdateVolume();
-
     }
     public void UpdateVolume()
     {

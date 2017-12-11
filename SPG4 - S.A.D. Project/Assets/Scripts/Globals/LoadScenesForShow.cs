@@ -6,13 +6,22 @@ using UnityEngine.UI;
 
 public class LoadScenesForShow : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    public static LoadScenesForShow Instance { get; private set; }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             LoadNextScene();
@@ -23,5 +32,10 @@ public class LoadScenesForShow : MonoBehaviour {
     {
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene + 1, LoadSceneMode.Single);
+    }
+
+    public void LoadScene(int sceneNr)
+    {
+        SceneManager.LoadScene(sceneNr, LoadSceneMode.Single);
     }
 }
