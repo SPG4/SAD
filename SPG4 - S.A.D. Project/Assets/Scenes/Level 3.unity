@@ -1670,12 +1670,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1f389785b29a7b4c9dfdc0a45486044, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &705795248 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114960141692428074, guid: db42e14cc7cb84b4b8b7153637be4fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1738754802}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &721261944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,7 +3130,8 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82275559135251716, guid: 32d1ccb498580f142bdcb29f79f31d25, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 32d1ccb498580f142bdcb29f79f31d25, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1261381161
@@ -4740,7 +4735,7 @@ Prefab:
         type: 2}
       propertyPath: testingText
       value: 
-      objectReference: {fileID: 705795248}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b42e634ef7fb7d14688bb824b0b2ec86, type: 2}
   m_IsPrefabParent: 0

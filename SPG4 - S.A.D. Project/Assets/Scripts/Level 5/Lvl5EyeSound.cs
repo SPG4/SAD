@@ -5,11 +5,8 @@ using UnityEngine;
 public class Lvl5EyeSound : MonoBehaviour {
     public AudioClip playSound;
     public float volume;
-    private AudioSource audioSource;
     // Use this for initialization
     void Start () {
-        audioSource = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -20,7 +17,7 @@ public class Lvl5EyeSound : MonoBehaviour {
     {
         if (collision.CompareTag("Eye"))
         {
-            audioSource.PlayOneShot(playSound, 0.7f);
+            SoundLevelManager.Instance.PlaySingle(playSound);
         }
     }
 }

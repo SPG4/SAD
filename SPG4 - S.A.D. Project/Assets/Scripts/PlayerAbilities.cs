@@ -54,7 +54,6 @@ public class PlayerAbilities : MonoBehaviour
             abilityList.Add("ShootTeleportBall");
             abilityList.Add("Shield");
         }
-        //abilityList.Add("RopeAbility");
 
         chosenAbility = abilityList[0];
 
