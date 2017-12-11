@@ -23,6 +23,5 @@ public class LoadScenesForShow : MonoBehaviour {
     {
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene + 1, LoadSceneMode.Single);
-        SoundLevelManager.Instance.UpdateMusic();
     }
 }
