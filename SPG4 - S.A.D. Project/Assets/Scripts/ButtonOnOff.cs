@@ -43,7 +43,7 @@ public class ButtonOnOff : MonoBehaviour
 
     private void FixedUpdate()
     {
-        moveObject();
+        MoveObject();
     }
     // Update is called once per frame
     void Update()
@@ -90,7 +90,7 @@ public class ButtonOnOff : MonoBehaviour
     /// <summary>
     /// Move object while object is inside object or not. Moves both ways.
     /// </summary>
-    private void moveObject()
+    private void MoveObject()
     {
         if (buttonOn == true && 0 < maxSeconds)
         {

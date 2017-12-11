@@ -4,6 +4,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Projectile : MonoBehaviour
 {
@@ -34,7 +36,7 @@ public class Projectile : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(Turret.destroyOnTriggerContant == true)
+        if (Turret.destroyOnTriggerContant == true)
         {
             Destroy(this.gameObject);
         }
@@ -51,13 +53,14 @@ public class Projectile : MonoBehaviour
         {
             if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
-                GameObject.Find(collision.gameObject.name).SetActive(false);
+                int scene = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(scene, LoadSceneMode.Single);
             }
         }
-        if(Turret.destroyOnTriggerContant == true)
+        if (Turret.destroyOnTriggerContant == true)
         {
             Destroy(this.gameObject);
         }
-        
+
     }
 }

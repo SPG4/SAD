@@ -6,6 +6,7 @@ public class DamageTAM : MonoBehaviour
 {
     public GameObject tam;
     public GameObject tamTime;
+    //public GameObject tamProjectile;
     //TAM tam = new TAM();
     // Use this for initialization
     void Start()
@@ -16,6 +17,7 @@ public class DamageTAM : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Interactable Objects"))  
         {
+
             tam.gameObject.SendMessage("ApplyDamage");
             gameObject.SendMessage("EnterTAM");
             tamTime.gameObject.SendMessage("NoTime");
