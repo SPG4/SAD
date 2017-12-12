@@ -7,6 +7,7 @@ public class ProjectileTAM : MonoBehaviour
 {
 
     public float time;
+    public GameObject teleToThis;
     float timer, timer2;
     public Sprite changeToTexture = null;
     float deadlyTime = 0;
