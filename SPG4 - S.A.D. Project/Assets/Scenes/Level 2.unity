@@ -1237,7 +1237,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 399721113}
+      objectReference: {fileID: 1685612630}
     - target: {fileID: 114082667518353088, guid: d720ef3bfbdf7a742840d288530a7946,
         type: 2}
       propertyPath: analyticsTracker
@@ -4742,11 +4742,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &399721113 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1687319909900616, guid: db42e14cc7cb84b4b8b7153637be4fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 483310919}
 --- !u!1 &401268318
 GameObject:
   m_ObjectHideFlags: 0
@@ -6003,15 +5998,20 @@ Prefab:
       propertyPath: diaList.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 508.5
+      value: 514
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 286
+      value: 319
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6116,12 +6116,12 @@ Prefab:
     - target: {fileID: 224909327230210278, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -390
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224909327230210278, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -686.24084
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224661459764625740, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6136,12 +6136,12 @@ Prefab:
     - target: {fileID: 224246955364475840, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -390
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224246955364475840, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 681.24084
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 224841854024885356, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6156,12 +6156,12 @@ Prefab:
     - target: {fileID: 224231043251909950, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 328.9
+      value: -71.1
       objectReference: {fileID: 0}
     - target: {fileID: 224231043251909950, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 681.24084
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 224122982570476146, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6176,12 +6176,12 @@ Prefab:
     - target: {fileID: 224585875055702378, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 294
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 224585875055702378, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -686.24084
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114793342691025718, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6218,6 +6218,35 @@ Prefab:
       propertyPath: playerTwo
       value: 
       objectReference: {fileID: 381971954}
+    - target: {fileID: 1967521296056078, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[0]
+      value: 'Green. That was a close call! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[2]
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[3]
+      value: "Green: Hey what\u2019s that?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[4]
+      value: "Blue: I don\u2019t know, but I don\u2019t plan on letting him get away."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[1]
+      value: "Blue: Oh, you\u2019re still here, I thought I left you behind\u2026 "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
   m_IsPrefabParent: 0
@@ -20272,6 +20301,11 @@ Transform:
   m_Father: {fileID: 1389034349}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1685612630 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1825314258990770, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+    type: 2}
+  m_PrefabInternal: {fileID: 483310919}
 --- !u!1 &1691072723
 GameObject:
   m_ObjectHideFlags: 0
@@ -21695,7 +21729,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 399721113}
+      objectReference: {fileID: 1685612630}
     - target: {fileID: 114700476049697734, guid: e85bccefe397c694c941264208c2bd87,
         type: 2}
       propertyPath: otherPlayer

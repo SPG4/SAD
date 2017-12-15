@@ -11,6 +11,7 @@ public class ChangeColour : MonoBehaviour {
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         isGreen = false;
+        transform.root.SendMessage("CheckColor", nr);
     }
 
     void Change2Green()

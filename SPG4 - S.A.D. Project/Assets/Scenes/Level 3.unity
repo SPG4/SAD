@@ -216,11 +216,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &120026570 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1687319909900616, guid: db42e14cc7cb84b4b8b7153637be4fe6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1738754802}
 --- !u!1 &125539095
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +800,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 120026570}
+      objectReference: {fileID: 1044588333}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e85bccefe397c694c941264208c2bd87, type: 2}
   m_IsPrefabParent: 0
@@ -971,7 +966,7 @@ Prefab:
         type: 2}
       propertyPath: DialogueBox
       value: 
-      objectReference: {fileID: 120026570}
+      objectReference: {fileID: 1044588333}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
   m_IsPrefabParent: 0
@@ -2661,6 +2656,11 @@ Transform:
   m_Father: {fileID: 165200028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1044588333 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1825314258990770, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1738754802}
 --- !u!1001 &1046587507
 Prefab:
   m_ObjectHideFlags: 0
@@ -4201,12 +4201,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 508.5
+      value: 514
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 286
+      value: 319
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -4399,6 +4399,17 @@ Prefab:
       propertyPath: playerTwo
       value: 
       objectReference: {fileID: 909748017}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[0]
+      value: "Green: What\u2019s all this noise about? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
+        type: 2}
+      propertyPath: diaList.Array.data[1]
+      value: "Blue: I don\u2019t know, let\u2019s just get out of this place as fast
+        as possible. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
   m_IsPrefabParent: 0
