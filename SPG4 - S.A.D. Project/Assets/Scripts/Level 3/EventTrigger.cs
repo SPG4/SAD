@@ -27,6 +27,11 @@ public class EventTrigger : MonoBehaviour {
 
     private void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         if (!playerMoved && hasHappened && movePlayer)
         {
             if (player2.transform.position.x != 115)

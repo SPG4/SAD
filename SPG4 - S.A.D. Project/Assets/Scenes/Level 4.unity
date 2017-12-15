@@ -1887,6 +1887,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd908b37686db2a4091c42a9640080f2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &274602031 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1722864141588178, guid: e85bccefe397c694c941264208c2bd87,
+    type: 2}
+  m_PrefabInternal: {fileID: 1644033161}
 --- !u!4 &313765010 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4694675958574776, guid: dd908b37686db2a4091c42a9640080f2,
@@ -15572,12 +15577,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 512
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 288
+      value: 181
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -17775,7 +17780,7 @@ Prefab:
         type: 2}
       propertyPath: player1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 274602031}
     - target: {fileID: 114075646246616854, guid: b42e634ef7fb7d14688bb824b0b2ec86,
         type: 2}
       propertyPath: player2
@@ -17786,7 +17791,8 @@ Prefab:
       propertyPath: testingText
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114874439576740160, guid: b42e634ef7fb7d14688bb824b0b2ec86, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b42e634ef7fb7d14688bb824b0b2ec86, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1920642978
