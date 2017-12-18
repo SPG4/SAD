@@ -10,7 +10,7 @@ public class PlayerAbilities : MonoBehaviour
     public string buttonInput; //The button tells us which player is attempting to use an ability
     public string chosenAbility; //what ability is being used
     public int level; //The level that is currentry played
-    
+
     public AudioClip standardSound;
     public AudioClip teleportSound;
     public AudioClip sizeSound;
@@ -39,17 +39,24 @@ public class PlayerAbilities : MonoBehaviour
         shots = 1;
         abilityTracker = GameObject.FindGameObjectWithTag("GameHandler").GetComponent<Save>();
         abilityList = new List<string>();
-        abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
+        //abilityList.Add("StandardAbility"); //The standard ability should always be added since it is always available for the player
+        abilityList.Add("");
 
+        if (level >= 2)
+        {
+            abilityList.Remove("");
+            abilityList.Add("StandardAbility");
+        }
         if (level >= 3)
             abilityList.Add("SizeGun");
         if (level >= 4)
             abilityList.Add("ShootTeleportBall");
         if (level >= 5)
             abilityList.Add("Shield");
-        
+
         if (level == 0)
         {
+            abilityList.Add("StandardAbility");
             abilityList.Add("SizeGun");
             abilityList.Add("ShootTeleportBall");
             abilityList.Add("Shield");
@@ -137,15 +144,20 @@ public class PlayerAbilities : MonoBehaviour
                     direction = direction * -1;
                     abilityTracker.SendMessage("AddOneUseOfStandard", 2);  //Sends message to Save to save use of ability
                     Debug.Log("totally happened");
+                    usedP2 = true;
+                    print(usedP2);
                 }
                 else
+                {
                     abilityTracker.SendMessage("AddOneUseOfStandard", 1);
+                    usedP1 = true;
+                }
 
                 if (hit)
                 {
                     SoundLevelManager.Instance.PlaySingle(standardSound);
                     hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
-                    
+
                 }
                 else if (ballHit)
                     ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
@@ -156,44 +168,6 @@ public class PlayerAbilities : MonoBehaviour
                 SoundLevelManager.Instance.PlaySingle(sizeSound);
                 hit.collider.gameObject.SendMessage(chosenAbility, buttonInput);
             }
-
-            else if (chosenAbility == "RopeAbility" && !buttonPressed) //If the input button has not been pressed, the ability can be used
-            {
-                if (buttonInput == "UseAbilityP1")
-                {
-                    //Creates a distance joint connected between the player and the interactable object
-                    distanceJoint = gameObject.AddComponent<DistanceJoint2D>();
-                    distanceJoint.enabled = true;
-                    distanceJoint.maxDistanceOnly = true;
-                    distanceJoint.enableCollision = true;
-                    distanceJoint.connectedBody = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                    distanceJoint.connectedAnchor = hit.point - new Vector2(hit.collider.transform.position.x, hit.collider.transform.position.y);
-                    distanceJoint.distance = Vector3.Distance(transform.position, hit.point);
-                }
-
-                if (buttonInput == "UseAbilityP2")
-                {
-                    //Creates a spring joint connected between the player and the interactable object
-                    springJoint = gameObject.AddComponent<SpringJoint2D>();
-                    springJoint.enabled = true;
-                    springJoint.enableCollision = true;
-                    springJoint.autoConfigureDistance = false;
-                    springJoint.distance = 0.005f;
-                    springJoint.dampingRatio = 1f;
-                    springJoint.frequency = 2f;
-                    springJoint.connectedAnchor = hit.point;
-                }
-            }
-            buttonPressed = true;
-        }
-        else if (chosenAbility == "RopeAbility" && buttonPressed)
-        {
-            if (buttonInput == "UseAbilityP1")
-                Destroy(distanceJoint);
-            if (buttonInput == "UseAbilityP2")
-                Destroy(springJoint);
-
-            buttonPressed = false;
         }
     }
 
