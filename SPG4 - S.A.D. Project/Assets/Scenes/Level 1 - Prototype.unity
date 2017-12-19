@@ -27940,6 +27940,7 @@ MonoBehaviour:
   - "Blue: It worked! I guess these powers don\u2019t work the same way for the both
     of us."
   useSpecial: 1
+  movePos: 1
 --- !u!114 &679506025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75581,12 +75582,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 322
+      value: 514
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 181
+      value: 319
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}

@@ -5234,6 +5234,7 @@ MonoBehaviour:
   - '*Green uses teleport*'
   - "Blue: Oh this is pointless, let\u2019s just move on."
   useSpecial: 1
+  movePos: 2
 --- !u!61 &2127045092
 BoxCollider2D:
   m_ObjectHideFlags: 0

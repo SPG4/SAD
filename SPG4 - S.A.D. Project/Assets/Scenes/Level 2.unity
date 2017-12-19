@@ -1198,7 +1198,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 42.55
+      value: 41.82
       objectReference: {fileID: 0}
     - target: {fileID: 4105625493051544, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1248,6 +1248,11 @@ Prefab:
       propertyPath: otherPlayer
       value: 
       objectReference: {fileID: 1636064436}
+    - target: {fileID: 114046017369128610, guid: d720ef3bfbdf7a742840d288530a7946,
+        type: 2}
+      propertyPath: jumpForce
+      value: 1700
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d720ef3bfbdf7a742840d288530a7946, type: 2}
   m_IsPrefabParent: 0
@@ -9323,7 +9328,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.2103424, y: 1.4568858}
+  m_Offset: {x: 3.6814194, y: 1.4568858}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9334,7 +9339,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4410553, y: 2.2618704}
+  m_Size: {x: 2.4989014, y: 2.2618704}
   m_EdgeRadius: 0
 --- !u!4 &739710402
 Transform:
@@ -9373,6 +9378,7 @@ MonoBehaviour:
   - '*Green use ability*'
   - 'Blue: Ruining the fun, as always.'
   useSpecial: 1
+  movePos: 3
 --- !u!1 &757268205
 GameObject:
   m_ObjectHideFlags: 0
@@ -13144,6 +13150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonNr: 1
+  press: 0
   lamps: {fileID: 5910796}
 --- !u!61 &1110354639
 BoxCollider2D:
@@ -13630,6 +13637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonNr: 2
+  press: 0
   lamps: {fileID: 5910796}
 --- !u!61 &1135970376
 BoxCollider2D:
@@ -18987,7 +18995,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4133453742575788, guid: 32d1ccb498580f142bdcb29f79f31d25, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 46.03999
+      value: 45.30999
       objectReference: {fileID: 0}
     - target: {fileID: 4133453742575788, guid: 32d1ccb498580f142bdcb29f79f31d25, type: 2}
       propertyPath: m_LocalPosition.y
@@ -21166,6 +21174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonNr: 3
+  press: 0
   lamps: {fileID: 5910796}
 --- !u!61 &1741510701
 BoxCollider2D:
@@ -21690,7 +21699,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4854632597042652, guid: e85bccefe397c694c941264208c2bd87, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 44.870007
+      value: 44.140007
       objectReference: {fileID: 0}
     - target: {fileID: 4854632597042652, guid: e85bccefe397c694c941264208c2bd87, type: 2}
       propertyPath: m_LocalPosition.y
@@ -21735,6 +21744,11 @@ Prefab:
       propertyPath: otherPlayer
       value: 
       objectReference: {fileID: 548744051}
+    - target: {fileID: 114700476049697734, guid: e85bccefe397c694c941264208c2bd87,
+        type: 2}
+      propertyPath: jumpForce
+      value: 1700
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e85bccefe397c694c941264208c2bd87, type: 2}
   m_IsPrefabParent: 0

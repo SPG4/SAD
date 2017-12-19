@@ -23,6 +23,7 @@ public class PlayerAbilities : MonoBehaviour
     bool buttonPressed;
     bool addedAbility = false;
     public bool usedP1, usedP2;
+    public bool canUseability = true;
 
     Vector2 direction;
     List<string> abilityList;
@@ -90,29 +91,33 @@ public class PlayerAbilities : MonoBehaviour
             chosenAbility = abilityList[temp]; //sets current ability to next ability in list
             player.SendMessage("SetActiveAbility", chosenAbility);
         }
-
-        if (chosenAbility == "Shield")
-            UseShield();
-
-        else if (Input.GetButtonDown(buttonInput))
+        if (canUseability)
         {
-            //analyticsTracker.TriggerEvent();
-            if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility" || chosenAbility == "RopeAbility")
-                CastRayAbility();
+            if (chosenAbility == "Shield")
+                UseShield();
+            else
+                transform.GetChild(0).gameObject.SetActive(false);
 
-            //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
-            //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
-            //change shot in another script but we can fix that later
-            if (chosenAbility == "ShootTeleportBall" && shots > 0 && player.InsideAntiGravArea() == false)
+            if (Input.GetButtonDown(buttonInput))
             {
-                SoundLevelManager.Instance.PlaySingle(teleportSound);
-                shots--;
-                gameObject.SendMessage(chosenAbility);
+                //analyticsTracker.TriggerEvent();
+                if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility" || chosenAbility == "RopeAbility")
+                    CastRayAbility();
 
-                if (gameObject.name == "Player 1")
-                    usedP1 = true;
-                if (gameObject.name == "Player 2")
-                    usedP2 = true;
+                //Using shots variable to make sure you can only shoot one at a time, setting the value of shot back to 1 
+                //in ShootBall when the TeleportBallEvent method is called, maybe not the best solution to 
+                //change shot in another script but we can fix that later
+                if (chosenAbility == "ShootTeleportBall" && shots > 0 && player.InsideAntiGravArea() == false)
+                {
+                    SoundLevelManager.Instance.PlaySingle(teleportSound);
+                    shots--;
+                    gameObject.SendMessage(chosenAbility);
+
+                    if (gameObject.name == "Player 1")
+                        usedP1 = true;
+                    if (gameObject.name == "Player 2")
+                        usedP2 = true;
+                }
             }
         }
         if (transform.GetChild(0).gameObject.tag == "ShieldP1")
@@ -143,9 +148,7 @@ public class PlayerAbilities : MonoBehaviour
                 {
                     direction = direction * -1;
                     abilityTracker.SendMessage("AddOneUseOfStandard", 2);  //Sends message to Save to save use of ability
-                    Debug.Log("totally happened");
                     usedP2 = true;
-                    print(usedP2);
                 }
                 else
                 {
@@ -157,7 +160,6 @@ public class PlayerAbilities : MonoBehaviour
                 {
                     SoundLevelManager.Instance.PlaySingle(standardSound);
                     hit.collider.gameObject.SendMessage(chosenAbility, direction); //Sending message to object telling it what ability has been used on it, plus a direction (for standard ability)
-
                 }
                 else if (ballHit)
                     ballHit.collider.gameObject.SendMessage(chosenAbility, direction);
@@ -173,7 +175,7 @@ public class PlayerAbilities : MonoBehaviour
 
     void UseShield()
     {
-        if (Input.GetButton(buttonInput) && mana > 0 && chosenAbility == "Shield")    //if button is pressed down the shield is active and mana is used       
+        if (Input.GetButton(buttonInput) && mana > 0)    //if button is pressed down the shield is active and mana is used       
         {
             transform.GetChild(0).gameObject.SetActive(true);
             mana -= Time.deltaTime;

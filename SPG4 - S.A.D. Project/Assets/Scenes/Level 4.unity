@@ -9471,6 +9471,7 @@ MonoBehaviour:
   - '*Blue uses shield*'
   - Yeah, this makes more sense!
   useSpecial: 1
+  movePos: 2
 --- !u!61 &1024196419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15577,12 +15578,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 322
+      value: 514
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 181
+      value: 319
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -15677,42 +15678,42 @@ Prefab:
     - target: {fileID: 224585875055702378, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 293.99997
+      value: 294
       objectReference: {fileID: 0}
     - target: {fileID: 224585875055702378, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1093.3193
+      value: -790.29407
       objectReference: {fileID: 0}
     - target: {fileID: 224246955364475840, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -389.99997
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 224246955364475840, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1088.3193
+      value: 785.29407
       objectReference: {fileID: 0}
     - target: {fileID: 224909327230210278, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -389.99997
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 224909327230210278, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1093.3193
+      value: -790.29407
       objectReference: {fileID: 0}
     - target: {fileID: 224231043251909950, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 328.89996
+      value: 328.9
       objectReference: {fileID: 0}
     - target: {fileID: 224231043251909950, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1088.3193
+      value: 785.29407
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
