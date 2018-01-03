@@ -45,7 +45,7 @@ public class LampButton : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         activated.Play();
-        pressed = true;
+        press = true;
         timer = 1;
 
     }
@@ -53,7 +53,6 @@ public class LampButton : MonoBehaviour {
 
     void Press()
     {
-        pressed = true;
         if (buttonNr == 1)
         {
             lamps.transform.GetChild(0).SendMessage("Change2Red");
