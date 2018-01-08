@@ -8,7 +8,7 @@ public class Level5 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //socketCount = 0;
-	}
+    }
 
     public void IncrementFromSocket()
     {
