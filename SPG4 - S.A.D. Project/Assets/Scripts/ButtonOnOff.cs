@@ -53,23 +53,27 @@ public class ButtonOnOff : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (whenObjectTouches != null && changeToTexture != null)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player") || collision.gameObject.name == "Eyeball")
         {
-            if (collision.transform.gameObject.name == whenObjectTouches.name)
+
+
+            if (whenObjectTouches != null && changeToTexture != null)
             {
-                this.gameObject.GetComponentInParent<SpriteRenderer>().sprite = changeToTexture;
-                Destroy(whenObjectTouches);
+                if (collision.transform.gameObject.name == whenObjectTouches.name)
+                {
+                    this.gameObject.GetComponentInParent<SpriteRenderer>().sprite = changeToTexture;
+                    Destroy(whenObjectTouches);
+                }
             }
-        }
-        if (oneTimeClick == false)
-        {
-            buttonOn = true;
-        }
-        else if (oneTimeClick == true && notClickable == false)
-        {
-            buttonOn = true;
-            notClickable = true;
+            if (oneTimeClick == false)
+            {
+                buttonOn = true;
+            }
+            else if (oneTimeClick == true && notClickable == false)
+            {
+                buttonOn = true;
+                notClickable = true;
+            }
         }
     }
 
@@ -80,11 +84,11 @@ public class ButtonOnOff : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(notClickable == false)
+        if (notClickable == false)
         {
             buttonOn = false;
         }
-        
+
     }
 
     /// <summary>

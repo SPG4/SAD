@@ -8,6 +8,8 @@ public class Lvl5Puzzel2 : MonoBehaviour {
     private bool locked = false;
     Level5 lvl5 = new Level5();
 
+    public static bool pzl2Done = false;
+
     // Use this for initialization
     void Start()
     {
@@ -27,7 +29,9 @@ public class Lvl5Puzzel2 : MonoBehaviour {
         {
             if (collision.gameObject.name == "Eyeball" && locked == false)
             {
+
                 locked = true;
+                pzl2Done = true;
                 this.gameObject.GetComponentInParent<SpriteRenderer>().sprite = changeToTexture;
                 collision.gameObject.SetActive(false);
                 MoveToPointArray.puzzleDone = true;
