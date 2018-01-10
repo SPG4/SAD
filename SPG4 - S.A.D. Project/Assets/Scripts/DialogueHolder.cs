@@ -18,8 +18,6 @@ public class DialogueHolder : MonoBehaviour
     bool changeBackCamera = true;
 
 
-    bool active = false;
-
     void Start()
     {
         diaManager = FindObjectOfType<DialogueManager>();
@@ -31,7 +29,7 @@ public class DialogueHolder : MonoBehaviour
 
     private void Update()
     {
-        if (active)
+        if (diaManager.diaActive)
         {
             P2.canUseability = false;
             P1.canUseability = false;
@@ -50,8 +48,13 @@ public class DialogueHolder : MonoBehaviour
                     diaManager.currentLine++;
                 }
             }
+            else
+            {
+                P2.canUseability = true;
+                P1.canUseability = true;
+            }
 
-            else if (diaManager.currentLine == useAbilityP2)
+            if (diaManager.currentLine == useAbilityP2)
             {
                 P2.canUseability = true;
                 if (!setfalse2)
@@ -93,7 +96,6 @@ public class DialogueHolder : MonoBehaviour
                         diaManager.SendMessage("AddText", diaLines[i]);
                     }
                     doneOnce = true;
-                    active = true;
                     if (other.gameObject.tag == "Player")
                     {
                         P1.gameObject.GetComponent<Transform>().position += new Vector3(movePos, 0, 0);
