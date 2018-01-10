@@ -8,6 +8,7 @@ public class MouthTAM : MonoBehaviour
     public GameObject pl1;
     public GameObject pl2;
     public GameObject teleBall;
+    public GameObject camera;
 
     public GameObject projectile;
     public static bool isDamaged = false;
@@ -49,5 +50,6 @@ public class MouthTAM : MonoBehaviour
     {
         pl1.transform.position = teleToThis.transform.position;
         pl2.transform.position = teleToThis.transform.position;
+        //camera.transform.position = pl1.transform.position;
     }
 }
