@@ -791,7 +791,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &112017393
 Prefab:
@@ -2931,7 +2931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487323362
 GameObject:
@@ -8774,7 +8774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &771706729 stripped
 Transform:
@@ -9771,101 +9771,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd908b37686db2a4091c42a9640080f2, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1024196417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1024196420}
-  - component: {fileID: 1024196419}
-  - component: {fileID: 1024196421}
-  - component: {fileID: 1024196418}
-  m_Layer: 0
-  m_Name: Dialouge Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1024196418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024196417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55696875d643a2c44b3565cbc7413442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useAbilityP1: 7
-  useAbilityP2: 5
-  newAbilityObject: {fileID: 0}
-  dialogue: 
-  diaLines:
-  - "Blue: Well, that wasn\u2019t so bad!"
-  - "Green: Sometimes I wish I could just shield myself away from the world\u2019s
-    judging eyes."
-  - "Blue: Go ahead, I wouldn\u2019t mind."
-  - '*Green uses shield*'
-  - "Hey that\u2019s not fair, why do you get a new ability? What about me? Maybe
-    there\u2019s another way to use this thing."
-  - '*Blue uses shield*'
-  - Yeah, this makes more sense!
-  useSpecial: 1
-  movePos: 2
---- !u!61 &1024196419
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024196417}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &1024196420
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024196417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 210.35, y: 31.64, z: 0}
-  m_LocalScale: {x: 4.8, y: 13.25, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1024196421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024196417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6858909f864afe439280a7511765d21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityToAdd: Shield
 --- !u!1001 &1047271905
 Prefab:
   m_ObjectHideFlags: 0
@@ -10517,7 +10422,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1148818891 stripped
 Transform:
@@ -14980,7 +14885,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4066145500237520, guid: 0136de552ec85084baa1c1e7d77b03f5, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 82740957880435460, guid: 0136de552ec85084baa1c1e7d77b03f5,
         type: 2}
@@ -16134,12 +16039,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 464
+      value: 604
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 261
+      value: 299.5
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -17450,7 +17355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1762167517
 MonoBehaviour:
@@ -18393,7 +18298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4231491796243626, guid: b42e634ef7fb7d14688bb824b0b2ec86, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 114075646246616854, guid: b42e634ef7fb7d14688bb824b0b2ec86,
         type: 2}
