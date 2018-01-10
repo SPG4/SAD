@@ -80,7 +80,6 @@ public class CPC_CameraPath : MonoBehaviour
     bool player2Input = false;
     GameObject dialogue;
     bool hasAdded1, hasAdded2, hasAdded3, hasAdded4;
-    string LevelToLoad = "Level1";
 
     void Start()
     {
@@ -278,7 +277,7 @@ public class CPC_CameraPath : MonoBehaviour
             if (currentWaypointIndex == points.Count && afterLoop == CPC_EAfterLoop.Continue) currentWaypointIndex = 0;
         }
         StopPath();
-        SceneManager.LoadScene(LevelToLoad);
+        SceneManager.LoadScene("Level 1");
     }
 
     int GetNextIndex(int index)
