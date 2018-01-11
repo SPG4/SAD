@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -6284,7 +6285,7 @@ Prefab:
     - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: diaList.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -6518,12 +6519,12 @@ Prefab:
     - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: diaList.Array.data[3]
-      value: "Green: Hey what\u2019s that?"
+      value: 'Blue: Well come on then, this has to be the right way'
       objectReference: {fileID: 0}
     - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: diaList.Array.data[4]
-      value: "Blue: I don\u2019t know, but I don\u2019t plan on letting him get away."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114051125686245720, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}

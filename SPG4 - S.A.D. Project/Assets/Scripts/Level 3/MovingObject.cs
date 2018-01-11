@@ -20,7 +20,7 @@ public class MovingObject : MonoBehaviour {
         time = timer;
         if (!notRando)
         {
-            startTime = 1;
+            startTime = 1.5f;
             startTime = Random.Range(startTime - 0.2f, startTime + 0.2f);
         }
 
