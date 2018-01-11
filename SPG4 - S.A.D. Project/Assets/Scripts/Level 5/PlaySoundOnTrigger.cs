@@ -8,7 +8,9 @@ public class PlaySoundOnTrigger : MonoBehaviour
     public bool noLayerCheck;
     public AudioClip sound;
     public float volume;
+    public bool playSoundOnce;
     private AudioSource source;
+    private bool played = false;
 
     // Use this for initialization
     void Start()
@@ -26,12 +28,28 @@ public class PlaySoundOnTrigger : MonoBehaviour
         {
             if (collision.gameObject.layer == LayerMask.NameToLayer(layerName))
             {
-                source.PlayOneShot(sound, volume);
+                if(playSoundOnce == false)
+                {
+                    source.PlayOneShot(sound, volume);
+                }
+                else if(played == false && playSoundOnce == true)
+                {
+                    played = true;
+                    source.PlayOneShot(sound, volume);
+                }
             }
         }
         else
         {
-            source.PlayOneShot(sound, volume);
+            if (playSoundOnce == false)
+            {
+                source.PlayOneShot(sound, volume);
+            }
+            else if (played == false && playSoundOnce == true)
+            {
+                played = true;
+                source.PlayOneShot(sound, volume);
+            }
         }
     }
 }

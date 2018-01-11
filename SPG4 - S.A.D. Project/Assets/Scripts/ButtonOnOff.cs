@@ -73,6 +73,10 @@ public class ButtonOnOff : MonoBehaviour
             {
                 buttonOn = true;
                 notClickable = true;
+                if(changeToTexture != null)
+                {
+                    this.gameObject.GetComponentInParent<SpriteRenderer>().sprite = changeToTexture;
+                }
             }
         }
     }
