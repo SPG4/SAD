@@ -221,7 +221,7 @@ MonoBehaviour:
   level3Music: {fileID: 8300000, guid: e52770c3ce887b94e873f265ef8284cb, type: 3}
   level4Music: {fileID: 8300000, guid: cdebd9407c104d54a8d445db5fbc603f, type: 3}
   level5Music: {fileID: 8300000, guid: 8b3ba974d96cc5247951ee317737a79f, type: 3}
-  bossMusic: {fileID: 8300000, guid: dd797b642107af542ba004b93ddc673b, type: 3}
+  bossMusic: {fileID: 8300000, guid: 8fdf4662bdb44654ebc0972ee6038812, type: 3}
   musicVolume: 0
   sfxVolume: 0
   lowPitchRange: 0.95
