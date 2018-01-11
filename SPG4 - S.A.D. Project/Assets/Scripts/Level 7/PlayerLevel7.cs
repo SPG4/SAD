@@ -19,7 +19,7 @@ public class PlayerLevel7 : MonoBehaviour {
     void TamDead()
     {
         print("moving");
-        tam = GameObject.FindGameObjectWithTag("Boss");
+        tam = GameObject.FindGameObjectWithTag("TheEnd");
 
         gameObject.GetComponent<Transform>().position = tam.GetComponent<Transform>().position - new Vector3(10, 0, 0);
         gameObject.GetComponent<Transform>().localScale = new Vector3(-1, 1, 1);

@@ -2810,6 +2810,7 @@ MonoBehaviour:
   noLayerCheck: 0
   sound: {fileID: 8300000, guid: 065a3e058c5bb714baddb0cb1bff3a38, type: 3}
   volume: 1
+  playSoundOnce: 0
 --- !u!82 &461858698
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3871,7 +3872,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538814671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.83, y: 8, z: 0}
+  m_LocalPosition: {x: 13.75, y: 8, z: 0}
   m_LocalScale: {x: 2.8735886, y: 0.47601086, z: 0.9520217}
   m_Children: []
   m_Father: {fileID: 2047785256}
@@ -5045,6 +5046,7 @@ MonoBehaviour:
   noLayerCheck: 1
   sound: {fileID: 8300000, guid: 3e90cb2ed2499f941a1cdc9c600c285f, type: 3}
   volume: 1
+  playSoundOnce: 0
 --- !u!212 &819678167
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5128,6 +5130,7 @@ MonoBehaviour:
   noLayerCheck: 0
   sound: {fileID: 8300000, guid: 065a3e058c5bb714baddb0cb1bff3a38, type: 3}
   volume: 1
+  playSoundOnce: 0
 --- !u!82 &841145327
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7715,6 +7718,7 @@ MonoBehaviour:
   noLayerCheck: 1
   sound: {fileID: 8300000, guid: 3e90cb2ed2499f941a1cdc9c600c285f, type: 3}
   volume: 1
+  playSoundOnce: 0
 --- !u!82 &1178301423
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9075,6 +9079,7 @@ MonoBehaviour:
   noLayerCheck: 1
   sound: {fileID: 8300000, guid: 3e90cb2ed2499f941a1cdc9c600c285f, type: 3}
   volume: 1
+  playSoundOnce: 0
 --- !u!1 &1473295884
 GameObject:
   m_ObjectHideFlags: 0
