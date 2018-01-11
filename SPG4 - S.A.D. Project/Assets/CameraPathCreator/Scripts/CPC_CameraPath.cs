@@ -277,7 +277,7 @@ public class CPC_CameraPath : MonoBehaviour
             if (currentWaypointIndex == points.Count && afterLoop == CPC_EAfterLoop.Continue) currentWaypointIndex = 0;
         }
         StopPath();
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(1);
     }
 
     int GetNextIndex(int index)

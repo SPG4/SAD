@@ -40,6 +40,7 @@ public class SoundLevelManager : MonoBehaviour {
             musicClips[4] = level4Music;
             musicClips[5] = level5Music;
             musicClips[6] = bossMusic;
+            musicClips[7] = menuMusic;
         }
         else
         {
