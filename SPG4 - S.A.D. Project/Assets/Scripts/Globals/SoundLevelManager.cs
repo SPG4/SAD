@@ -32,7 +32,7 @@ public class SoundLevelManager : MonoBehaviour {
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            musicClips = new AudioClip[7];
+            musicClips = new AudioClip[8];
             musicClips[0] = menuMusic;
             musicClips[1] = level1Music;
             musicClips[2] = level2Music;
