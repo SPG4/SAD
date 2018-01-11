@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -5655,6 +5654,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &118730373
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 64.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.6925297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959438276137348, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_Name
+      value: Puzzle2Analytics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_StaticString
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &120845142
 GameObject:
   m_ObjectHideFlags: 0
@@ -21715,7 +21770,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -23839,6 +23893,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &570531193
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 127.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.6925297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959438276137348, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_Name
+      value: Puzzle3Analytics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_StaticString
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &573103390
 GameObject:
   m_ObjectHideFlags: 0
@@ -33711,6 +33821,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &889672637
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 201.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -13.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959438276137348, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_Name
+      value: Puzzle5Analytics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_StaticString
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &891299484
 GameObject:
   m_ObjectHideFlags: 0
@@ -54336,6 +54502,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1365521108
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 231.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -15.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959438276137348, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_Name
+      value: PuzzleEndAnalytics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_StaticString
+      value: End
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1371168116
 GameObject:
   m_ObjectHideFlags: 0
@@ -57782,6 +58004,62 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1476976525
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 158.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959438276137348, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_Name
+      value: Puzzle4Analytics
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_TrackableProperty.m_Fields.Array.data[0].m_StaticString
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1478476166
 GameObject:
   m_ObjectHideFlags: 0
@@ -73551,7 +73829,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -74714,6 +74991,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1927547295
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 31.427929
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 7.6925297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4910731108294500, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114977283040610434, guid: a88f23407b6fffc429cbd2a73820eb79,
+        type: 2}
+      propertyPath: m_EventName
+      value: Level 1 Puzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a88f23407b6fffc429cbd2a73820eb79, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1928462510
 GameObject:
   m_ObjectHideFlags: 0
@@ -76167,12 +76491,12 @@ Prefab:
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 514
+      value: 604
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 319
+      value: 299.5
       objectReference: {fileID: 0}
     - target: {fileID: 224174546325570086, guid: db42e14cc7cb84b4b8b7153637be4fe6,
         type: 2}
@@ -76407,7 +76731,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1967521296056078, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db42e14cc7cb84b4b8b7153637be4fe6, type: 2}

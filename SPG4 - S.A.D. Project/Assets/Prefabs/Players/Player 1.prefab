@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4895071582845228}
   m_Layer: 9
   m_Name: Ground Check
-  m_TagString: Untagged
+  m_TagString: P1Collider
   m_Icon: {fileID: -6488666005112524639, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,7 +275,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1722864141588178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.96, y: -11.79, z: 0}
+  m_LocalPosition: {x: -53.449986, y: 0.7399998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4401623427380436}
@@ -485,6 +485,7 @@ MonoBehaviour:
   shots: 0
   usedP1: 0
   usedP2: 0
+  canUseability: 1
   analyticsTracker: {fileID: 114696003308232266}
 --- !u!114 &114696003308232266
 MonoBehaviour:
@@ -529,7 +530,7 @@ MonoBehaviour:
   speed: 9
   maxSpeed: 10
   crouchSpeed: 2
-  jumpForce: 1500
+  jumpForce: 1800
   wallJumpForce: 20
   jumpPushForce: 40
   wallCheck: {fileID: 4099471657051480}

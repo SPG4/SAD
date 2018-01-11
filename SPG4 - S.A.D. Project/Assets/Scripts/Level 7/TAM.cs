@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class TAM : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class TAM : MonoBehaviour
 
     public float speedTime;
     public float maxRotation;
+
+    public AnalyticsTracker analyticsTracker;
 
     void Start()
     {
@@ -88,7 +91,7 @@ public class TAM : MonoBehaviour
 
             speed = 0;
             isDead = true;
-           
+            analyticsTracker.TriggerEvent();
         }
     }
 

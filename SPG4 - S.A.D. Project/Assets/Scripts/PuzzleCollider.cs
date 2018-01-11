@@ -5,30 +5,24 @@ using UnityEngine.Analytics;
 
 public class PuzzleCollider : MonoBehaviour {
 
-    public AnalyticsTracker analyticsTrackerP1, analyticsTrackerP2;
-    // Use this for initialization
-   
+    public AnalyticsTracker analyticsTracker;
+    public int playerNr;
         
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "P1Collider")
+        if (collision.gameObject.tag == "Player")
         {
-            analyticsTrackerP1.TriggerEvent();
+            playerNr = 1;
+            analyticsTracker.TriggerEvent();
         }
 
-        else if (collision.gameObject.tag == "P2Collider")
+        else if (collision.gameObject.tag == "Player2")
         {
-            analyticsTrackerP2.TriggerEvent();
+            playerNr = 2;
+            analyticsTracker.TriggerEvent();
         }
 
         Destroy(gameObject);
     }
-
-     void Start () {
-	}
-	
-    
-	// Update is called once per frame
-	void Update () {
-	}
+  
 }

@@ -100,7 +100,7 @@ public class PlayerAbilities : MonoBehaviour
 
             if (Input.GetButtonDown(buttonInput))
             {
-                //analyticsTracker.TriggerEvent();
+                analyticsTracker.TriggerEvent();
                 if (chosenAbility == "SizeGun" || chosenAbility == "StandardAbility" || chosenAbility == "RopeAbility")
                     CastRayAbility();
 
