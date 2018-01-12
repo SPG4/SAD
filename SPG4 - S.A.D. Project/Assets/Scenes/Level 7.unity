@@ -12208,7 +12208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d91fc19dc6d849bfcbf4e29e70eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  analyticsTracker: {fileID: 0}
+  analyticsTracker: {fileID: 135970473}
   playerNr: 0
 --- !u!61 &135970475
 BoxCollider2D:
@@ -30685,7 +30685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d91fc19dc6d849bfcbf4e29e70eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  analyticsTracker: {fileID: 0}
+  analyticsTracker: {fileID: 700415012}
   playerNr: 0
 --- !u!61 &700415014
 BoxCollider2D:
@@ -35132,7 +35132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d91fc19dc6d849bfcbf4e29e70eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  analyticsTracker: {fileID: 0}
+  analyticsTracker: {fileID: 760691722}
   playerNr: 0
 --- !u!61 &760691724
 BoxCollider2D:
@@ -40419,7 +40419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d91fc19dc6d849bfcbf4e29e70eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  analyticsTracker: {fileID: 0}
+  analyticsTracker: {fileID: 878237051}
   playerNr: 0
 --- !u!61 &878237053
 BoxCollider2D:
@@ -89988,7 +89988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074d91fc19dc6d849bfcbf4e29e70eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  analyticsTracker: {fileID: 0}
+  analyticsTracker: {fileID: 1955428419}
   playerNr: 0
 --- !u!61 &1955428421
 BoxCollider2D:

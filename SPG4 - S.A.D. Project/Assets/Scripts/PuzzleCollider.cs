@@ -14,15 +14,16 @@ public class PuzzleCollider : MonoBehaviour {
         {
             playerNr = 1;
             analyticsTracker.TriggerEvent();
+            Destroy(gameObject);
         }
 
         else if (collision.gameObject.tag == "Player2")
         {
             playerNr = 2;
             analyticsTracker.TriggerEvent();
+            Destroy(gameObject);
         }
 
-        Destroy(gameObject);
     }
   
 }
